@@ -128,7 +128,7 @@ export default function Home() {
         </div>
         <h1 className="font-serif text-[clamp(64px,12vw,140px)] leading-[0.95] tracking-tight mb-8">
           In chaos,<br />
-          <em className="italic text-[#ff4d4d]">fear not.</em>
+          <em className="italic text-[#ff4d4d]">FEAR NOT.</em>
         </h1>
         <p className="text-xl leading-relaxed text-[#a1a1a1] max-w-[600px] mb-10">
           We look where others won&apos;t. Systematic macro research, powered by a multi-agent AI architecture and grounded in 150 years of market evidence. We take markets seriously. Ourselves, less so.
