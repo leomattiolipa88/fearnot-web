@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import Header from '@/app/components/Header';
 
 // ============== Types ==============
 type WebData = {
@@ -99,27 +101,7 @@ export default function Home() {
            style={{ background: 'radial-gradient(circle, rgba(255,77,77,0.08) 0%, transparent 60%)' }} />
 
       {/* Topbar */}
-      <div className="sticky top-0 backdrop-blur-xl bg-[#0a0a0a]/80 border-b border-white/[0.08] z-50">
-        <div className="max-w-[1200px] mx-auto px-8 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2.5 text-base font-medium tracking-tight">
-            <div className="w-6 h-6 bg-[#ff4d4d] rounded-md relative overflow-hidden">
-              <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 70%)' }} />
-            </div>
-            <span>FearNot</span>
-          </div>
-          <div className="hidden md:flex gap-8">
-            <a href="#" className="text-sm text-white">Today</a>
-            <a href="#" className="text-sm text-[#a1a1a1] hover:text-white transition">Research</a>
-            <a href="#" className="text-sm text-[#a1a1a1] hover:text-white transition">Signals</a>
-            <a href="#" className="text-sm text-[#a1a1a1] hover:text-white transition">Performance</a>
-            <a href="#" className="text-sm text-[#a1a1a1] hover:text-white transition">Manifesto</a>
-          </div>
-          <div className="flex items-center gap-2 text-xs text-[#a1a1a1] px-3 py-1.5 bg-[#141414] border border-white/[0.08] rounded-full">
-            <span className="w-1.5 h-1.5 bg-[#7cc943] rounded-full animate-pulse" style={{ boxShadow: '0 0 8px rgba(124,201,67,0.5)' }} />
-            <span>Live · {data.regimen.clasificacion} {data.regimen.confianza}%</span>
-          </div>
-        </div>
-      </div>
+      <Header regimen={data.regimen.clasificacion} confianza={data.regimen.confianza} />
 
       {/* Hero */}
       <section className="max-w-[1200px] mx-auto px-8 pt-32 pb-24 relative z-10">
@@ -134,9 +116,9 @@ export default function Home() {
           We look where others won&apos;t. Systematic macro research, powered by a multi-agent AI architecture and grounded in 150 years of market evidence. We take markets seriously. Ourselves, less so.
         </p>
         <div className="flex gap-3">
-          <button className="px-6 py-3 bg-white text-black rounded-lg text-sm font-medium hover:bg-[#a1a1a1] hover:-translate-y-0.5 transition-all">
-            Read today&apos;s thesis →
-          </button>
+          <Link href="/research" className="px-6 py-3 bg-white text-black rounded-lg text-sm font-medium hover:bg-[#a1a1a1] hover:-translate-y-0.5 transition-all inline-flex items-center">
+  Read today&apos;s thesis →
+</Link>
           <button className="px-6 py-3 text-white border border-white/[0.14] rounded-lg text-sm font-medium hover:bg-[#141414] hover:border-[#a1a1a1] transition-all">
             How it works
           </button>
