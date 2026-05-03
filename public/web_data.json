@@ -1,40 +1,40 @@
 {
   "metadata": {
-    "generado": "2026-04-30T12:11:31.794126",
-    "fecha": "2026-04-30",
-    "tesis_macro_fecha": "2026-04-30",
-    "tesis_tecnica_fecha": "2026-04-30"
+    "generado": "2026-05-03T14:49:21.651638",
+    "fecha": "2026-05-03",
+    "tesis_macro_fecha": "2026-05-03",
+    "tesis_tecnica_fecha": "2026-05-03"
   },
   "regimen": {
     "clasificacion": "GOLDILOCKS",
     "confianza": 85,
-    "razonamiento": "Régimen Goldilocks confirmado por múltiples indicadores: yield curve normalizada en +0.7% (yield_curve), Sahm Rule en 0.2 indicando no-recesión (sahm_rule), jobless claims saludables en 189K (jobless_claims), y spreads de crédito contenidos en 2.82% (hy_spread). VIX moderado en 17.44 sugiere volatilidad controlada."
+    "razonamiento": "Múltiples indicadores confirman un escenario de crecimiento sólido con inflación controlada: yield curve normalizada en +0.81% (yield_curve), unemployment estable en 4.3% (unemployment), Sahm rule baja en 0.2 (sahm_rule), jobless claims contenidas en 189,000 (jobless_claims), breakeven inflation 5y5y moderada en 2.27% (breakeven_5y5y), y VIX tranquilo en 16.99 (vix). Credit spreads ajustados en 283 bps (hy_spread) indican liquidez saludable."
   },
-  "tesis_principal": "El régimen Goldilocks está plenamente establecido con la curva de rendimientos normalizada en +0.7% (yield_curve), eliminando las preocupaciones de inversión que dominaron 2022-2025. El mercado laboral se mantiene resiliente con jobless claims en 189K (jobless_claims) y Sahm Rule en 0.2 (sahm_rule), descartando riesgo recesivo inmediato. Los spreads de high yield contenidos en 2.82% (hy_spread) confirman condiciones crediticias saludables, mientras que el VIX en 17.44 (vix) sugiere apetito por riesgo controlado pero presente. La configuración macro favorece claramente risk-on assets, especialmente equities que se benefician de crecimiento sin presiones inflacionarias extremas. Sin embargo, el USD/JPY en 156.69 (usdjpy) se acerca a niveles que históricamente han provocado intervención del BoJ, representando el principal riesgo de cola para la estabilidad de carry trades que sustentan parte de la liquidez global actual.",
+  "tesis_principal": "El régimen Goldilocks está completamente establecido con datos frescos que confirman el sweet spot macro. La yield curve normalizada en +0.81% (yield_curve) marca el fin de la inversión, mientras unemployment estable en 4.3% (unemployment) y jobless claims contenidas en 189,000 (jobless_claims) confirman labor market resiliente sin sobrecalentamiento. La Sahm rule en apenas 0.2 (sahm_rule) descarta riesgo recesivo inmediato. En paralelo, la inflación está controlada con breakeven 5y5y en 2.27% (breakeven_5y5y) y Michigan expectations en 3.8% (michigan_inflation_exp) mostrando anclaje de expectativas. El VIX tranquilo en 16.99 (vix) y credit spreads ajustados en 283 bps (hy_spread) reflejan apetito de riesgo saludable y liquidez abundante. Los mercados están validando este escenario con SPY en 720.65 (spy) y QQQ en 674.15 (qqq) en territorio constructivo, mientras que el USD fuerte con DXY en 98.21 (dxy) y USDJPY en 157.03 (usdjpy) sugiere capital flows hacia activos americanos por fundamentals superiores.",
   "indicadores_clave": {
     "yield_curve": {
-      "valor": 0.7,
-      "fecha": "2026-04-30"
+      "valor": 0.81,
+      "fecha": "2026-05-03"
     },
     "vix": {
-      "valor": 17.440000534057617,
-      "fecha": "2026-04-30"
+      "valor": 16.989999771118164,
+      "fecha": "2026-05-01"
     },
     "hy_spread": {
-      "valor": 2.82,
-      "fecha": "2026-04-29"
+      "valor": 2.83,
+      "fecha": "2026-04-30"
     },
     "usdjpy_mkt": {
-      "valor": 156.69000244140625,
-      "fecha": "2026-04-30"
+      "valor": 157.0330047607422,
+      "fecha": "2026-05-01"
     },
     "dxy": {
-      "valor": 98.14600372314453,
-      "fecha": "2026-04-30"
+      "valor": 98.20999908447266,
+      "fecha": "2026-05-01"
     },
     "yield_10y": {
-      "valor": 4.3,
-      "fecha": "2026-04-22"
+      "valor": 4.4,
+      "fecha": "2026-04-30"
     },
     "sahm_rule": {
       "valor": 0.2,
@@ -48,85 +48,85 @@
   "tecnicos": {
     "activos": {
       "DXY": {
-        "id": 35,
-        "fecha": "2026-04-30",
+        "id": 41,
+        "fecha": "2026-05-03",
         "activo": "DXY",
-        "precio_actual": 98.17,
+        "precio_actual": 98.21,
         "dma200": 98.54,
-        "pct_sobre_dma": -0.37,
-        "cruce_dma": "CRUCE_BAJISTA",
-        "momentum_12m": -2.07,
-        "vol_12m": 6.43,
-        "momentum_ajust": -0.322
+        "pct_sobre_dma": -0.33,
+        "cruce_dma": "BAJO_DMA",
+        "momentum_12m": -1.79,
+        "vol_12m": 6.4,
+        "momentum_ajust": -0.28
       },
       "GLD": {
-        "id": 32,
-        "fecha": "2026-04-30",
+        "id": 38,
+        "fecha": "2026-05-03",
         "activo": "GLD",
-        "precio_actual": 424.4,
-        "dma200": 390.96,
-        "pct_sobre_dma": 8.55,
+        "precio_actual": 423.18,
+        "dma200": 391.53,
+        "pct_sobre_dma": 8.08,
         "cruce_dma": "SOBRE_DMA",
-        "momentum_12m": 39.71,
-        "vol_12m": 27.22,
-        "momentum_ajust": 1.459
+        "momentum_12m": 42.26,
+        "vol_12m": 27.2,
+        "momentum_ajust": 1.554
       },
       "QQQ": {
-        "id": 31,
-        "fecha": "2026-04-30",
+        "id": 37,
+        "fecha": "2026-05-03",
         "activo": "QQQ",
-        "precio_actual": 663.35,
-        "dma200": 602.25,
-        "pct_sobre_dma": 10.15,
+        "precio_actual": 674.15,
+        "dma200": 602.86,
+        "pct_sobre_dma": 11.82,
         "cruce_dma": "SOBRE_DMA",
-        "momentum_12m": 40.19,
-        "vol_12m": 16.24,
-        "momentum_ajust": 2.474
+        "momentum_12m": 40.64,
+        "vol_12m": 16.28,
+        "momentum_ajust": 2.496
       },
       "SPY": {
-        "id": 30,
-        "fecha": "2026-04-30",
+        "id": 36,
+        "fecha": "2026-05-03",
         "activo": "SPY",
-        "precio_actual": 714.39,
-        "dma200": 667.41,
-        "pct_sobre_dma": 7.04,
+        "precio_actual": 720.65,
+        "dma200": 667.94,
+        "pct_sobre_dma": 7.89,
         "cruce_dma": "SOBRE_DMA",
-        "momentum_12m": 30.3,
-        "vol_12m": 12.44,
-        "momentum_ajust": 2.436
+        "momentum_12m": 30.52,
+        "vol_12m": 12.47,
+        "momentum_ajust": 2.448
       },
       "TLT": {
-        "id": 33,
-        "fecha": "2026-04-30",
+        "id": 39,
+        "fecha": "2026-05-03",
         "activo": "TLT",
-        "precio_actual": 85.86,
-        "dma200": 86.8,
-        "pct_sobre_dma": -1.09,
+        "precio_actual": 85.61,
+        "dma200": 86.49,
+        "pct_sobre_dma": -1.02,
         "cruce_dma": "BAJO_DMA",
-        "momentum_12m": 0.31,
-        "vol_12m": 10.08,
-        "momentum_ajust": 0.031
+        "momentum_12m": 0.91,
+        "vol_12m": 10.06,
+        "momentum_ajust": 0.09
       },
       "USO": {
-        "id": 34,
-        "fecha": "2026-04-30",
+        "id": 40,
+        "fecha": "2026-05-03",
         "activo": "USO",
-        "precio_actual": 147.05,
-        "dma200": 83.58,
-        "pct_sobre_dma": 75.95,
+        "precio_actual": 142.8,
+        "dma200": 83.91,
+        "pct_sobre_dma": 70.18,
         "cruce_dma": "SOBRE_DMA",
-        "momentum_12m": 131.36,
-        "vol_12m": 42.5,
-        "momentum_ajust": 3.091
+        "momentum_12m": 121.33,
+        "vol_12m": 42.45,
+        "momentum_ajust": 2.858
       }
     },
     "mercado": {
-      "id": 6,
-      "fecha": "2026-04-30",
-      "vix_spot": 17.43,
-      "vix_3m": 20.36,
+      "id": 7,
+      "fecha": "2026-05-03",
+      "vix_spot": 16.99,
+      "vix_3m": 20.37,
       "vix_term_struct": "CONTANGO_FUERTE",
-      "vrp": 107.4,
+      "vrp": 157.57,
       "pct_sobre_200": 62.0
     }
   },
@@ -138,7 +138,7 @@
         "direccion": "LONG",
         "horizonte": "MENSUAL",
         "conviccion": 8,
-        "razonamiento": "Condiciones macro ideales para equities: régimen Goldilocks con curva de rendimientos normalizada (+0.7%), crédito fluido (hy_spread: 2.82%), y mercado laboral sólido (jobless_claims: 189K). SPY en 714.20 con soporte macro robusto.",
+        "razonamiento": "Goldilocks perfecto con yield curve normalizada, labor market resiliente, credit spreads estrechos y VIX bajo. SPY en 720.65 se beneficia del momentum de crecimiento sin presiones inflacionarias extremas",
         "dato_clave": "yield_curve"
       },
       "tecnico": {
@@ -146,9 +146,9 @@
         "direccion": "LONG",
         "horizonte": "TRIMESTRAL",
         "conviccion": 9,
-        "razonamiento": "Precio 714.39 sobre 200DMA 667.41 (+7.04%, SOBRE_DMA), momentum 12M en +30.3% con vol 12.44%, momentum ajustado por vol en 2.436 (>1.5 = momentum fuerte alta convicción, Barroso & Santa-Clara).",
-        "indicador_clave": "momentum_ajust = 2.436",
-        "interaccion_macro": "GOLDILOCKS habilita full sizing en equity momentum (Cooper et al. 2004, +0.93%/mes en UP markets). VRP +107.4 y VIX en contango refuerzan la señal."
+        "razonamiento": "Precio 720.65 vs 200DMA 667.94 (+7.89%, SOBRE_DMA). Momentum 12M en +30.52% con vol 12.47% da momentum ajustado de 2.448, muy por encima del umbral +1.5 de Barroso & Santa-Clara. Senal LONG de alta conviccion.",
+        "indicador_clave": "momentum_ajust = 2.448",
+        "interaccion_macro": "GOLDILOCKS habilita full sizing en momentum equity (Cooper et al. 2004, +0.93%/mes en UP markets). Regimen amplifica conviccion."
       },
       "consenso": "CONVERGENTE"
     },
@@ -158,8 +158,8 @@
         "activo": "QQQ",
         "direccion": "LONG",
         "horizonte": "MENSUAL",
-        "conviccion": 7,
-        "razonamiento": "Tech favorecido en Goldilocks con yields reales atractivos (TIPS 10Y: 1.92%) y VIX contenido (17.44). QQQ en 663.21 se beneficia de condiciones de liquidez favorables y expectativas inflacionarias ancladas (breakeven 5y5y: 2.25%).",
+        "conviccion": 9,
+        "razonamiento": "Tech se beneficia doblemente: yields reales atractivas en 1.94% (tips_yield_10y) pero sin restrictividad extrema, más las noticias de expansión de AI militar de Nvidia/Microsoft/AWS que validan el secular story",
         "dato_clave": "tips_yield_10y"
       },
       "tecnico": {
@@ -167,9 +167,9 @@
         "direccion": "LONG",
         "horizonte": "TRIMESTRAL",
         "conviccion": 9,
-        "razonamiento": "Precio 663.35 sobre 200DMA 602.25 (+10.15%), momentum 12M +40.19%, vol 16.24%, momentum ajustado 2.474 (señal LONG de alta convicción).",
-        "indicador_clave": "momentum_ajust = 2.474",
-        "interaccion_macro": "En GOLDILOCKS el momentum tech opera con full sizing. Alerta: pct_sobre_dma de +10.15% sugiere algo de sobreextensión pero no extrema."
+        "razonamiento": "Precio 674.15 vs 200DMA 602.86 (+11.82%, SOBRE_DMA). Momentum 12M +40.64%, vol 16.28%, momentum ajustado 2.496 (muy fuerte). Cumple regla de Tudor Jones (sobre 200DMA) y Barroso (>+1.5).",
+        "indicador_clave": "momentum_ajust = 2.496",
+        "interaccion_macro": "GOLDILOCKS favorece growth/tech; momentum tech recibe full sizing. Maxima conviccion tecnica."
       },
       "consenso": "CONVERGENTE"
     },
@@ -179,39 +179,18 @@
         "activo": "TLT",
         "direccion": "SHORT",
         "horizonte": "TRIMESTRAL",
-        "conviccion": 6,
-        "razonamiento": "Yield 10Y market en 4.388% vs TLT en 85.84 sugiere presión bajista en bonos largos. Curva normalizada (+0.7%) indica que la Fed puede mantener política restrictiva, especialmente con expectativas inflacionarias Michigan en 3.8%.",
-        "dato_clave": "yield_10y_mkt"
+        "conviccion": 7,
+        "razonamiento": "Con yield curve en +0.81% y breakeven inflation estable en 2.27%, la normalización continúa. TLT en 85.61 enfrenta headwinds de crecimiento sólido sin necesidad de flight-to-quality",
+        "dato_clave": "yield_curve"
       },
       "tecnico": {
         "activo": "TLT",
         "direccion": "NEUTRAL",
         "horizonte": "MENSUAL",
-        "conviccion": 6,
-        "razonamiento": "Precio 85.86 bajo 200DMA 86.8 (-1.09%, BAJO_DMA) impide LONG por regla de Tudor Jones. Momentum 12M +0.31% con momentum ajustado 0.031 está en zona ambigua (-0.5 a +1.5).",
-        "indicador_clave": "cruce_dma = BAJO_DMA",
-        "interaccion_macro": "GOLDILOCKS es ambiguo para bonos largos: crecimiento sólido no necesita refugio pero baja inflación los soporta. Sin señal técnica clara."
-      },
-      "consenso": "DIVERGENTE"
-    },
-    {
-      "activo": "DXY",
-      "macro": {
-        "activo": "DXY",
-        "direccion": "NEUTRAL",
-        "horizonte": "SEMANAL",
-        "conviccion": 5,
-        "razonamiento": "DXY en 98.15 con señales mixtas: EUR/USD en 1.1734 sugiere debilidad relativa del dólar, pero USD/JPY en 156.69 indica fortaleza vs yen. Carry trades activos requieren monitoreo cercano.",
-        "dato_clave": "usdjpy"
-      },
-      "tecnico": {
-        "activo": "DXY",
-        "direccion": "SHORT",
-        "horizonte": "MENSUAL",
-        "conviccion": 7,
-        "razonamiento": "Precio 98.17 bajo 200DMA 98.54 (-0.37%) con CRUCE_BAJISTA reciente (señal de salida fuerte). Momentum 12M -2.07%, momentum ajustado -0.322 (zona ambigua pero negativa).",
-        "indicador_clave": "cruce_dma = CRUCE_BAJISTA",
-        "interaccion_macro": "GOLDILOCKS típicamente debilita al USD (apetito por riesgo global, flujos hacia EM y commodities). Coherente con fortaleza de GLD y USO."
+        "conviccion": 4,
+        "razonamiento": "Precio 85.61 vs 200DMA 86.49 (-1.02%, BAJO_DMA) prohibe LONG por regla Tudor Jones. Momentum 12M +0.91% y momentum ajustado 0.09 estan en zona ambigua (-0.5 a +1.5). Sin tendencia clara.",
+        "indicador_clave": "cruce_dma = BAJO_DMA y momentum_ajust = 0.09",
+        "interaccion_macro": "GOLDILOCKS tipicamente neutral/negativo para duracion (crecimiento sin recesion). Sin senal clara para SHORT por momentum no negativo."
       },
       "consenso": "DIVERGENTE"
     },
@@ -220,19 +199,40 @@
       "macro": {
         "activo": "GLD",
         "direccion": "NEUTRAL",
-        "horizonte": "MENSUAL",
-        "conviccion": 4,
-        "razonamiento": "Oro en 424.27 sin catalizador claro. Yields reales en 1.92% (tips_yield_10y) no favorecen oro, pero USD/JPY extremo en 156.69 podría generar volatilidad que beneficie activos de refugio.",
-        "dato_clave": "usdjpy"
+        "horizonte": "SEMANAL",
+        "conviccion": 5,
+        "razonamiento": "Gold en 423.18 enfrenta cross-currents: real rates positivas en 1.94% son negativas, pero geopolítica (UAE saliendo de OPEC) y DXY fuerte en 98.21 crean volatilidad bidireccional",
+        "dato_clave": "tips_yield_10y"
       },
       "tecnico": {
         "activo": "GLD",
         "direccion": "LONG",
         "horizonte": "TRIMESTRAL",
+        "conviccion": 7,
+        "razonamiento": "Precio 423.18 sobre 200DMA 391.53 (+8.08%). Momentum 12M +42.26% con vol 27.2% da momentum ajustado 1.554, apenas sobre el umbral +1.5. Tendencia clara pero alta volatilidad reduce conviccion.",
+        "indicador_clave": "momentum_ajust = 1.554",
+        "interaccion_macro": "GOLDILOCKS no es el regimen optimo para oro (preferiria stagflation o reflacion), pero DXY debil (-0.33% bajo 200DMA) le da soporte tactico."
+      },
+      "consenso": "DIVERGENTE"
+    },
+    {
+      "activo": "DXY",
+      "macro": {
+        "activo": "DXY",
+        "direccion": "LONG",
+        "horizonte": "MENSUAL",
         "conviccion": 8,
-        "razonamiento": "Precio 424.4 sobre 200DMA 390.96 (+8.55%), momentum 12M +39.71% con vol 27.22%, momentum ajustado 1.459 (apenas debajo del umbral 1.5 pero claramente positivo).",
-        "indicador_clave": "momentum_12m = +39.71%",
-        "interaccion_macro": "GOLDILOCKS no es el régimen ideal para oro pero la tendencia técnica es robusta y DXY débil (-0.37% bajo 200DMA, CRUCE_BAJISTA) es viento de cola."
+        "razonamiento": "USD fortaleza basada en fundamentals sólidos: growth resiliente, yield curve normalizada, USDJPY en 157.03 sugiere carry trade unwinding continuando, EURUSD débil en 1.172",
+        "dato_clave": "usdjpy"
+      },
+      "tecnico": {
+        "activo": "DXY",
+        "direccion": "SHORT",
+        "horizonte": "MENSUAL",
+        "conviccion": 5,
+        "razonamiento": "Precio 98.21 bajo 200DMA 98.54 (-0.33%, BAJO_DMA) prohibe LONG. Momentum 12M -1.79%, momentum ajustado -0.28 (zona ambigua, no fuertemente bajista). Senal SHORT de baja-media conviccion.",
+        "indicador_clave": "cruce_dma = BAJO_DMA",
+        "interaccion_macro": "GOLDILOCKS con risk-on global suele coincidir con USD debil; consistente con la senal tecnica."
       },
       "consenso": "DIVERGENTE"
     },
@@ -244,41 +244,41 @@
         "direccion": "LONG",
         "horizonte": "MENSUAL",
         "conviccion": 6,
-        "razonamiento": "Precio 147.05 muy sobre 200DMA 83.58 (+75.95%), momentum 12M +131.36%, momentum ajustado 3.091. Señal técnica fortísima pero sobreextensión extrema (+75.95% sobre 200DMA) eleva riesgo de mean reversion.",
-        "indicador_clave": "pct_sobre_dma = +75.95% (sobreextensión)",
-        "interaccion_macro": "En GOLDILOCKS el commodity momentum no es el preferido (más típico de REFLACION). La sobreextensión sugiere reducir tamaño y horizonte corto."
+        "razonamiento": "Precio 142.80 muy por encima de 200DMA 83.91 (+70.18%, sobreextension extrema). Momentum 12M +121.33%, momentum ajustado 2.858. Tecnicamente LONG pero la sobreextension del 70% sobre 200DMA es alerta de mean-reversion.",
+        "indicador_clave": "pct_sobre_dma = +70.18% (sobreextendido)",
+        "interaccion_macro": "GOLDILOCKS no privilegia commodities (mas tipico de reflacion). La sobreextension + regimen no optimo justifica horizonte mas corto y conviccion moderada."
       },
       "consenso": "PARCIAL"
     }
   ],
   "eventos_clave": [
-    "[New York Times] Fed Meeting Live Updates: Wash Nomination for Fed Chair Advances Ahead of Powell's Presser — Incertidumbre sobre continuidad de Powell podría generar volatilidad en curva de rendimientos",
-    "[CNBC] Fed meeting live updates: Potential drama ahead if Powell hints he will hang around — Mercado pricing continuidad vs cambio de liderazgo Fed impacta expectativas política monetaria",
-    "[New York Times] U.S. Gas Prices Climb Further as Effects of Iran War Reverberate — Presión alcista en energía mantiene riesgo inflacionario latente",
-    "[Axios] Scoop: Trump huddles with oil execs as Iran stalemate drags on — Coordinación política-energética sugiere manejo estratégico de crisis geopolítica",
-    "[AP News] Asian stocks mostly gain and oil rises after the UAE says it will exit OPEC — Fragmentación OPEC podría alterar dinámicas de pricing petrolero"
+    "[Bloomberg] Nvidia, Microsoft, AWS Expanding Classified Military AI Use — valida el secular growth story de tech y justifica múltiplos premium en QQQ",
+    "[Forbes] UAE Quit OPEC Because Its Sovereign Wealth Now Dwarfs Oil — reshaping energy geopolitics, potential commodity volatility ahead",
+    "[Associated Press] Spirit Airlines shuts down after 34 years — señal temprana de consumer discretionary stress que contrasta con macro data resiliente",
+    "[Business Insider] K-shaped economy research — confirma bifurcación wealth que puede impactar consumption patterns",
+    "[Wall Street Journal] Berkshire profits more than double — valida corporate earnings strength en insurance/energy sectors"
   ],
   "invalidadores": [
-    "USD/JPY rompiendo 160 y forzando intervención masiva del BoJ, desarmando carry trades globales",
-    "Jobless claims subiendo consistentemente por encima de 250K, activando preocupaciones del mercado laboral",
-    "Spreads de high yield expandiéndose por encima de 4%, señalando stress crediticio",
-    "Breakeven 5y5y subiendo por encima de 3%, reavivando temores inflacionarios",
-    "Escalada geopolítica en Medio Oriente impactando materialmente precios energéticos"
+    "Sahm rule subiendo por encima de 0.5 indicaría deterioro del labor market",
+    "Credit spreads expandiéndose por encima de 400 bps señalaría stress sistémico",
+    "Breakeven inflation 5y5y rompiendo por encima de 2.8% reactivaría fears inflacionarios",
+    "VIX sostenido por encima de 25 indicaría cambio en risk sentiment",
+    "Yield curve volviendo a terreno negativo sugeriría recesión inminente"
   ],
   "invalidadores_tecnicos": [
-    "VIX spot supera 25 o term structure pasa a BACKWARDATION (stress agudo)",
-    "SPY o QQQ pierden 200DMA con CRUCE_BAJISTA confirmado",
-    "Breadth cae bajo 50% sobre 200DMA (deterioro de participación)",
-    "VRP gira a negativo (complacencia se rompe)",
-    "Momentum ajustado de SPY/QQQ cae bajo +1.5 indicando pérdida de fuerza"
+    "SPY/QQQ cierran bajo 200DMA -> salir de longs sin excepcion (regla Tudor Jones).",
+    "VIX term structure cambia a BACKWARDATION -> reducir todo risk-on inmediatamente.",
+    "VRP cae a territorio negativo -> bearish para equities (Bollerslev).",
+    "Breadth (pct_sobre_200) cae bajo 50% -> deterioro de amplitud, debilita tesis LONG en equity.",
+    "GLD pierde 200DMA o momentum ajustado cae bajo +0.5 -> cerrar long en oro."
   ],
   "performance": {
-    "total_senales": 43,
+    "total_senales": 48,
     "senales_evaluadas": 7,
-    "senales_activas": 36,
+    "senales_activas": 41,
     "hit_rate_global": 100.0
   },
-  "confianza_macro": 78,
-  "confianza_tecnica": 80,
-  "confianza_consolidada": 79.0
+  "confianza_macro": 85,
+  "confianza_tecnica": 78,
+  "confianza_consolidada": 81.5
 }
