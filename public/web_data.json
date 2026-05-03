@@ -1,56 +1,56 @@
 {
   "metadata": {
     "fecha": "2026-05-03",
-    "generado": "2026-05-03T15:45:38.077475",
+    "generado": "2026-05-03T16:09:27.716698",
     "tesis_macro_fecha": "2026-05-03",
     "tesis_tecnica_fecha": "2026-05-03"
   },
   "regimen": {
     "clasificacion": "GOLDILOCKS",
     "confianza": 85,
-    "razonamiento": "Múltiples indicadores confirman un escenario de crecimiento sólido con inflación controlada: yield curve normalizada en +0.81% (yield_curve), unemployment estable en 4.3% (unemployment), Sahm rule baja en 0.2 (sahm_rule), jobless claims contenidas en 189,000 (jobless_claims), breakeven inflation 5y5y moderada en 2.27% (breakeven_5y5y), y VIX tranquilo en 16.99 (vix). Credit spreads ajustados en 283 bps (hy_spread) indican liquidez saludable."
+    "razonamiento": "Curva de rendimiento normalizada en +0.81% (yield_curve), VIX controlado en 16.99 (vix), spreads corporativos HY estrechos en 2.83% (hy_spread), desempleo estable en 4.3% (unemployment) y claims bajos en 189K (jobless_claims). Inflación expectativas ancladas en 2.27% (breakeven_5y5y) vs 3.8% Michigan (michigan_inflation_exp)."
   },
-  "tesis_principal": "El régimen Goldilocks está completamente establecido con datos frescos que confirman el sweet spot macro. La yield curve normalizada en +0.81% (yield_curve) marca el fin de la inversión, mientras unemployment estable en 4.3% (unemployment) y jobless claims contenidas en 189,000 (jobless_claims) confirman labor market resiliente sin sobrecalentamiento. La Sahm rule en apenas 0.2 (sahm_rule) descarta riesgo recesivo inmediato. En paralelo, la inflación está controlada con breakeven 5y5y en 2.27% (breakeven_5y5y) y Michigan expectations en 3.8% (michigan_inflation_exp) mostrando anclaje de expectativas. El VIX tranquilo en 16.99 (vix) y credit spreads ajustados en 283 bps (hy_spread) reflejan apetito de riesgo saludable y liquidez abundante. Los mercados están validando este escenario con SPY en 720.65 (spy) y QQQ en 674.15 (qqq) en territorio constructivo, mientras que el USD fuerte con DXY en 98.21 (dxy) y USDJPY en 157.03 (usdjpy) sugiere capital flows hacia activos americanos por fundamentals superiores.",
+  "tesis_principal": "Estamos en un régimen Goldilocks textbook: curva normalizada (yield_curve: 0.81%), spreads crediticios estrechos (hy_spread: 2.83%), volatilidad contenida (vix: 16.99) y mercado laboral sólido (unemployment: 4.3%, jobless_claims: 189K). La fortaleza del USD (dxy: 98.21) y USD/JPY en 157.03 indican apetito por riesgo y carry trades activos. Las expectativas inflacionarias están divididas entre FRED (breakeven_5y5y: 2.27%) y consumidores (michigan_inflation_exp: 3.8%), pero los yields reales positivos (tips_yield_10y: 1.94%) mantienen la Fed cómoda. SPY en 720.65 y QQQ en 674.15 reflejan este entorno favorable para risk-on.",
   "senales": [
     {
       "activo": "DXY",
       "macro": {
         "direccion": "LONG",
-        "conviccion": 8,
-        "razonamiento": "USD fortaleza basada en fundamentals sólidos: growth resiliente, yield curve normalizada, USDJPY en 157.03 sugiere carry trade unwinding continuando, EURUSD débil en 1.172"
+        "conviccion": 7,
+        "razonamiento": "USD/JPY en 157.03 señala fortaleza dólar, EUR/USD débil en 1.172. Yields reales US atractivos vs resto del mundo"
       },
       "tecnico": {
         "direccion": "SHORT",
         "conviccion": 5,
-        "razonamiento": "Precio 98.21 bajo 200DMA 98.54 (-0.33%, BAJO_DMA) prohibe LONG. Momentum 12M -1.79%, momentum ajustado -0.28 (zona ambigua, no fuertemente bajista). Senal SHORT de baja-media conviccion."
+        "razonamiento": "Precio 98.21 BAJO 200DMA 98.54 (-0.33%, BAJO_DMA), momentum_12m -1.79% con vol_12m 6.4%, momentum_ajust -0.28 (zona ambigua, no llega al umbral -0.5 para SHORT de alta conviccion). Tendencia bajista incipiente pero suave."
       },
       "consenso": "DIVERGENTE"
     },
     {
       "activo": "GLD",
       "macro": {
-        "direccion": "NEUTRAL",
-        "conviccion": 5,
-        "razonamiento": "Gold en 423.18 enfrenta cross-currents: real rates positivas en 1.94% son negativas, pero geopolítica (UAE saliendo de OPEC) y DXY fuerte en 98.21 crean volatilidad bidireccional"
+        "direccion": "SHORT",
+        "conviccion": 6,
+        "razonamiento": "DXY fuerte en 98.21, yields reales positivos (TIPS 1.94%), y régimen Goldilocks reducen demanda de refugio. Oro en 423.18"
       },
       "tecnico": {
         "direccion": "LONG",
-        "conviccion": 7,
-        "razonamiento": "Precio 423.18 sobre 200DMA 391.53 (+8.08%). Momentum 12M +42.26% con vol 27.2% da momentum ajustado 1.554, apenas sobre el umbral +1.5. Tendencia clara pero alta volatilidad reduce conviccion."
+        "conviccion": 8,
+        "razonamiento": "Precio 423.18 sobre 200DMA 391.53 (+8.08%, SOBRE_DMA), momentum_12m +42.26% con vol_12m 27.2%, momentum_ajust 1.554 apenas sobre el umbral de 1.5. Tendencia clara pero la alta volatilidad limita conviccion."
       },
-      "consenso": "PARCIAL"
+      "consenso": "DIVERGENTE"
     },
     {
       "activo": "QQQ",
       "macro": {
         "direccion": "LONG",
-        "conviccion": 9,
-        "razonamiento": "Tech se beneficia doblemente: yields reales atractivas en 1.94% (tips_yield_10y) pero sin restrictividad extrema, más las noticias de expansión de AI militar de Nvidia/Microsoft/AWS que validan el secular story"
+        "conviccion": 7,
+        "razonamiento": "Tech se beneficia de régimen Goldilocks y USD/JPY en 157.03 sugiere carry trade activo financiando growth. QQQ en 674.15"
       },
       "tecnico": {
         "direccion": "LONG",
         "conviccion": 9,
-        "razonamiento": "Precio 674.15 vs 200DMA 602.86 (+11.82%, SOBRE_DMA). Momentum 12M +40.64%, vol 16.28%, momentum ajustado 2.496 (muy fuerte). Cumple regla de Tudor Jones (sobre 200DMA) y Barroso (>+1.5)."
+        "razonamiento": "Precio 674.15 sobre 200DMA 602.86 (+11.82%), momentum_12m +40.64% con vol_12m 16.28%, momentum_ajust 2.496 (lectura mas fuerte del bloque equity). Cumple regla universal de Tudor Jones y Barroso/Santa-Clara con margen."
       },
       "consenso": "CONVERGENTE"
     },
@@ -59,36 +59,36 @@
       "macro": {
         "direccion": "LONG",
         "conviccion": 8,
-        "razonamiento": "Goldilocks perfecto con yield curve normalizada, labor market resiliente, credit spreads estrechos y VIX bajo. SPY en 720.65 se beneficia del momentum de crecimiento sin presiones inflacionarias extremas"
+        "razonamiento": "Goldilocks clásico con liquidez abundante: VIX 16.99, HY spreads 2.83%, curva normalizada 0.81%. SPY en 720.65 con condiciones macro favorables"
       },
       "tecnico": {
         "direccion": "LONG",
         "conviccion": 9,
-        "razonamiento": "Precio 720.65 vs 200DMA 667.94 (+7.89%, SOBRE_DMA). Momentum 12M en +30.52% con vol 12.47% da momentum ajustado de 2.448, muy por encima del umbral +1.5 de Barroso & Santa-Clara. Senal LONG de alta conviccion."
+        "razonamiento": "Precio 720.65 sobre 200DMA 667.94 (+7.89%, SOBRE_DMA), momentum_12m +30.52% con vol_12m 12.47%, momentum_ajust 2.448 (muy por encima del umbral 1.5 de Barroso & Santa-Clara). Tendencia alcista limpia y volatilidad contenida."
       },
       "consenso": "CONVERGENTE"
     },
     {
       "activo": "TLT",
       "macro": {
-        "direccion": "SHORT",
-        "conviccion": 7,
-        "razonamiento": "Con yield curve en +0.81% y breakeven inflation estable en 2.27%, la normalización continúa. TLT en 85.61 enfrenta headwinds de crecimiento sólido sin necesidad de flight-to-quality"
+        "direccion": "NEUTRAL",
+        "conviccion": 5,
+        "razonamiento": "Yield 10Y en 4.40% vs TIPS 1.94% implica breakeven 2.46%. Expectativas inflacionarias mixtas entre FRED 2.27% y Michigan 3.8%. TLT en 85.61 sin dirección clara"
       },
       "tecnico": {
         "direccion": "NEUTRAL",
-        "conviccion": 4,
-        "razonamiento": "Precio 85.61 vs 200DMA 86.49 (-1.02%, BAJO_DMA) prohibe LONG por regla Tudor Jones. Momentum 12M +0.91% y momentum ajustado 0.09 estan en zona ambigua (-0.5 a +1.5). Sin tendencia clara."
+        "conviccion": 3,
+        "razonamiento": "Precio 85.61 BAJO 200DMA 86.49 (-1.02%), momentum_12m solo +0.91% con vol_12m 10.06%, momentum_ajust 0.09 (zona ambigua entre -0.5 y +1.5). Regla de Tudor Jones prohibe LONG bajo 200DMA, pero momentum no es suficientemente negativo para SHORT."
       },
-      "consenso": "PARCIAL"
+      "consenso": "CONVERGENTE"
     },
     {
       "activo": "USO",
       "macro": null,
       "tecnico": {
         "direccion": "LONG",
-        "conviccion": 6,
-        "razonamiento": "Precio 142.80 muy por encima de 200DMA 83.91 (+70.18%, sobreextension extrema). Momentum 12M +121.33%, momentum ajustado 2.858. Tecnicamente LONG pero la sobreextension del 70% sobre 200DMA es alerta de mean-reversion."
+        "conviccion": 7,
+        "razonamiento": "Precio 142.80 muy por encima de 200DMA 83.91 (+70.18%), momentum_12m +121.33% con vol_12m 42.45%, momentum_ajust 2.858. Senal tecnica fortisima pero sobreextension extrema (+70% sobre DMA) eleva riesgo de mean reversion."
       },
       "consenso": "PARCIAL"
     }
@@ -170,18 +170,17 @@
     }
   },
   "eventos_clave": [
-    "[Bloomberg] Nvidia, Microsoft, AWS Expanding Classified Military AI Use — valida el secular growth story de tech y justifica múltiplos premium en QQQ",
-    "[Forbes] UAE Quit OPEC Because Its Sovereign Wealth Now Dwarfs Oil — reshaping energy geopolitics, potential commodity volatility ahead",
-    "[Associated Press] Spirit Airlines shuts down after 34 years — señal temprana de consumer discretionary stress que contrasta con macro data resiliente",
-    "[Business Insider] K-shaped economy research — confirma bifurcación wealth que puede impactar consumption patterns",
-    "[Wall Street Journal] Berkshire profits more than double — valida corporate earnings strength en insurance/energy sectors"
+    "[WSJ] Berkshire profits more than double — Fortalece confianza en mercado doméstico y quality stocks",
+    "[Bloomberg] Pentagon expands AI partnerships with tech — Impulsa tesis secular growth para QQQ",
+    "[Forbes] UAE exits OPEC, wealth fund prioritized — Reduce riesgo geopolítico en commodities",
+    "[WSJ] 3M+ lose federal food aid — Presión deflacionaria doméstica contiene inflación"
   ],
   "invalidadores": [
-    "Sahm rule subiendo por encima de 0.5 indicaría deterioro del labor market",
-    "Credit spreads expandiéndose por encima de 400 bps señalaría stress sistémico",
-    "Breakeven inflation 5y5y rompiendo por encima de 2.8% reactivaría fears inflacionarios",
-    "VIX sostenido por encima de 25 indicaría cambio en risk sentiment",
-    "Yield curve volviendo a terreno negativo sugeriría recesión inminente"
+    "Sahm Rule supere 0.5% desde actual 0.2% indicando recesión inminente",
+    "USD/JPY rompa 160+ provocando intervención BoJ y unwinding masivo de carry trades",
+    "HY spreads se expandan sobre 4% señalizando stress crediticio",
+    "VIX supere 25 por shock geopolítico o crisis de confianza",
+    "Breakeven 5y5y supere 3% confirmando desanclaje inflacionario"
   ],
-  "confianza_consolidada": 77
+  "confianza_consolidada": 76
 }
