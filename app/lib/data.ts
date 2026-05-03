@@ -44,6 +44,7 @@ export type WebData = {
     senales_activas?: number;
     hit_rate_global?: number | null;
   };
+  convicciones?: any[];
   confianza_macro: number | null;
   confianza_tecnica: number | null;
   confianza_consolidada: number | null;
