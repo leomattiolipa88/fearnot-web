@@ -3,6 +3,7 @@ import Header from '@/app/components/Header';
 import { getAllPapers } from '@/app/lib/papers';
 import ConvictionsSection from './ConvictionsSection';
 import DailyPulseCard from './DailyPulseCard';
+import EnergyPulseSection from './EnergyPulseSection';
 
 export default function ResearchPage() {
   const papers = getAllPapers();
@@ -26,13 +27,19 @@ export default function ResearchPage() {
           </h1>
         </div>
 
-        {/* SECTION 1: Daily Pulse */}
+        {/* SECTION 1: Daily Pulse (macro + technical) */}
         <section className="mb-24">
-          <SectionHeader title="Daily Pulse" subtitle="What the agents see today" />
+          <SectionHeader title="Daily Pulse" subtitle="Macro and technical regime" />
           <DailyPulseCard />
         </section>
 
-        {/* SECTION 2: Convictions */}
+        {/* SECTION 2: Energy Pulse (O&G + LPG) */}
+        <section className="mb-24">
+          <SectionHeader title="Energy Pulse" subtitle="Energy desk view: oil, natural gas, LPG" />
+          <EnergyPulseSection />
+        </section>
+
+        {/* SECTION 3: Convictions */}
         <section className="mb-24">
           <SectionHeader
             title="This Week's Convictions"
@@ -41,7 +48,7 @@ export default function ResearchPage() {
           <ConvictionsSection />
         </section>
 
-        {/* SECTION 3: Deep Dives */}
+        {/* SECTION 4: Deep Dives */}
         <section>
           <SectionHeader
             title="Deep Dives"
