@@ -222,10 +222,8 @@ export default function Home() {
       {/* Quote */}
       <div className="h-px bg-white/[0.08] max-w-[1200px] mx-auto" />
       <section className="max-w-[1200px] mx-auto px-8 py-32 text-center">
-        <p className="font-serif text-[clamp(32px,5vw,56px)] leading-tight tracking-tight max-w-[900px] mx-auto mb-8">
-          &ldquo;The whole trick in investing is: <em className="italic text-[#ff4d4d]">how do I keep from losing everything?</em>&rdquo;
-        </p>
-        <p className="text-xs uppercase tracking-widest text-[#a1a1a1]">— Paul Tudor Jones</p>
+        <p className="font-serif text-[clamp(32px,5vw,56px)] leading-tight tracking-tight max-w-[900px] mx-auto mb-8">&ldquo;It takes courage to be <em className="italic text-[#ff4d4d]">a pig</em>.&rdquo;</p>
+        <p className="text-xs uppercase tracking-widest text-[#a1a1a1]">— Stanley Druckenmiller</p>
       </section>
       <div className="h-px bg-white/[0.08] max-w-[1200px] mx-auto" />
 
