@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "fecha": "2026-07-16",
-    "generado": "2026-07-16T12:01:57.692391",
+    "fecha": "2026-07-17",
+    "generado": "2026-07-17T11:53:15.092668",
     "tesis_macro_fecha": "",
-    "tesis_tecnica_fecha": "2026-07-16",
-    "tesis_og_fecha": "2026-07-16"
+    "tesis_tecnica_fecha": "2026-07-17",
+    "tesis_og_fecha": "2026-07-17"
   },
   "regimen": {
     "clasificacion": "INDETERMINADO",
@@ -18,8 +18,8 @@
       "macro": null,
       "tecnico": {
         "direccion": "NEUTRAL",
-        "conviccion": 4,
-        "razonamiento": "Precio 100.55 vs 200DMA 99.0 (+1.57%), SOBRE_DMA marginal. Momentum 12M +2.2%, vol 5.77%, momentum_ajust 0.38 (zona ambigua). Sin senal tecnica clara."
+        "conviccion": 5,
+        "razonamiento": "Precio 100.77 sobre DMA200 99.01 (+1.77%), tecnicamente habilitado pero apenas. Momentum ajustado 0.358 en zona ambigua Barroso. Sin conviccion tecnica clara."
       },
       "consenso": "PARCIAL"
     },
@@ -28,8 +28,8 @@
       "macro": null,
       "tecnico": {
         "direccion": "NEUTRAL",
-        "conviccion": 5,
-        "razonamiento": "Precio 372.35 vs 200DMA 411.25 (-9.46%), BAJO_DMA -> zona prohibida para LONG por regla Tudor Jones. Sin embargo momentum 12M +21.39% con momentum_ajust 0.766 no justifica SHORT. Contradiccion tecnica -> NEUTRAL."
+        "conviccion": 6,
+        "razonamiento": "Precio 364.96 BAJO DMA200 411.34 (-11.27%), regla Tudor Jones PROHIBE LONG. Pero momentum_12m sigue positivo en +18.39% y momentum ajustado 0.657 (zona ambigua Barroso -0.5 a +1.5). Contradiccion tecnica: tendencia larga rota pero momentum anual todavia constructivo. NEUTRAL hasta que se resuelva."
       },
       "consenso": "PARCIAL"
     },
@@ -38,8 +38,8 @@
       "macro": null,
       "tecnico": {
         "direccion": "LONG",
-        "conviccion": 7,
-        "razonamiento": "Precio 717.74 vs 200DMA 638.47 (+12.42%), SOBRE_DMA. Momentum 12M +29.54%, vol 18.6%, momentum_ajust 1.588 (>1.5). Senal LONG alta conviccion tecnica."
+        "conviccion": 6,
+        "razonamiento": "Precio 705.94 sobre DMA200 639.03 (+10.47%), habilitado. Momentum ajustado 1.46 (mom 27.28% / vol 18.69%) apenas por debajo del umbral 1.5 de Barroso; senal LONG pero no de conviccion maxima. Sobreextension +10.47% sobre 200DMA sugiere cautela."
       },
       "consenso": "PARCIAL"
     },
@@ -49,7 +49,7 @@
       "tecnico": {
         "direccion": "LONG",
         "conviccion": 7,
-        "razonamiento": "Precio 754.81 vs 200DMA 692.54 (+8.99%), SOBRE_DMA. Momentum 12M +22.67% con vol 12.58%, momentum ajustado 1.802 (>1.5 = fuerte). VRP 78.28 positivo confirma bid en equities."
+        "razonamiento": "Precio 750.72 sobre DMA200 693.01 (+8.33%), habilitado por regla Tudor Jones. Momentum ajustado 1.716 (momentum_12m 21.6% / vol 12.58%) esta por encima del umbral +1.5 de Barroso & Santa-Clara, senal LONG de alta conviccion. VRP 144.89 y breadth 78% confirman. Solo bajo a 7 por regimen DESCONOCIDO."
       },
       "consenso": "PARCIAL"
     },
@@ -59,7 +59,7 @@
       "tecnico": {
         "direccion": "NEUTRAL",
         "conviccion": 5,
-        "razonamiento": "Precio 84.24 vs 200DMA 86.04 (-2.09%), BAJO_DMA -> no LONG. Momentum 12M +3.61% marginal, momentum_ajust 0.385 (zona ambigua -0.5 a +1.5). No hay conviccion para SHORT tampoco."
+        "razonamiento": "Precio 84.21 BAJO DMA200 86.03 (-2.12%), regla Tudor Jones prohibe LONG pero la ruptura es marginal. Momentum ajustado 0.366 en zona ambigua. Sin senal clara de SHORT tampoco (momentum_12m positivo +3.43%)."
       },
       "consenso": "PARCIAL"
     },
@@ -68,8 +68,8 @@
       "macro": null,
       "tecnico": {
         "direccion": "LONG",
-        "conviccion": 6,
-        "razonamiento": "Precio 121.38 vs 200DMA 96.89 (+25.27%), SOBRE_DMA fuerte. Momentum 12M +61.28% con vol alta 44.87%, momentum_ajust 1.366 (zona ambigua-fuerte). Sobreextension importante (+25% sobre DMA)."
+        "conviccion": 7,
+        "razonamiento": "Precio 119.3 sobre DMA200 97.11 (+22.86%), momento fuertemente habilitado. Momentum ajustado 1.306 (momentum 58.66% / vol 44.91%) constructivo aunque debajo de umbral 1.5. Alta volatilidad 44.91% obliga a sizing reducido. Sobreextension +22.86% es tecnicamente preocupante."
       },
       "consenso": "PARCIAL"
     }
@@ -320,96 +320,97 @@
     }
   ],
   "energy_pulse": {
-    "fecha": "2026-07-16",
+    "fecha": "2026-07-17",
     "regimen_oil": {
       "clasificacion": "TIGHT_BACKWARDATED",
       "confianza": 82,
-      "razonamiento": "Multiples señales fisicas apuntan a tightness genuina. Primero, la curva WTI muestra backwardation de +4.29 USD en 6 meses - esto no es especulacion, es el mercado fisico pagando premium por barriles hoy versus futuro, señal de escasez real en el prompt. Segundo, los inventarios EIA de crudo en USA se ubican en 409,665 kbbl (al 10-Jul); no tengo el 5-year average exacto para contextualizar, pero la estructura en backwardation sugiere que el mercado percibe este nivel como ajustado o en trayectoria de draw. Tercero, y critico: el contexto geopolitico es excepcional. US-Iran hostilities en curso con colapso del truce, blockade activo del Estrecho de Hormuz por Iran, Iran ademas amenazando el Red Sea gateway (Bab el-Mandeb), Houthis rompiendo ceasefire con Saudi Arabia y amenazando cerrar Bab el-Mandeb, Ukraine atacando tankers rusos en el Mar de Azov obligando a Russia a rerouting de exportaciones. Esta acumulacion de disrupciones en chokepoints criticos (Hormuz + Bab el-Mandeb simultáneamente) representa una remocion real de oferta del mercado fisico, no una prima especulativa. Iran halteo shipments desde Fujairah. El crack 3-2-1 en 61.89 USD es MUY_FUERTE, confirmando que la demanda de productos refinados es robusta y que las refinerias estan pagando alto por el crudo disponible. Refinery utilization al 96.2% - practicamente full capacity - confirma que la demanda de crudo como feedstock es maxima. La coherencia entre backwardation + crack alto + utilizacion maxima + disrupciones de oferta = regimen TIGHT genuino, no manufactura de precio."
+      "razonamiento": "Multiples señales fisicas convergen en tightness real. (1) Curva WTI calendar 6m spread de +$4.27 en backwardation — esto NO es especulativo, es el mercado fisico pagando premium por barril inmediato sobre barril futuro, señal clasica de tightness en el prompt. (2) Crude inventory USA en 409,665 kb — no tengo el 5-year average exacto en mis inputs para cuantificar el deficit, pero en contexto historico post-COVID este nivel es notablemente ajustado para mediados de julio. (3) Utilizacion de refinerias al 96.2% — nivel altisimo, casi en techo operacional, indica que las refinerias estan corriendo a maxima capacidad para satisfacer demanda. (4) Geopolitica critica: US military strikes sobre Bandar Abbas (Iran), trafico en Estrecho de Hormuz cayendo segun noticias. Hormuz es el cuello de botella de ~20% del suministro global de petroleo. Disrupciones aqui son inmediatas y fisicas, no especulativas. (5) IRGC amenaza con extender el corte energetico al Mar Rojo via proxies Houthi — si se materializa, rutas alternativas (Cabo de Buena Esperanza) añaden semanas y costos significativos a los flujos. BRENT en $85.76, WTI en $79.94, spread Brent-WTI de ~$5.81 refleja prima de riesgo geopolitico real sobre crudo del Norte de Mar del Norte vs WTI landlocked. El regimen fisico es claramente TIGHT_BACKWARDATED, con la geopolitica amplificando una tightness que ya existia en los fundamentales."
     },
     "regimen_natgas": {
-      "clasificacion": "OVERSUPPLIED",
-      "confianza": 65,
-      "razonamiento": "NATGAS al spot de 2.906 USD/MMBtu es bajo en terminos historicos para mid-July en USA. El storage de gas natural Lower 48 se ubica en 2,983 Bcf al 3-Jul. No tengo el 5-year average exacto ni el rango historico para esta fecha del año, pero 2,983 Bcf es un nivel robusto para inicio de julio (tipicamente el peak de injection season precede al withdrawal season en noviembre). Un precio de 2.90 con storage alto sugiere mercado abastecido a nivel CONUS. CRITICA IMPORTANTE: Las noticias indican que India enfrenta un shortfall de LNG de 1.5 Mt/mes como resultado del conflicto en West Asia, y Asia en general sufre escasez severa. Esto crea una divergencia geografica importante: el mercado US domestic puede estar en oversupply relativo mientras el mercado LNG spot Asia esta tight. Sin embargo, mi calificacion de regimen se refiere principalmente al mercado US (Henry Hub) por ser la base de precio de NATGAS futures (NG=F). El conflicto de Hormuz puede restringir flujos de LNG del Golfo hacia Asia, pero no impacta directamente la produccion o storage CONUS en el corto plazo. Confianza moderada (65) porque me falta el 5-year average de storage para contextualizar el 2,983 Bcf con precision."
+      "clasificacion": "BALANCED",
+      "confianza": 55,
+      "razonamiento": "Natgas storage USA en 3,024 Bcf al 10-Jul-2026. Sin el dato exacto del 5-year average en mis inputs no puedo cuantificar si estamos above/below promedio historico con precision — esto es un data gap importante. Precio spot en $2.885/MMBtu es moderado, no indica tightness extrema ni oversupply severo en el mercado domestico US. Sin embargo, hay tension cruzada: (1) Asian LNG prices subieron a maximo de 4 meses por tensiones en Medio Oriente — Hormuz afecta directamente el flujo de LNG desde Qatar y otros exportadores del Golfo hacia Asia, lo que tight el mercado global de GNL. (2) Expansion del terminal Croatia LNG y avance de Delfin FLNG en USA sugieren que la infraestructura de exportacion sigue creciendo, lo que puede drenar storage domestico US hacia mercados internacionales de mayor precio. (3) La disrupciones rusas en refinacion (noticias sobre Ukraine strikes) son mas relevantes para diesel europeo que para natgas directamente. La divergencia entre precio spot US moderado y LNG Asia en maximos de 4 meses es la contradiccion principal. Clasifico BALANCED para mercado domestico US con sesgo TIGHT en mercado global LNG."
     },
     "regimen_lpg": {
       "clasificacion": "TIGHT",
-      "confianza": 55,
-      "razonamiento": "DATA LIMITADA - declaro explicitamente: No tengo Saudi CP (Contract Price oficial de Aramco para propano/butano), no tengo freight rates (VLGC rates), no tengo FEI Asia quotes, no tengo Mt Belvieu spot prices especificos. Lo que SI tengo: (1) Propane inventory USA en 93,489 kbbl al 10-Jul - necesitaria el 5-year average para contextualizar pero este nivel en pleno verano es relevante; (2) Las noticias son el driver mas fuerte aqui: India reporta que LPG supply esta AT RISK por dependencia de importaciones del Golfo - ejecutivos de industria en India advierten especificamente que LPG es mas vulnerable que crudo o LNG porque depende fuertemente de imports del Golfo; (3) Iran halt de shipments desde Fujairah y potencial cierre de Bab el-Mandeb afectan directamente las rutas de VLGC desde Saudi Arabia/UAE hacia Asia. La convergencia de disrupciones en Hormuz y Red Sea comprimiria severamente el supply de LPG hacia Asia. Clasifico TIGHT con confianza 55 - la direccion es clara (disrupciones de supply en rutas criticas) pero la falta de datos cuantitativos especificos de LPG limita la confianza. Para un trader fisico de LPG seria inaceptable operar sin Saudi CP y VLGC rates - esos son los datos que mas necesito."
+      "confianza": 45,
+      "razonamiento": "DATA LIMITADA — ADVERTENCIA EXPLICITA. No tengo en mis inputs: Saudi Aramco CP (Contract Price) para propano/butano, freight rates VLGC, FEI Asia LPG, spreads propano vs naphtha para petroquimica. Los datos que SI tengo: (1) Propane inventory USA en 93,489 kb — sin 5-year average en mis inputs no puedo contextualizar si es surplus o deficit. (2) Indirectamente: Hormuz disruption es CRITICA para LPG. Qatar y Arabia Saudita exportan volumenes masivos de LPG via Golfo Persico. Si Hormuz trafico cae, las exportaciones de LPG del Golfo se ven directamente afectadas — esto es TIGHT por definicion de supply disruption. (3) Asian LNG prices en maximos de 4 meses sugiere que el mercado energetico asiatico en general esta bajo presion, lo que correlaciona con LPG. (4) La petroquimica europea sigue presionada por costos (contexto diesel/energia elevados). Clasifico TIGHT con confianza baja (45) por la logica de supply disruption geopolitica, pero reconozco que sin Saudi CP, VLGC rates y FEI Asia, esta clasificacion es preliminar y debe ser revisada con data fisica directa de LPG."
     },
-    "tesis_principal": "El mercado energetico global esta experimentando una dislocacion de oferta de magnitud excepcional generada por la convergencia simultanea de dos chokepoints criticos: el Estrecho de Hormuz (bloqueado por Iran con halt de shipments desde Fujairah) y el Bab el-Mandeb (amenazado por Houthis que rompieron el ceasefire con Saudi Arabia). Esto no es ruido geopolitico marginal - es la interrupcion potencial del ~40% del oil trade maritimo global si ambos cierran simultaneamente. El conflicto US-Iran con colapso del truce, las sanciones a Russia en preparacion en el Congreso bipartidario, los ataques de Ukraine a tankers rusos en el Mar de Azov, y el rift Saudi-UAE (con Wall Street preparando contingency plans) crean un entorno de supply risk premium estructural, no transitorio.\n\nLos fundamentales fisicos validan el precio: backwardation de 4.29 USD en 6M en WTI confirma escasez en el prompt, el crack 3-2-1 en 61.89 USD (MUY_FUERTE) confirma que la demanda de productos refinados es robusta y que las refinerias - operando al 96.2% de utilizacion, practicamente full capacity - estan compitiendo agresivamente por crudo disponible. Los inventarios de gasolina (210,529 kbbl) y destilados (108,175 kbbl) son datos que necesitan contexto del 5-year average para evaluar si los draws son suficientes para sostener los crack spreads actuales, pero la estructura de precio es internamente consistente.\n\nEl regimen macro del fondo aparece como N/A (0%), lo cual es una limitacion significativa para mi analisis - no puedo evaluar si el contexto macro soporta o contradice la demanda energetica. Sin embargo, las señales tecnicas del fondo muestran SPY y QQQ en LONG con alta conviccion, sugiriendo un entorno risk-on que seria coherente con demanda energetica sostenida. USO tecnicamente en LONG con conviction 6/10 y momentum 12M de +61.28% confirma que el mercado ha estado premiando exposicion a oil. El único riesgo macro identificable desde las señales tecnicas es TLT debil (posible entorno de rates altos) que podria pesar en valuaciones, pero no cambia el balance fisico de oil.",
+    "tesis_principal": "El sector energetico en julio 2026 esta siendo dominado por un shock geopolitico de primera magnitud: los strikes militares de USA sobre Bandar Abbas (Iran) y la consecuente perturbacion del trafico en el Estrecho de Hormuz representan un evento de supply disruption con impacto fisico real e inmediato. Hormuz canaliza aproximadamente 20% del suministro mundial de petroleo, 25% del LNG global y volumenes significativos de LPG del Golfo Persico. Cualquier caida sostenida en el trafico de Hormuz — que las noticias confirman ya esta ocurriendo — no es un riesgo tail especulativo sino una disrupcio fisica en curso que los mercados estan comenzando a pricear. El WTI calendar spread de +$4.27 en backwardation y la utilizacion de refinerias al 96.2% confirman que la tightness existia ANTES del evento geopolitico; Iran amplifica una estructura de mercado que ya era constructiva para los longs. La contradiccion mas interesante del momento es el precio del WTI en $79.94 — relativamente contenido dado el nivel de disrupcio geopolitica. Esto sugiere que el mercado todavia no ha descontado un escenario de cierre prolongado de Hormuz, lo que crea asimetria de riesgo al alza significativa. La amenaza del IRGC de extender la campana al Mar Rojo via Houthis es el escalada event que, si se materializa, podria mover los precios violentamente. En el lado de productos refinados, el crack 3-2-1 en $63.24 es extraordinariamente fuerte — nivel que historicamente corresponde a demanda de productos robusta y/o supply de crudo tight hacia las refinerias. Con utilizacion al 96.2%, las refinerias ya estan corriendo al limite; cualquier disrupcio adicional de feedstock o una caida de demanda abrupta seria la unica forma de comprimir este crack. El contexto tecnico del fondo (USO LONG conv 7/10, SPY LONG) es coherente con este regimen — el analisis tecnico del fondo ya habia captado la direccionalidad.",
     "senales": [
       {
         "activo": "XOM",
         "direccion": "LONG",
         "conviccion": 7,
-        "razonamiento": "Integrated major con exposicion a upstream production (beneficiario de precios altos) y downstream refining (beneficiario del crack 3-2-1 MUY_FUERTE). En entorno de disrupciones de supply, los majors integrados con produccion diversificada geograficamente outperforman. ExxonMobil tiene producicion en Guyana, Permian, y elsewhere - relativamente aislada de Hormuz. El crack spread alto beneficia directamente su refining margin. Conviccion 7 por exposicion diversificada en un entorno oil bullish."
+        "razonamiento": "Exxon es el mayor integrado US con beneficio directo de precios altos de crudo Y crack spreads elevados. Simultaneamente se beneficia en su segmento upstream (crudo caro) y en refining (crack $63). La combinacion de ambos en niveles elevados es el sweet spot para los integrados. Correlacion alta con el regimen TIGHT_BACKWARDATED que identificamos."
       },
       {
         "activo": "CVX",
         "direccion": "LONG",
-        "conviccion": 6,
-        "razonamiento": "Similar a XOM como integrated major. Beneficiario de oil prices altos y crack spreads fuertes. CVX tiene operaciones en Kazakhstan (exporta via Caspian pipeline) - riesgo de disrupciones adicionales en esa region dado el contexto de conflictos. Conviccion ligeramente menor que XOM por ese risk. Pero en el setup actual oil-bullish con macro tecnica SPY/QQQ LONG, los majors integrados son un vehículo razonable."
+        "conviccion": 7,
+        "razonamiento": "Similar a XOM — integrado con exposicion upstream importante y refining. CVX tiene presencia significativa en Middle East (Kuwait, Arabia Saudita) lo que puede ser disrupcio operacional en escenario de escalada, pero tambien implica que sus activos se aprecian en este entorno de precios."
       },
       {
         "activo": "OXY",
         "direccion": "LONG",
         "conviccion": 7,
-        "razonamiento": "Pure play upstream mas concentrado que XOM/CVX. Alta exposicion al precio del crudo (Permian heavy). En entorno de WTI alza con backwardation, OXY tiene leverage operacional significativo. Berkshire/Buffett posicion conocida da floor de soporte. Beneficiario directo de todo lo que empuja el precio del crudo hacia arriba."
+        "razonamiento": "Pure-play E&P con high leverage operacional al precio del crudo. En un regimen TIGHT_BACKWARDATED con WTI al alza, OXY captura el upside mas agresivamente que los integrados. Su estructura de costos en Permian le da margen operacional significativo a estos precios. Alta beta a WTI price deck."
       },
       {
         "activo": "EOG",
         "direccion": "LONG",
         "conviccion": 7,
-        "razonamiento": "Shale upstream USA - beneficiario directo de precios WTI altos. EOG es uno de los operadores mas eficientes del Permian con bajo breakeven. En entorno de WTI >75 USD con backwardation, el free cash flow de EOG se expande significativamente. No tiene exposicion directa a Hormuz o rutas maritimas - es un net beneficiario de disrupciones sin el riesgo operacional del Golfo."
+        "razonamiento": "Premium E&P en shale US — bajo costo de produccion, alta calidad de activos en Permian y Eagle Ford. Regimen de precios altos con backwardation incentiva maximizar produccion actual (no hedgear forward en contango). EOG se beneficia directamente. Mismo racional que OXY con perfil de riesgo ligeramente mas conservador."
       },
       {
         "activo": "VLO",
         "direccion": "LONG",
         "conviccion": 8,
-        "razonamiento": "Valero es el pure play refiner mas relevante del universo. Crack 3-2-1 en 61.89 USD MUY_FUERTE con refinery utilization al 96.2% es el setup ideal para un refiner. VLO margenes de refining se expanden directamente con el crack spread. Si Hormuz disrupciones aprietan el suministro de crudo pesado (que suele venir del Golfo), esto puede comprimir el spread para refinerias que usan heavy sour crudes, pero VLO tiene una capacidad diversificada. El crack spread dominante sobre el headline es el driver. Conviccion 8 - es el activo mas directamente leveraged al crack spread actual."
+        "razonamiento": "Valero es el refiner puro con mayor leverage al crack spread. Crack 3-2-1 en $63.24 MUY_FUERTE con utilizacion de refinerias al 96.2% es el escenario ideal para VLO: maxima throughput a margenes excepcionales. La disrupcio rusa de refinacion (exportaciones de gasolina/diesel rusas halted segun noticias) reduce oferta global de productos refinados, manteniendo presion alcista en cracks. Este es quizas el trade con mejor riesgo/retorno en la cartera energy dado que es una jugada en crack spread no solo en precio de crudo."
       },
       {
         "activo": "VIST",
         "direccion": "LONG",
         "conviccion": 6,
-        "razonamiento": "Vista Energy - upstream Vaca Muerta Argentina. Beneficiario de precios WTI altos con exposicion especifica a produccion Shale en Argentina. VIST tiene leverage al precio del petroleo pero con riesgo pais Argentina adicional. En entorno global oil bullish con Brent/WTI en alza, VIST sube con el beta de exploracion. Sin embargo, Argentina esta geograficamente aislada de las disrupciones de Hormuz/Bab el-Mandeb, lo cual es un factor positive (no enfrenta supply disruptions) pero tampoco es el activo mas directamente leveraged al evento geopolitico actual. Conviccion 6 - es un LONG oil play valido pero con riesgo idiosincratico de pais."
+        "razonamiento": "Vista Energy — E&P argentino con exposicion directa a Vaca Muerta. Alta leverage al precio del crudo international (sus exportaciones se pricean vs Brent/WTI). En regimen TIGHT, los margenes de VIST mejoran significativamente. El factor diferencial: menor exposicion directa al riesgo geopolitico de Medio Oriente vs peers del Golfo. Conviccion 6 (no 7-8) porque el riesgo Argentina-especifico (macro local, tipo de cambio, politica energetica) añade ruido que no puedo modelar completamente con esta data."
       }
     ],
     "eventos_clave": [
-      "COLAPSO DEL TRUCE US-IRAN + BLOCKADE HORMUZ: Iran reanudo hostilidades, halt de shipments desde Fujairah, Trump intensifica blockade del Estrecho de Hormuz. Esto es el driver numero 1 del supply shock global - Hormuz es el paso de ~20% del oil maritimo mundial.",
-      "IRAN PIVOTA AL RED SEA: Iran señala que podria usar el Bab el-Mandeb como nuevo pressure point despues de Hormuz - si se cierra simultaneamente con Hormuz, las rutas de VLCC y VLGC hacia Asia quedan severamente comprometidas. Houthis rompen ceasefire con Saudi Arabia y amenazan cerrar Bab el-Mandeb.",
-      "RIFT SAUDI-UAE + CONTINGENCY PLANS WALL STREET: Wall Street firms preparando contingency plans por el rift Saudi-UAE. Si OPEC+ cohesion se rompe entre sus dos miembros mas grandes, el mecanismo de gestion de produccion queda paralizado justo cuando el mercado necesita claridad de oferta.",
-      "RUSSIA-UKRAINE ESCALATION MARITIMA: Ukraine ataco 11 embarcaciones rusas en el Mar de Azov incluyendo tankers. Russia rerouting exportaciones. Bipartisan Graham sanctions bill avanzando en Senado. Doble presion sobre exportaciones rusas.",
-      "INDIA LPG Y LNG AT RISK: India enfrenta shortfall LNG de 1.5 Mt/mes y ejecutivos advierten que LPG supply es altamente vulnerable por dependencia de imports del Golfo. Indica que la disrupcion en Hormuz/Red Sea ya esta teniendo efectos fisicos medibles en demanda asiatica."
+      "US military strikes on Bandar Abbas (Iran) — disrupcio fisica confirmada del trafico en Estrecho de Hormuz, impacto directo en ~20% del suministro global de crudo y LNG",
+      "IRGC amenaza con extender la campaña al Mar Rojo via proxies Houthi — si se materializa, cierre de ambas rutas criticas (Hormuz + Bab-el-Mandeb) seria un shock de supply sin precedentes moderno",
+      "Ukraine strikes crippling Russian refinery capacity — exportaciones rusas de gasolina, jet fuel y diesel halted, reduciendo oferta global de productos refinados y presionando crack spreads al alza",
+      "Asian LNG prices en maximo de 4 meses por tensiones Medio Oriente — confirma que la disrupcio de Hormuz ya esta siendo priceda en los mercados de gas asiaticos, con potencial re-routing que impacta balances de storage US",
+      "US Senate propone sanctions bill con 100% tariffs sobre compradores de energia rusa (China) — China anuncia que 'firmemente defendera' sus empresas, riesgo de escalada comercial que puede remodelar los flujos globales de petroleo y gas si se implementa"
     ],
-    "contradicciones": "La contradiccion mas interesante es la DIVERGENCIA OIL vs NATGAS en un contexto de conflicto que deberia ser bullish para ambos. NATGAS USA en 2.906 USD con storage en 2,983 Bcf se mantiene deprimido mientras el mercado LNG Asia colapsa por falta de supply del Golfo. Esto sugiere que: (a) el mercado fisico de LNG Asia esta completamente desconectado del Henry Hub por ahora, y (b) la capacidad de export de LNG USA no puede absorber el diferencial rapido enough para arbitrar los precios. Este diferencial podria ser una oportunidad de largo plazo en acciones de LNG exporters USA (Cheniere, etc.) pero no en el future NG=F directamente. // Segunda contradiccion: Los inventarios de crudo USA en 409,665 kbbl con utilizacion de refinerias al 96.2% implica que si la utilizacion se mantiene a este ritmo y los imports del Golfo se comprimen por Hormuz, el draw de crude inventories deberia acelerarse significativamente en las proximas semanas. El mercado de futuros via backwardation ya lo esta priceando, pero los niveles de inventario aun no muestran el draw extremo (necesito el 5-year average para confirmar esto). Hay un lag entre el evento geopolitico y la aparicion del draw fisico en los datos EIA - ese lag es donde esta la oportunidad si el mercado no ha priceado completamente la duracion del conflicto.",
+    "contradicciones": "La contradiccion mas relevante es la siguiente: WTI en $79.94 con Hormuz trafico cayendo, backwardation de $4.27 y utilizacion de refinerias al 96.2%. Historicamente, disrupciones de Hormuz de esta magnitud han movido el WTI $10-15 al alza en dias. El precio actual parece bajo relativo al nivel de disrupcio geopolitica — sugiere que el mercado o bien no cree que la disrupcio sea duradera, o bien hay absorcion por draws de SPR/inventarios que estamos viendo parcialmente en el numero de crude inventory. Esta divergencia precio-geopolitica es la oportunidad: si la disrupcio se prolonga (lo cual es probable dado el escenario de conflicto activo), el precio tiene que re-ratear al alza. Segunda contradiccion: crack 3-2-1 en $63.24 MUY_FUERTE vs utilizacion de refinerias ya en 96.2%. Normalmente crack alto atrae mas throughput, pero si las refinerias ya estan al techo operacional, no pueden responder mas — esto mantiene los cracks elevados estructuralmente y no los comprime por respuesta de oferta. Tercera contradiccion en LPG: propane inventory en 93,489 kb (nivel moderado domestico US) versus Hormuz disrupcio que deberia tight el mercado global de LPG del Golfo — puede haber divergencia entre precios domesticos US LPG y precios internacionales que generaria oportunidades de arb.",
     "invalidadores": [
-      "RESOLUCION DIPLOMATICA US-IRAN: Un acuerdo de cese de hostilidades o un nuevo nuclear deal que reabra Hormuz colapsaria el supply premium inmediatamente. El Brent podria caer 8-12 USD en un solo dia. Este es el invalidador numero 1 y mas probable de los tres.",
-      "OPEC+ EMERGENCY PRODUCTION INCREASE: Si Saudi Arabia y UAE resuelven su rift y acuerdan un aumento extraordinario de produccion (como hicieron en 2022 por presion de Biden) para compensar las disrupciones iranies/rusas, el balance fisico cambiaria. Saudi tiene spare capacity estimada pero no tengo el numero exacto.",
-      "RECESION DEMAND DESTRUCTION: Si el regimen macro (actualmente N/A en el fondo) se deteriora hacia recesion - señal que podria venir de TLT recovery + SPY breakdown - la destruccion de demanda puede superar el supply shock. Los cracs spreads colapsarian antes que el crude price, y VLO/CRAK serian el canario en la mina."
+      "Cese al fuego rapido USA-Iran o acuerdo diplomatico que restablezca el trafico normal de Hormuz — colapsaria la prima geopolitica y potencialmente reverteria WTI $5-10 en horas",
+      "Build significativo en crude inventories EIA proxima semana (por encima de +3-4 mb) que señale que la disrupcio de supply esta siendo compensada por draws de SPR u otros productores (Arabia Saudita incrementando produccion, Libya, UAE), esto romperia la backwardation",
+      "Compression abrupta de crack spreads por destruccion de demanda — si los datos macro confirman deterioro economico (recesion señales, unemployment spike) la demanda de gasolina y distillates puede colapsar rapido, destruyendo el crack 3-2-1 que sustenta la mitad de las señales equity energy",
+      "Escalada extrema que cierre completamente Hormuz Y Mar Rojo simultaneamente podria paradojicamente volverse BEARISH para E&P equities por riesgo sistemico financiero global, aunque el commoditie WTI/Brent subiria"
     ],
-    "data_gaps": "Los datos que me faltan y que limitaron significativamente la precision del analisis son: (1) 5-YEAR AVERAGE de inventarios EIA para crudo, gasolina, destilados y propano - sin este contexto no puedo decir si los niveles actuales son 'ajustados' o 'holgados' vs historia; (2) SAUDI ARAMCO CONTRACT PRICE (CP) para propano y butano del mes en curso - critico para el regimen LPG; (3) VLGC FREIGHT RATES (Baltic Exchange LPG Index) - determina si el tightness fisico de LPG se esta transmitiendo a costos de flete; (4) FEI ASIA (Far East Index) para LPG - el mercado que mas importa hoy dado el conflicto; (5) ESTRUCTURA COMPLETA DE LA CURVA de futuros WTI y BRENT (solo tengo el 6M spread, no el shape completo del contango/backwardation); (6) REGIMEN MACRO DEL FONDO - aparece como N/A (0%), lo que me impide integrar la vista macro del fondo con mi analisis sectorial; (7) IRAN EXPORT VOLUMES actuales vs pre-conflicto para calibrar el quantum del supply shock; (8) RUSSIAN OIL EXPORT DATA post-ataques de Ucrania en Azov; (9) CHINA CRUDE INVENTORY LEVELS - la nota menciona que China drew heavily on inventories durante el conflicto Iran, lo que tiene implicaciones para la demanda futura de China."
+    "data_gaps": "Datos criticos que me faltan para analisis completo: (1) 5-year average de crude, gasoline, distillate y propane inventories EIA — sin esto no puedo cuantificar deficit/surplus relativo al promedio historico, solo tengo niveles absolutos. (2) Saudi Aramco Contract Price (CP) para propano y butano — esencial para LPG physical regime. (3) VLGC freight rates (Very Large Gas Carriers) — criticos para entender si el Hormuz disruption esta siendo capturado en los costos de transporte LPG. (4) FEI Asia (Far East Index) para LPG — sin esto no puedo calcular arb US-Asia ni evaluar correctamente el regimen LPG global. (5) Trafico real de Hormuz en barriles/dia — las noticias confirman 'caida' pero no cuantifican el volumen de disrupcio. (6) Datos de produccion OPEC actuales post-reunion reciente — no tengo los volumenes de compliance actuales. (7) Natgas 5-year average storage para contextualizar los 3,024 Bcf. (8) Regimen macro del fondo en N/A — el Synthesizer no ha provisto regimen macro, lo que limita mi calibracion de la tesis: en GOLDILOCKS la demanda energetica es sostenida, en RECESION_PROXIMA el crack spread alto puede ser temporal antes del demand destruction."
   },
   "indicadores_clave": {
     "yield_curve": {
-      "valor": 0.87,
-      "fecha": "2026-07-16"
+      "valor": 0.85,
+      "fecha": "2026-07-17"
     },
     "vix": {
-      "valor": 16.09000015258789,
-      "fecha": "2026-07-16"
+      "valor": 18.110000610351562,
+      "fecha": "2026-07-17"
     },
     "hy_spread": {
-      "valor": 2.72,
-      "fecha": "2026-07-14"
+      "valor": 2.71,
+      "fecha": "2026-07-15"
     },
     "dxy": {
-      "valor": 100.552001953125,
-      "fecha": "2026-07-16"
+      "valor": 100.77100372314453,
+      "fecha": "2026-07-17"
     },
     "yield_10y": {
-      "valor": 4.58,
-      "fecha": "2026-07-14"
+      "valor": 4.55,
+      "fecha": "2026-07-15"
     },
     "sahm_rule": {
       "valor": 0.07,
@@ -420,13 +421,13 @@
       "fecha": "2026-06-01"
     },
     "breakeven_5y5y": {
-      "valor": 2.21,
-      "fecha": "2026-07-15"
+      "valor": 2.2,
+      "fecha": "2026-07-16"
     }
   },
   "eventos_clave": [],
   "invalidadores": [],
-  "confianza_consolidada": 53,
+  "confianza_consolidada": 55,
   "track_record": [
     {
       "id": 24,
