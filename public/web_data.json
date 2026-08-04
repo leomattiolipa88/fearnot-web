@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "fecha": "2026-08-03",
-    "generado": "2026-08-03T21:14:52.894534",
-    "tesis_macro_fecha": "2026-08-03",
-    "tesis_tecnica_fecha": "2026-08-03",
-    "tesis_og_fecha": "2026-08-03"
+    "fecha": "2026-08-04",
+    "generado": "2026-08-04T20:45:57.891777",
+    "tesis_macro_fecha": "2026-08-04",
+    "tesis_tecnica_fecha": "2026-08-04",
+    "tesis_og_fecha": "2026-08-04"
   },
   "regimen": {
     "clasificacion": "GOLDILOCKS",
     "confianza": 68,
-    "razonamiento": "El bloque de crecimiento/riesgo confirma Goldilocks: yield_curve en +0.99% (calculado:10Y-3M, dato de hoy) sin inversión, hy_spread en 2.84% (FRED:BAMLH0A0HYM2) en zona de complacencia crediticia, vix en 15.98 (yfinance:^VIX) y sahm_rule en 0.07 (FRED:SAHMREALTIME) muy lejos del umbral recesivo de 0.50, con unemployment en 4.2% (FRED:UNRATE). Renta variable en zona alta: spy 747.03 y qqq 687.99. El matiz que impide una confianza mayor es el lado inflacionario/tasas: tips_yield_10y en 2.41% (FRED:DFII10) es un real yield restrictivo, yield_10y en 4.68% (FRED:DGS10, confirmado por yield_10y_mkt 4.682 de hoy) mantiene el costo de capital alto, y michigan_inflation_exp en 4.6% (FRED:MICH) está claramente desanclado respecto de breakeven_5y5y en 2.30% (FRED:T5YIFR). Esa divergencia entre expectativas de encuestas (4.6%) y expectativas de mercado (2.30%) es la principal fuente de fragilidad del régimen: es un Goldilocks con tasas reales altas, no un Goldilocks con liquidez barata. Los datos duros de inflación y empleo (cpi 332.568, pce_core 130.266, unemployment, michigan, sahm) tienen 63 días de antigüedad, lo que reduce la resolución sobre el momentum más reciente."
+    "razonamiento": "Crecimiento estable sin señales de recesión: unemployment 4.2% (FRED:UNRATE), sahm_rule 0.07 (FRED:SAHMREALTIME, muy lejos del umbral de 0.50) y jobless_claims 197.000 (FRED:ICSA, es_fresco=false, 10 días de antigüedad — señal degradada pero direccionalmente muy fuerte). Liquidez y crédito benignos: hy_spread 2.78% (FRED:BAMLH0A0HYM2) y vix 16.5 (^VIX), ambos frescos y consistentes con apetito de riesgo. Curva positiva y con pendiente sana: yield_curve +0.95% (10Y 4.70% FRED:DGS10 vs 3M 3.75% FRED:DTB3), sin inversión. Expectativas de inflación de mercado ancladas: breakeven_5y5y 2.31% (FRED:T5YIFR). Reduzco la confianza desde el régimen pre-calculado (que reporta 0 señales de riesgo y 0 de inflación) por tres motivos: (1) michigan_inflation_exp 4.6% (FRED:MICH) está muy por encima del breakeven de mercado 2.31% — divergencia encuestas vs mercado no trivial; (2) tips_yield_10y 2.43% (FRED:DFII10) es un nivel de tasa real restrictivo que históricamente comprime múltiplos; (3) todo el bloque de datos duros macro (CPI 332.568, PCE core 130.266, unemployment, Sahm, Michigan) tiene fecha_publicacion 2026-06-01, es decir 64 días de antigüedad: el régimen se apoya en fotos de junio mientras los precios de mercado son de hoy. Hay una cola reflacionaria (gold 374.16 en GLD, curva empinándose, 10Y 4.70%) que no descarto."
   },
-  "tesis_principal": "El mercado está en un Goldilocks de manual por el lado del riesgo y en un régimen restrictivo por el lado de las tasas, y esa contradicción es la tesis del día. Del lado benigno: yield_curve en +0.99% (calculado 10Y-3M, con yield_10y 4.68% y yield_3m 3.69%) ya no está invertida, hy_spread en 2.84% (FRED:BAMLH0A0HYM2, 4 días) indica que el crédito high yield no percibe riesgo de default, vix en 15.98 (yfinance, hoy) confirma cero demanda de protección, y el mercado laboral no da señal recesiva: unemployment 4.2%, sahm_rule 0.07 muy por debajo del umbral de 0.50 y jobless_claims 197.000 — aunque este último tiene 9 días y está marcado es_fresco=false, por lo que no lo usamos como confirmación, solo como no-contradicción. Con ese set, spy 747.03 y qqq 687.99 en zona alta es coherente, no una anomalía.\n\nDel lado incómodo: tips_yield_10y en 2.41% (FRED:DFII10) significa que el costo real del dinero a 10 años sigue siendo el más punitivo de este ciclo, y con breakeven_5y5y en 2.30% (FRED:T5YIFR) casi todo el 4.68% nominal es tasa real más prima de término, no compensación por inflación. Es decir: el mercado de bonos no teme inflación, teme oferta de papel y prima de término. Eso choca frontalmente con michigan_inflation_exp en 4.6% (FRED:MICH, dato de junio, 63 días) — un gap de 230bp entre lo que espera el consumidor y lo que descuenta el mercado. Ese gap se cierra de una de dos formas: o el consumidor converge a la baja (bullish bonos y equity, bullish continuación de Goldilocks) o el mercado converge al alza (bearish TLT en 82.25, bullish GLD). El comportamiento de gold en 371.54 sosteniéndose contra un real yield de 2.41% sugiere que hay dinero posicionado para el segundo escenario, y por eso mantenemos long oro como hedge del propio long equity.\n\nEn monedas, dxy 99.77 con eurusd 1.1530, usdbrl 5.0639, usdmxn 17.3048 y usdcny 6.7413 describe un dólar que pierde contra todo excepto el yen: usdjpy 156.61 (hoy) mantiene el carry trade JPY plenamente operativo, y ese carry es el combustible silencioso del vix 15.98 y del hy_spread 2.84%. Es la pata más frágil de la estructura: un movimiento brusco de usdjpy hacia abajo históricamente coincide con desapalancamiento global sincronizado, exactamente el tipo de evento que el titular de [Yahoo Finance] sobre el 'chip wipeout' insinúa a nivel micro sin que todavía aparezca en los agregados de crédito. Posicionamiento: long SPY moderado, neutral QQQ (rotación intra-tech no confirmada como stress), long GLD estructural, neutral TLT por señales contradictorias, short USD selectivo contra EUR/EM y no contra JPY. El flujo de noticias del día es macro-irrelevante (retail, restaurantes, cuotas IRA, market share de Linux), lo que en sí mismo es información: no hay catalizador narrativo que explique un cambio de régimen, el mercado se mueve por posicionamiento y tasas.",
+  "tesis_principal": "El régimen es Goldilocks pero de una variedad cara: crecimiento sin fisuras y crédito impecable, financiado con tasas reales altas. Del lado del crecimiento, unemployment 4.2% (FRED:UNRATE), sahm_rule 0.07 (FRED:SAHMREALTIME) y jobless_claims 197.000 (FRED:ICSA, es_fresco=false, 10 días) no dejan lugar a una narrativa de recesión inminente; la curva 10Y-3M está positiva en +0.95% (yield_curve, calculado con DGS10 4.70% y DTB3 3.75%), es decir, ya se normalizó tras el ciclo de inversión y lo hizo por bull-steepening del tramo corto, no por deterioro. Del lado de la inflación, el mercado está tranquilo: breakeven_5y5y 2.31% (FRED:T5YIFR) y un breakeven 10Y implícito de ~2.27% (yield_10y 4.70% menos tips_yield_10y 2.43%). El precio del riesgo lo confirma: hy_spread 2.78% (FRED:BAMLH0A0HYM2) y vix 16.5 son niveles de complacencia estructural, no de estrés. Sobre eso, SPY 771.33 hace máximos y hoy el tape mejora por la de-escalación EE.UU.-Irán, con petróleo y yields cayendo ([MarketWatch]); yield_10y_mkt 4.627% ya cotiza 7pb por debajo del cierre oficial de ayer.\n\nLa grieta de la tesis está en tres números. Primero, tips_yield_10y 2.43%: una tasa real de largo plazo en ese nivel es un impuesto permanente sobre múltiplos de equity y sobre la refinanciación corporativa; con hy_spread en 2.78% el mercado de crédito no está compensando ese costo de capital, es decir, la parte más frágil del complejo no es el equity sino el spread. Segundo, michigan_inflation_exp 4.6% (FRED:MICH) contra breakeven_5y5y 2.31%: el hogar mediano y el mercado de bonos viven en universos distintos; si el dato de julio/agosto de CPI (último disponible: 332.568 al 2026-06-01) o de PCE core (130.266, misma fecha) sorprende al alza, la convergencia se resuelve contra los bonos y el régimen migra de Goldilocks a Reflación o Stagflation en cuestión de semanas. Tercero, usdjpy 157.715: el nota de [Axios] indica que hubo intervención en el yen con participación estadounidense, explícitamente diseñada para que Japón suavice el tipo de cambio sin verse forzado a vender Treasuries. Eso es el reconocimiento oficial de que el carry trade yen-dólar está en zona de fragilidad y de que el canal de transmisión hacia el tramo largo de la curva americana es la preocupación de los policymakers. Un desarme desordenado del carry es el evento con mayor asimetría negativa del tablero actual, y no aparece en ningún indicador de riesgo del JSON porque los indicadores de riesgo (vix, hy_spread) son coincidentes, no anticipatorios.\n\nOperativamente: mantengo sesgo largo de riesgo (SPY 7, QQQ 6) porque nunca se pelea contra crédito tight y desempleo bajo, pero con convicción calibrada, no máxima. Largo GLD (6) como cobertura del régimen equivocado: el oro en 374.16 subiendo contra tasas reales de 2.43% está diciendo algo que ni el VIX en 16.5 ni el spread en 2.78% están diciendo, y en la experiencia histórica el oro suele tener razón antes. Neutral en TLT (4): sin recesión no hay rally de duration, y con michigan_inflation_exp en 4.6% tampoco quiero estar corto de bonos de forma agresiva. Corto táctico y modesto de DXY (5) apoyado en la intervención coordinada. Advertencia metodológica: todo el bloque macro duro tiene 64 días de antigüedad (fecha_publicacion 2026-06-01) — estoy clasificando el régimen de agosto con datos de junio, y esa es la limitación central del análisis de hoy.",
   "senales": [
     {
       "activo": "DXY",
       "macro": {
         "direccion": "SHORT",
         "conviccion": 5,
-        "razonamiento": "dxy 99.77 (yfinance:DX-Y.NYB, hoy) con eurusd 1.1530 y EM firmes: usdbrl 5.0639, usdmxn 17.3048, usdcny 6.7413 (todos yfinance, hoy) muestran un dólar sin bid contra alto beta, consistente con Goldilocks/risk-on y hy_spread 2.84%. La contra es usdjpy 156.61 (yfinance:USDJPY=X, hoy): el yen sigue siendo la única moneda que pierde, lo que sostiene artificialmente el índice y mantiene vivo el carry trade. Short DXY es en realidad short USD contra EUR/EM, no contra JPY. Convicción 5 por esa asimetría interna."
+        "razonamiento": "DXY 99.86 (yfinance:DX-Y.NYB) con eurusd 1.1535 (yfinance:EURUSD=X). La nota de [Axios] sobre participación estadounidense en la intervención del yen sugiere tolerancia oficial a un dólar más débil, especialmente contra JPY (usdjpy 157.715, yfinance:USDJPY=X, nivel de estrés de carry trade). Además yields cayendo hoy (yield_10y_mkt 4.627%) reducen el diferencial de soporte del dólar. Modero la convicción a 5 porque el diferencial 3M sigue alto (yield_3m 3.75%) y los EM cross del JSON no muestran debilidad del dólar generalizada (usdbrl 5.1263, usdmxn 17.3268, usdcny 6.7527 — todos en niveles de dólar contenido, no colapsando)."
       },
       "tecnico": {
         "direccion": "NEUTRAL",
         "conviccion": 4,
-        "razonamiento": "Precio 99.77 apenas sobre 200DMA 99.14 (+0.64% pct_sobre_dma, SOBRE_DMA): tecnicamente esta pegado a la media, sin tendencia definida. Momentum 12M +1.1% (momentum_12m) con vol 5.6% (vol_12m) da momentum ajustado 0.196 (momentum_ajust), el mas bajo en valor absoluto de todo el panel. No hay senal."
+        "razonamiento": "Precio 99.86 apenas +0.72% sobre su 200DMA de 99.15 (pct_sobre_dma), cruce_dma = SOBRE_DMA pero practicamente pegado a la media: cualquier movimiento menor lo cruza. Momentum 12M de +1.09% (momentum_12m) con vol 5.43% (vol_12m) da momentum ajustado de 0.201 (momentum_ajust), plenamente dentro de la zona ambigua -0.5 / +1.5. No hay senal explotable."
       },
       "consenso": "PARCIAL"
     },
@@ -31,41 +31,41 @@
       "activo": "GLD",
       "macro": {
         "direccion": "LONG",
-        "conviccion": 7,
-        "razonamiento": "gold (GLD) en 371.54 (yfinance:GLD) sostenido a pesar de tips_yield_10y 2.41% — un real yield que históricamente debería castigar al oro. Esa resiliencia implica demanda estructural (reservas oficiales / hedge de cola) no explicada por tasas. Además michigan_inflation_exp 4.6% muy por encima de breakeven_5y5y 2.30% deja espacio a un re-pricing inflacionario, y dxy 99.77 (yfinance:DX-Y.NYB) está en la frontera psicológica de 100 con eurusd 1.1530: cualquier quiebre a la baja del dólar es viento de cola directo."
+        "conviccion": 6,
+        "razonamiento": "GLD 374.16 (yfinance:GLD) sostenido pese a tasas reales de 2.43% (tips_yield_10y), lo cual es anómalo bajo el modelo clásico oro-vs-real-yields: indica un bid estructural (debasement/reservas oficiales) que no depende del ciclo. Refuerzo: michigan_inflation_exp 4.6% muy por encima del breakeven_5y5y 2.31%, y la intervención coordinada en el yen reportada por [Axios] con participación de EE.UU. — intervención cambiaria es históricamente favorable al oro. Contra: la de-escalación EE.UU.-Irán [MarketWatch] quita prima geopolítica en el corto plazo. Horizonte trimestral, no semanal."
       },
       "tecnico": {
         "direccion": "NEUTRAL",
         "conviccion": 6,
-        "razonamiento": "Precio 371.54 debajo de 200DMA 411.86 (-9.79% pct_sobre_dma, cruce_dma BAJO_DMA): zona prohibida para LONG por regla universal, sin excepciones. Sin embargo el momentum 12M sigue positivo en +22.64% (momentum_12m) con vol 28.13% (vol_12m), momentum ajustado +0.805 (momentum_ajust), muy lejos del -0.5 que habilitaria SHORT. Regla de 200DMA y momentum se contradicen: la resolucion correcta es no tener posicion."
+        "razonamiento": "Divergencia mas relevante del panel: precio 374.16 contra 200DMA de 411.75, es decir -9.13% (pct_sobre_dma) y cruce_dma = BAJO_DMA, lo que prohibe el LONG por regla universal. Pero el momentum 12M sigue en +20.34% (momentum_12m), con vol 28.06% (vol_12m) y momentum ajustado de +0.725 (momentum_ajust), positivo y dentro de la zona ambigua. No cumple la condicion de SHORT (mom/vol < -0.5 y bajo 200DMA). Momentum trailing todavia positivo pero estructura de precio ya rota: quedarse afuera."
       },
       "consenso": "PARCIAL"
     },
     {
       "activo": "QQQ",
       "macro": {
-        "direccion": "NEUTRAL",
-        "conviccion": 5,
-        "razonamiento": "qqq en 687.99 (yfinance:QQQ, 3 días) sigue en zona alta y el régimen favorece duration de equity, pero el titular de [Yahoo Finance] sobre el 'chip wipeout' que 'reached a climax this week' señala rotación/desapalancamiento intra-sector que no se ve todavía en vix 15.98 ni en hy_spread 2.84%. Con yield_10y 4.68% y tips_yield_10y 2.41%, el segmento de mayor duración de earnings es el más sensible. Preferimos neutral táctico sobre short: no hay confirmación de stress sistémico."
+        "direccion": "LONG",
+        "conviccion": 6,
+        "razonamiento": "Mismo soporte macro que SPY (vix 16.5, hy_spread 2.78%) y caída del yield_10y_mkt a 4.627% desde 4.70% (yield_10y), lo que favorece duration equity. Convicción un punto menor que SPY porque el JSON no contiene precio de QQQ (no puedo verificar nivel ni momentum) y porque el flujo de noticias regulatorias sobre IA ([Fox Business] AGs republicanos sobre OpenAI; [Politico] marco de supervisión de la Casa Blanca) introduce riesgo idiosincrático de titulares sobre el liderazgo del índice, con Palantir reportando hoy [MarketWatch]."
       },
       "tecnico": {
         "direccion": "LONG",
-        "conviccion": 7,
-        "razonamiento": "Precio 687.99 sobre 200DMA 643.83 (+6.86% pct_sobre_dma, SOBRE_DMA). Momentum 12M +22.35% (momentum_12m), superior al de SPY, pero vol 19.38% (vol_12m) deja el momentum ajustado en 1.153 (momentum_ajust), dentro de la banda ambigua 0.5-1.5. Es decir: mas retorno pero peor calidad de tendencia que SPY. Long si, pero con menor sizing relativo."
+        "conviccion": 8,
+        "razonamiento": "Precio 723.85 vs 200DMA 644.97, +12.23% sobre la media (pct_sobre_dma), cruce_dma = SOBRE_DMA. Momentum 12M de +28.94% (momentum_12m), el mas alto del bloque equity, pero con vol 19.61% (vol_12m) el momentum ajustado queda en 1.475 (momentum_ajust), justo por debajo del umbral de 1.5. Es decir: mayor retorno absoluto que SPY pero peor calidad ajustada por riesgo, y ademas mas sobreextendido respecto a su 200DMA."
       },
-      "consenso": "PARCIAL"
+      "consenso": "CONVERGENTE"
     },
     {
       "activo": "SPY",
       "macro": {
         "direccion": "LONG",
         "conviccion": 7,
-        "razonamiento": "Régimen Goldilocks con crédito y volatilidad cooperando: hy_spread 2.84% (FRED:BAMLH0A0HYM2) y vix 15.98 (yfinance:^VIX) indican que no hay stress de financiamiento; yield_curve +0.99% positiva y sahm_rule 0.07 descartan señal recesiva inminente. spy en 747.03 con curva normalizada favorece continuidad de tendencia. Convicción limitada a 7 porque tips_yield_10y 2.41% es un real yield históricamente restrictivo para múltiplos y porque los datos macro duros tienen 63 días."
+        "razonamiento": "Combinación clásica de risk-on: hy_spread 2.78% (crédito no valida ningún estrés), vix 16.5, sahm_rule 0.07 y unemployment 4.2%. La curva está positiva en +0.95% (yield_curve). SPY 771.33 (yfinance:SPY) con el mercado hoy empujando hacia máximos según [MarketWatch] por de-escalación EE.UU.-Irán y caída de yields (yield_10y_mkt 4.627% vs FRED:DGS10 4.70% de ayer). El único freno es tips_yield_10y 2.43%: tasa real alta que limita expansión de múltiplos, por eso no llevo la convicción por encima de 7."
       },
       "tecnico": {
         "direccion": "LONG",
-        "conviccion": 8,
-        "razonamiento": "Precio 747.03 sobre 200DMA de 697.41 (+7.12% pct_sobre_dma, cruce_dma SOBRE_DMA), zona habilitada por la regla de Tudor Jones. Momentum 12M en +19.5% (momentum_12m) con vol 12.89% (vol_12m) da momentum ajustado 1.512 (momentum_ajust), por encima del umbral de +1.5 de Barroso & Santa-Clara: momentum fuerte con la mejor relacion senal/ruido del universo analizado. VRP +109.1 y contango fuerte apoyan."
+        "conviccion": 9,
+        "razonamiento": "Precio 771.33 sobre 200DMA de 698.47, +10.43% (pct_sobre_dma), cruce_dma = SOBRE_DMA: zona habilitada para LONG bajo la regla universal de Tudor Jones. Momentum 12M en +23.56% (momentum_12m) con vol 12.96% (vol_12m) da momentum ajustado de 1.819 (momentum_ajust), por encima del umbral de +1.5 de Barroso & Santa-Clara: momentum fuerte con la volatilidad realizada mas baja del universo analizado. Breadth de 74.0% (pct_sobre_200) confirma que la tendencia es amplia y VRP +70.09 apoya el carry largo de equity."
       },
       "consenso": "CONVERGENTE"
     },
@@ -74,12 +74,12 @@
       "macro": {
         "direccion": "NEUTRAL",
         "conviccion": 4,
-        "razonamiento": "tlt en 82.25 (yfinance:TLT) refleja el castigo de yield_10y 4.68% (FRED:DGS10 / yield_10y_mkt 4.682 hoy). Hay argumento long: breakeven_5y5y 2.30% anclado implica que casi todo el yield es prima real/término, y con sahm_rule 0.07 no hay riesgo inflacionario de demanda desbocada. Pero el argumento short también existe: curva ya positiva en +0.99% con 3m en 3.69% sugiere que el bear steepening puede continuar y michigan 4.6% amenaza el ancla. Señales contradictorias → neutral, convicción baja."
+        "razonamiento": "Señales contradictorias. A favor de duration: yields bajando hoy (yield_10y_mkt 4.627% vs yield_10y 4.70%) por de-escalación geopolítica [MarketWatch], y breakeven_5y5y 2.31% anclado. En contra: tips_yield_10y 2.43% implica que el mercado exige prima real alta; la economía no se está deteriorando (sahm_rule 0.07, unemployment 4.2%, claims 197k aunque rancios) por lo que no hay catalizador de rally por recesión; y michigan_inflation_exp 4.6% es un riesgo latente. TLT en 82.82 (yfinance:TLT). Sin catalizador claro, convicción insuficiente para tomar dirección."
       },
       "tecnico": {
         "direccion": "NEUTRAL",
         "conviccion": 5,
-        "razonamiento": "Precio 82.25 debajo de 200DMA 85.87 (-4.21% pct_sobre_dma, BAJO_DMA): LONG prohibido. Momentum 12M -1.06% (momentum_12m) con vol 9.32% (vol_12m) deja momentum ajustado -0.114 (momentum_ajust), dentro de la banda ambigua -0.5 a +1.5, insuficiente para justificar SHORT. Tendencia bajista suave pero sin conviccion direccional."
+        "razonamiento": "Precio 82.82 bajo su 200DMA de 85.47, -3.10% (pct_sobre_dma), cruce_dma = BAJO_DMA: zona prohibida para LONG sin excepciones. Sin embargo el momentum ajustado es de -0.178 (momentum_ajust, momentum_12m -1.64% sobre vol_12m 9.25%), por encima del umbral de -0.5 requerido para habilitar SHORT. Precio bajo la media pero sin momentum bajista que lo confirme: la lectura correcta es NEUTRAL, no SHORT."
       },
       "consenso": "CONVERGENTE"
     },
@@ -87,13 +87,13 @@
       "activo": "USO",
       "macro": {
         "direccion": "NEUTRAL",
-        "conviccion": 1,
-        "razonamiento": "No hay ningún indicador de crudo, inventarios ni energía en el JSON recibido. Convicción insuficiente: no emitimos dirección sobre petróleo sin dato de precio ni de oferta/demanda."
+        "conviccion": 3,
+        "razonamiento": "Convicción insuficiente: el JSON no contiene ningún precio de crudo ni de USO, por lo que cualquier señal sería inventada. La única referencia es cualitativa: [MarketWatch] reporta caída del petróleo por de-escalación EE.UU.-Irán. Direccionalmente eso es bajista de corto plazo y desinflacionario (consistente con breakeven_5y5y 2.31%), pero sin dato verificable no tomo posición."
       },
       "tecnico": {
         "direccion": "LONG",
         "conviccion": 5,
-        "razonamiento": "Precio 129.17 sobre 200DMA 100.21, pero +28.9% (pct_sobre_dma) es una sobreextension extrema respecto a la media movil. Momentum 12M +62.29% (momentum_12m) con vol 46.91% (vol_12m) da momentum ajustado 1.328 (momentum_ajust), fuerte pero no de alta conviccion una vez normalizado por la volatilidad, que es la mas alta del panel. Trend intacto, pero riesgo de reversion a la media elevado; el tamano debe ser inverso a la vol."
+        "razonamiento": "Precio 115.78 sobre 200DMA de 100.71, +14.96% (pct_sobre_dma) — la mayor sobreextension del panel — con cruce_dma = SOBRE_DMA, lo que habilita tecnicamente el LONG. Momentum 12M de +52.12% (momentum_12m) es el mas alto de todos los activos, pero la vol de 47.43% (vol_12m) lo degrada a un momentum ajustado de 1.099 (momentum_ajust), dentro de la banda ambigua -0.5 / +1.5. Trend valido, calidad mediocre."
       },
       "consenso": "PARCIAL"
     }
@@ -297,151 +297,102 @@
         "technical: USO SOBRE_DMA con momentum_12m +44%, breadth 70%, VRP +35 confirma risk-on general que soporta cyclicals",
         "macro (indicadores duros): ausencia de stress crediticio (HY 2.7%), empleo solido (claims 215k, Sahm 0.07) descarta destruccion de demanda near-term"
       ]
-    },
-    {
-      "id": 24,
-      "fecha": "2026-07-06",
-      "tipo": "WEEKLY",
-      "ticker": "VLO",
-      "direccion": "LONG",
-      "horizonte": "WEEKS",
-      "conviccion": 7,
-      "position_size": "STANDARD",
-      "entry_strategy": "Mantener posicion existente (ya publicada 4 semanas consecutivas). No agregar a niveles actuales (273.14). Solo add en pullback a 255-260 zone.",
-      "stop_loss_logic": "Salida si crack 3-2-1 cae bajo 40 USD/bbl (normalizacion de margenes) o si VLO pierde 240 USD (nivel psicologico y probable soporte tecnico).",
-      "profit_target": "Trim parcial en 300-310 USD (extension del rally). Full exit si crack sostiene bajo 45 durante 2 semanas consecutivas o si utilizacion refinerias cae bajo 92%.",
-      "wrong_about": "Este trade lleva 4 publicaciones consecutivas - riesgo de crowding y complacencia. El crack spread es mean-reverting historicamente y estamos en la parte alta del ciclo estacional (driving season peak). VLO a 273 ya refleja muchos de estos factores; el edge marginal disminuye con cada semana que pasa sin nueva informacion. Ademas, macro agent unavailable esta semana genera blind spot importante - no puedo confirmar que no haya deterioro en demanda agregada que impacte productos refinados post-verano.",
-      "precio_entrada": 272.6000061035156,
-      "fecha_evaluacion": "2026-07-13",
-      "precio_salida": 280.69,
-      "retorno_pct": 2.97,
-      "evaluado": 1,
-      "mfe_pct": 5.3,
-      "mae_pct": -4.22,
-      "dias_hasta_mfe": 4,
-      "dias_hasta_mae": 1,
-      "volatilidad_pct": 3.55,
-      "precio_max": 287.05,
-      "precio_min": 261.1,
-      "dias_trade": 7,
-      "thesis": [
-        "El complejo energetico esta bifurcado: crudo bajo presion OPEC+ (WTI 68.68) mientras el crack 3-2-1 esta en 56 USD/bbl (MUY_FUERTE) con refinerias USA al 96.6% de utilizacion, situacion que beneficia doblemente a los refinadores puros (input barato, output caro).",
-        "La destruccion del 25%+ de capacidad refinadora rusa por drones ucranianos tightening estructuralmente los spreads globales de productos refinados, y VLO es el refinador puro mas eficiente y directo para capturar esta anomalia.",
-        "El setup tecnico del mercado sigue risk-on (SPY momentum ajustado 1.674, breadth 64%, VIX 16.25) lo que valida mantener exposicion sectorial larga en energia via el eslabon donde los margenes son excepcionales."
-      ],
-      "fundamental_case": {
-        "macro_context": "Macro agent no disponible esta semana - gap de informacion importante. Indicadores macro observables: yield curve +0.77 (normalizada), HY spread 2.75 (sin stress), Sahm 0.07 (sin recesion), jobless claims 215k (mercado laboral estable). No hay red flags macro que invaliden risk-on.",
-        "sectoral_dynamics": "Crack 3-2-1 en 56 USD/bbl clasificado MUY_FUERTE. Utilizacion refinerias USA en 96.6% (techo operacional). Destruccion capacidad refino Rusia tightening global product spreads. OPEC+ subiendo cuotas presiona crudo (input) a la baja - favorable para margenes de refino.",
-        "technical_setup": "USO SOBRE_DMA (+9.47%) confirma sector energetico direccionalmente sano. SPY/QQQ ambos con momentum ajustado >1.5 (umbral Barroso). Breadth 64%. VIX term structure en contango fuerte - risk-on intacto.",
-        "why_this_expression": "VLO expresa el trade especifico del crack spread sin tomar direccional en crudo (que tiene headwind OPEC+). XOM/CVX diluyen la tesis mezclando upstream (perjudicado) con downstream. OXY/EOG/VIST son pure-play crudo, direccion equivocada. VLO es la unica expresion limpia del edge observado."
-      },
-      "invalidators": [
-        "Crack 3-2-1 contrayendose bajo 45 USD/bbl consecutivamente 2 semanas",
-        "Utilizacion refinerias USA cae bajo 92% (fin driving season o demand destruction)",
-        "Compliance OPEC+ real materializa mayor supply de crudo y este cae bajo 60 - paradojicamente inicialmente bueno para refiners pero indica demand weakness subyacente",
-        "SPY pierde 200DMA (689.21) invalidando risk-on"
-      ],
-      "agents_aligned": [
-        "energy_desk: VLO LONG conv 8 - crack MUY_FUERTE, refinerias 96.6%, capacidad rusa destruida, setup multi-factor",
-        "technical: USO LONG conv 6 (SOBRE_DMA +9.47%, momentum 12M +39%) valida sector; SPY LONG conv 8 valida risk-on general que soporta ciclicos"
-      ]
     }
   ],
   "energy_pulse": {
-    "fecha": "2026-08-03",
+    "fecha": "2026-08-04",
     "regimen_oil": {
       "clasificacion": "TIGHT_BACKWARDATED",
       "confianza": 78,
-      "razonamiento": "La curva WTI muestra backwardation de +6.42 USD en el calendar 6m sobre un flat price de 79.24 (≈8% del precio en 6 meses). Eso no es sentimiento: es alguien pagando prima por el barril prompt porque lo necesita fisicamente ahora. Se confirma por el lado del downstream: refinery utilization en 97.2% (EIA 24-jul) es practicamente el techo operativo del sistema US, y aun corriendo a maximo los inventarios de producto siguen bajos en terminos absolutos (gasolina 211.3 MMbbl, destilados 110.6 MMbbl) y el crudo esta en 404.5 MMbbl. Es decir: el sistema esta consumiendo crudo a maxima velocidad y no logra reconstruir cobertura de productos. El crack 3-2-1 en 60.70 USD/bbl (calculado con RBOB 3.0078 y HO 3.9815) es un nivel de margen que solo aparece cuando hay escasez fisica de capacidad de refino o de barriles de producto, no cuando hay exceso. Del lado de la oferta, OPEC+ solo agrega 188 kb/d desde septiembre - un incremento cosmetico frente a la disrupcion reportada por la guerra Iran-US, y varias notas indican que muchos miembros ya no pueden cumplir cuotas por declino de capacidad. El unico argumento en contra de TIGHT es que parte de la prima es geopolitica y reversible (Trump anuncio cancelacion de strikes con 'perimetros de un acuerdo'), pero eso afecta el flat price, no la estructura de curva ni los cracks, que son la evidencia fisica. No tengo el 5-year average de inventarios ni los cambios semanales WoW, lo que limita la confianza al 78 en vez de mas alto."
+      "razonamiento": "La estructura fisica dice tightness sin ambiguedad: el calendar spread WTI 6m esta en +4.55 USD (BACKWARDATION), es decir ~6% del flat price de 75.35 — eso no es una curva de mercado abastecido, es una curva que paga por tener barriles hoy. Los inventarios de crudo USA en 404.508 kb (EIA, 2026-07-24) estan en la banda baja de lo que suele verse en pleno verano, y la utilizacion de refinerias en 97.2% es esencialmente capacidad maxima operativa: las refinerias estan tirando crudo del tanque al maximo ritmo posible. Del lado de la oferta hay tres disrupciones simultaneas y verificables en las noticias: interrupciones alrededor del Estrecho de Hormuz, bloqueo del Mar Rojo declarado por los Houthis que ademas ataca las rutas alternativas (el workaround saudi de sacar crudo por fuera de Hormuz), y una tormenta en el Golfo que dejo 2 millones de barriles offline. El flat price cayo ('Oil Slumps as Trump Holds Off Iran Attack') porque el mercado esta descontando un acuerdo diplomatico, pero ni la curva ni los cracks validaron esa caida. Clasifico TIGHT_BACKWARDATED con confianza 78 y no mas alto por dos razones: (1) los datos EIA son del 24-jul, 11 dias de antiguedad, y no tengo el cambio semanal ni el promedio de 5 anios para saber si el nivel es draw o build; (2) el spread Brent-WTI de solo 3.48 USD es sospechosamente estrecho para un escenario de disrupcion waterborne severa."
     },
     "regimen_natgas": {
       "clasificacion": "OVERSUPPLIED",
-      "confianza": 58,
-      "razonamiento": "Henry Hub en 2.772 USD/MMBtu con working storage Lower 48 en 3,084 Bcf al 24-jul. Estar por encima de 3,000 Bcf a fines de julio implica que la trayectoria de inyeccion va a llegar comoda a los ~4,000 Bcf de fin de temporada, y el precio lo esta validando: 2.77 es un nivel que solo se sostiene cuando no hay preocupacion de balance para el invierno. La contradiccion es que el verano es intenso (las noticias reportan olas de calor persistentes en Europa que debilitan generacion nuclear/hidro y fuerzan mas importacion de fosiles) y eso deberia traccionar exportacion de LNG desde US; sin embargo el precio domestico no reacciona, lo que sugiere que la produccion asociada y no-asociada esta cubriendo todo el pull de LNG mas cargas de generacion. Confianza limitada a 58 porque NO tengo el 5-year average de storage, ni el cambio semanal de inyeccion, ni datos de feedgas de LNG, ni JKM/TTF para medir el arbitraje de exportacion. Sin esos datos no puedo distinguir OVERSUPPLIED estructural de BALANCED con precio deprimido por posicionamiento."
+      "confianza": 65,
+      "razonamiento": "Henry Hub en 2.68 USD/MMBtu con storage Lower 48 en 3.084 Bcf al 24-jul. Ese nivel de almacenamiento a fines de julio es holgado en terminos absolutos para la trayectoria de inyeccion hacia el invierno, y el precio lo confirma: 2.68 es un precio de mercado que necesita destruir produccion asociada o forzar switching gas-carbon, no un precio de escasez. El contraste con el crudo es brutal — mientras el complejo liquido esta backwardated y con cracks extremos, el gas domestico americano cotiza como si nada estuviera pasando. La razon es que el gas es un mercado regional y el bottleneck no esta en el molecule sino en la capacidad de licuefaccion. Confianza limitada a 65 por una razon concreta y bullish: las noticias reportan que Belgica quedo enteramente dependiente de LNG ruso en julio porque la guerra en Medio Oriente colapso el suministro a Europa (presumiblemente carga qatari via Hormuz). Eso es un mercado global de LNG en estres severo, y si aparece capacidad de arbitraje o si el feedgas de las terminales USA hace records, el pull de exportacion puede tensar Henry Hub rapido. No tengo data de feedgas LNG, ni produccion diaria seca, ni HDD/CDD forecast, ni el deficit/superavit vs promedio de 5 anios — todos criticos para subir la conviccion."
     },
     "regimen_lpg": {
       "clasificacion": "BALANCED",
-      "confianza": 38,
-      "razonamiento": "Data explicitamente limitada. El unico dato duro que tengo es propane/propylene inventory US en 102,286 kbbl al 24-jul, que en terminos absolutos es un nivel de stock alto para fines de julio en la temporada de build pre-invierno, lo que apunta a un mercado domestico bien abastecido (consistente con crudo/gas de esquisto corriendo fuerte y NGL abundantes). Pero LPG es un mercado de arbitraje internacional y me faltan TODAS las variables que definen el regimen: no tengo Saudi Aramco Contract Price, no tengo FEI Asia ni el spread FEI-Mont Belvieu, no tengo freight rates VLGC Houston-Chiba/Houston-Flushing, no tengo terminal fees ni datos de exportacion semanal de LPG US, no tengo demanda PDH china. Con inventario domestico comodo pero un contexto de guerra en Medio Oriente que puede tensar la oferta LPG del Golfo Persico y disparar freight, lo honesto es BALANCED con baja confianza y no forzar una direccion."
+      "confianza": 40,
+      "razonamiento": "Tengo data muy limitada para LPG y lo digo explicitamente: el unico dato duro es el inventario de propano/propileno USA en 102.286 kb al 24-jul. Ese nivel es holgado en terminos absolutos para fines de julio y sugiere que el balance domestico USA (Mont Belvieu) esta comodo a bien abastecido, apoyado por la produccion de NGL asociada al gas barato (Henry Hub 2.68). Pero el mercado de LPG se define en el arbitraje internacional y ahi estoy ciego: no tengo Saudi CP, no tengo FEI Asia, no tengo el spread FEI-Mont Belvieu, no tengo tarifas de flete VLGC ni tiempos de transito. Lo unico que puedo inferir de las noticias es que el flete esta explotando — el mayor shipbroker del mundo esta registrando ganancias record por la 'volatilidad excepcional' en el Estrecho de Hormuz — y que un bloqueo del Mar Rojo mas riesgo Hormuz encarece y alarga el viaje de la carga del Golfo Persico a Asia. Eso es tightness de LPG entregado en Asia con simultanea holgura en la costa del Golfo USA: el arb se abre en teoria pero el flete se come la ganancia. Clasifico BALANCED con confianza 40 — es una clasificacion por default, no una conviccion."
     },
-    "tesis_principal": "El regimen fisico del crudo es genuinamente tight y el downstream es donde esta la anomalia. Backwardation de 6.42 USD a 6 meses en WTI, refinerias US corriendo al 97.2% de utilizacion, e inventarios de producto bajos en absoluto (gasolina 211.3 MMbbl, destilados 110.6 MMbbl) con crudo en 404.5 MMbbl. La foto es de un sistema al limite: se procesa todo lo que se puede y aun asi no se acumula producto. El crack 3-2-1 en 60.70 USD/bbl es el dato mas violento del set - un multiplo de un margen normal - y esta liderado por heating oil en 3.9815 USD/gal versus RBOB en 3.0078, es decir un destilado que vale casi un dolar por galon mas que la gasolina en pleno verano. Eso es inversion de la estacionalidad normal y grita disrupcion de oferta de destilado middle-of-the-barrel: consistente con la guerra Iran-US afectando flujos y refino en Medio Oriente, con demanda militar/logistica, y con los mercados europeos importando mas combustible por la debilidad de su generacion electrica bajo olas de calor.\n\nEl contexto macro del fondo es coherente con esto y refuerza el lado de la demanda. GOLDILOCKS al 68% con yield curve en +0.99% (no invertida), HY spread en 2.84% en zona de complacencia, VIX en 15.98 y Sahm rule en 0.07 significa que no hay senal de destruccion ciclica de demanda energetica. En ese entorno, el tightness fisico no se resuelve por el lado de la demanda - solo se resuelve por oferta. Y la oferta viene corta: OPEC+ decidio el 2-ago sumar apenas 188 kb/d desde septiembre, un incremento simbolico, y varias fuentes senalan que buena parte del grupo ya no puede materializar sus aumentos por declino de capacidad efectiva. El tecnico del fondo tambien valida direccion pero advierte extension: USO en 129.17 contra 200DMA de 100.21 (+28.9%), momentum 12M +62.29% - tendencia intacta pero sobre-extendida, lo que argumenta por tamano moderado y no por maxima conviccion en el flat price.\n\nEl riesgo dominante es de headline, no de balance: Trump anuncio que cancela strikes sobre Iran porque 'los perimetros de un acuerdo' estarian acordados, mientras Iran amenaza con atacar campos energeticos de terceros paises si hay nuevos ataques. Esa asimetria es la clave de como expresar la vista. Un acuerdo real deberia comprimir el flat price de crudo (donde vive la prima de guerra) mas rapido que los cracks (donde vive el deficit fisico de producto y la restriccion de capacidad de refino). Por eso el trade limpio del sector esta en refino y margen - VLO, CRAK, integrados con downstream - mas que en crudo direccional puro. Long crudo se justifica por la curva, pero con conviccion moderada porque estamos comprando un flat price que ya lleva una prima geopolitica identificable y con un catalizador de desarme sobre la mesa esta misma semana. Natural gas es la excepcion bajista del complejo: 2.772 con storage en 3,084 Bcf a fines de julio es un balance comodo que no participa del tightness del liquido.",
+    "tesis_principal": "La dislocacion central de esta semana es que el flat price del crudo esta operando la paz mientras la estructura fisica esta operando la guerra. WTI cayo a 75.35 y Brent a 78.83 porque Trump suspendio el ataque a Iran y anuncio conversaciones ('deal imminent'), pero nada de lo que mide tightness real se movio con el: el calendar 6m de WTI sigue en +4.55 de backwardation, la utilizacion de refinerias esta en 97.2% (capacidad maxima), el crudo USA en 404.5 mmbbl y — el dato mas violento del panel — el crack 3-2-1 en 56.24 USD/bbl. Un crack de 56 no es un mercado normal; es entre dos y tres veces un crack fuerte de temporada. Descomponiendolo: gasolina 2.8365 implica ~43.8 USD/bbl de crack y heating oil 3.7285 implica ~81.2 USD/bbl de crack destilado. El mensaje fisico es inequivoco: el mundo tiene un problema de productos refinados, no de crudo. Y tiene sentido causal — el bloqueo del Mar Rojo declarado por los Houthis, los ataques a las rutas alternativas al workaround saudi, y los ataques con drones ucranianos sobre Rusia (con Rusia 'quedandose sin petroleo y tiempo', historicamente sinonimo de capacidad de refinacion daniada) destruyen flujos de producto y alargan ton-miles mucho mas de lo que destruyen barriles de crudo.\n\nEl contexto macro refuerza el lado de la demanda y no lo contradice. El fondo esta en GOLDILOCKS 68% con unemployment 4.2%, Sahm 0.07 y claims en 197k: no hay ningun mecanismo por el cual la demanda de destilados o gasolina se este cayendo. Al contrario, una economia sin fisuras con refinerias al 97.2% y destilados en 110.6 mmbbl significa que el sistema esta corriendo al maximo y aun asi no puede reconstruir inventario de producto antes del invierno. Tecnicamente el desk marca USO +14.96% sobre su 200DMA, la mayor sobreextension del panel — coherente con un activo que ademas captura roll yield positivo en backwardation. La lectura de trading que se desprende: la expresion mas limpia no es el flat price del crudo (que es rehen del titular Trump-Iran de cualquier manana) sino el complejo de productos y los refinadores — largo heating oil, largo VLO/CRAK, largo integradas con exposicion a downstream.\n\nEl riesgo que no puedo ignorar y que me impide subir convicciones al 8-9 es politico, no fundamental. Trump acuso publicamente a Exxon y Chevron de ganar 'demasiada plata' y exigio bajas inmediatas del precio del combustible al dia siguiente de que Chevron reportara ganancias record y repartiera un bono especial. Un crack de 56 USD/bbl con la Casa Blanca haciendo jawboning es la definicion de un margen politicamente insostenible: el riesgo de restricciones a la exportacion de productos, de un windfall tax, o simplemente de presion regulatoria es real y golpearia exactamente donde tengo mi mejor senal. En paralelo, el gas natural vive en otro planeta: 2.68 con 3.084 Bcf en storage, completamente desconectado de un mercado global de LNG tan tenso que obligo a Belgica a depender enteramente de LNG ruso en julio. Esa desconexion es estructural (cuello de botella en licuefaccion), pero es la asimetria que mas vigilo por si se rompe.",
     "senales": [
-      {
-        "activo": "VLO",
-        "direccion": "LONG",
-        "conviccion": 7,
-        "razonamiento": "El trade mas limpio del sector. Crack 3-2-1 en 60.70 USD/bbl (MUY_FUERTE) con utilizacion del sistema US en 97.2%: VLO es refinador puro y esta capturando margen extraordinario a maximo throughput, sin exposicion a upstream que sufriria si el flat price cae por un acuerdo con Iran. Inventarios de producto bajos (gasolina 211.3, destilados 110.6) sostienen el margen. Riesgo: cracks a estos niveles son historicamente insostenibles y cualquier normalizacion comprime rapido - de ahi 7 y no 8."
-      },
       {
         "activo": "XOM",
         "direccion": "LONG",
-        "conviccion": 6,
-        "razonamiento": "Integrado con downstream significativo capturando el crack de 60.70, mas upstream expuesto a la backwardation. Catalizador especifico en las noticias: Irak firmo 100 mil millones USD en acuerdos energeticos con Chevron y ExxonMobil - opcion de reservas de largo plazo, aunque con riesgo de ejecucion politico porque Bagdad debe balancear con Iran y China y el conflicto regional esta activo."
+        "conviccion": 5,
+        "razonamiento": "Integrada con captura simultanea de upstream (backwardation, crudo tight) y downstream (crack 3-2-1 en 56.24). El regimen macro GOLDILOCKS y el desk tecnico con SPY LONG 9/10 sobre 200DMA dan viento de cola de beta. El freno concreto: Trump acuso a Exxon por nombre de ganar 'demasiada plata' y exigio bajar precios de combustible. Ese titular no cambia el cash flow del trimestre pero introduce riesgo de headline y de politica (export curbs, windfall tax) sobre exactamente la parte del negocio que hoy mas gana. Conviccion 5."
       },
       {
         "activo": "CVX",
         "direccion": "LONG",
         "conviccion": 6,
-        "razonamiento": "Misma logica que XOM: mix integrado que monetiza margen de refino en 60.70 USD/bbl mas upstream en curva backwardated. Nombrada explicitamente en los 100 mil millones USD de acuerdos energeticos de Irak. Ademas es el nombre con mas opcionalidad si las conversaciones de transicion politica en Venezuela (que empiezan esta semana en Caracas) avanzan, dada su presencia historica alli - aunque eso a mediano plazo es oferta adicional al mercado, bearish para crudo."
+        "razonamiento": "Chevron a 190.40 con ganancias record confirmadas y un bono especial a empleados 'siguiendo el earnings blowout' — eso es confirmacion operativa dura, no guidance. Captura el crack 56.24 y la backwardation upstream. Le doy un punto mas que a XOM porque el bono especial es evidencia de resultados ya realizados y no de expectativa. Mismo riesgo politico: Trump atacando al CEO por nombre y exigiendo reduccion inmediata de precios de combustible."
       },
       {
         "activo": "OXY",
         "direccion": "LONG",
-        "conviccion": 4,
-        "razonamiento": "E&P de alto beta al flat price WTI (79.24) y balance apalancado, sin downstream que lo proteja. La curva backwardated y la respuesta minima de OPEC+ (188 kb/d) le juegan a favor, pero es el perfil que mas sufre si el acuerdo Iran-US desarma la prima geopolitica del flat price. Lean long debil, con tamano chico."
+        "conviccion": 5,
+        "razonamiento": "Pure play de crudo USA, el mas apalancado del panel al flat price de WTI (75.35) y por lo tanto el mas expuesto al headline Iran-USA en ambas direcciones. La backwardation de +4.55 y el inventario de crudo de 404.5 mmbbl favorecen al productor, pero sin exposicion downstream no captura el crack de 56 que es donde esta la verdadera anomalia. Ademas carga apalancamiento de balance en un entorno de tasas reales altas (DGS10 4.70%). Conviccion 5."
+      },
+      {
+        "activo": "VLO",
+        "direccion": "LONG",
+        "conviccion": 6,
+        "razonamiento": "El refinador puro es el beneficiario directo del crack 3-2-1 en 56.24 combinado con utilizacion de 97.2% — margen extremo por volumen maximo es la mejor ecuacion posible para un refinador, y VLO tiene la exposicion a destilado y a exportacion desde USGC que mas se beneficia del crack de ~81 USD/bbl. Bajo de 7 a 6 por dos razones honestas: a 308.73 buena parte de esto puede estar ya en el precio (no tengo el 200DMA de VLO para medirlo), y el riesgo politico es maximo justo aca — cuando la Casa Blanca exige bajar precios de combustible, el margen de refino es el primer objetivo, sea via jawboning, windfall tax o restricciones a la exportacion de productos."
       },
       {
         "activo": "EOG",
         "direccion": "LONG",
         "conviccion": 4,
-        "razonamiento": "E&P de shale con calidad de balance superior a OXY, pero con exposicion mixta crudo/gas: el lado gas es un lastre con Henry Hub en 2.772 y storage en 3,084 Bcf. Long debil - la parte de la tesis que funciona (crudo tight) esta parcialmente cancelada por la parte que no (gas oversupplied)."
+        "razonamiento": "Productor USA que se beneficia del crudo tight y backwardated, pero con exposicion relevante a gas natural, que es el punto debil del complejo: Henry Hub en 2.68 con storage en 3.084 Bcf. Ese drag me impide subirlo al nivel de una integrada con downstream. Sin data de guidance, hedges ni mix exacto de produccion, mantengo un lean direccional debil de 4."
       },
       {
         "activo": "VIST",
         "direccion": "LONG",
         "conviccion": 4,
-        "razonamiento": "Productor de Vaca Muerta con realizaciones ligadas a Brent/WTI, se beneficia de flat price alto y curva backwardated. Pero no tengo NINGUN dato especifico de la compania en este set - ni produccion, ni guidance, ni diferenciales Medanito, ni situacion de capacidad de evacuacion/export argentina, ni riesgo FX/regulatorio local. Long por correlacion al complejo unicamente, conviccion baja por gap de informacion, no por vista negativa."
+        "razonamiento": "Exposicion a crudo de Vaca Muerta, direccionalmente correlacionada al Brent (78.83) y beneficiada por el regimen TIGHT_BACKWARDATED. Pero es la posicion sobre la que menos informacion tengo: no tengo produccion, costos, guidance, ni datos de capacidad de evacuacion/exportacion argentina, y suma riesgo pais/FX que es completamente ortogonal a mi analisis fisico del sector. Lean debil de 4 puramente por correlacion con crudo."
       }
     ],
     "eventos_clave": [
-      "Trump anuncia cancelacion de strikes sobre Iran alegando que 'los perimetros de un acuerdo' fueron acordados (BBC/NPR/Al Jazeera, 2-ago) - principal catalizador de desarme de prima geopolitica en el flat price",
-      "Iran amenaza con atacar campos energeticos de otros paises si EE.UU. reanuda ataques (Reuters, 2-ago) - riesgo de cola sobre oferta del Golfo Persico intacto pese al anuncio de tregua",
-      "OPEC+ acuerda subir produccion 188,000 b/d desde septiembre (reunion 2-ago de Arabia Saudita, Rusia, Irak, Kuwait, Kazajistan, Argelia y Oman; JMMC 67ma reunion) - incremento marginal frente a la disrupcion; multiples fuentes senalan que varios miembros no pueden cumplir por declino de capacidad",
-      "Irak firma 100 mil millones USD en acuerdos energeticos con Chevron y ExxonMobil, con tension geopolitica sobre el balance Bagdad-Teheran-Beijing (Forbes, 2-ago)",
-      "Olas de calor persistentes en Europa debilitan generacion electrica historicamente confiable y fuerzan mas importacion de combustibles fosiles (Financial Post, 1-ago) - soporte de demanda de destilados/LNG europeos",
-      "Inician conversaciones presenciales de transicion politica en Venezuela en Caracas (1-2 ago) - opcionalidad de oferta adicional a mediano plazo, bearish estructural"
+      "Trump suspende el ataque planeado contra Iran y anuncia reinicio de conversaciones ('deal imminent', talks Iran-Oman sobre Hormuz en curso): el crudo se desploma sobre este titular a WTI 75.35 / Brent 78.83 mientras la curva sigue backwardated en +4.55 — la desconexion mas importante de la semana entre flat price y fisico",
+      "Houthis declaran bloqueo del Mar Rojo y se abre un nuevo frente que ataca las rutas alternativas: pone en riesgo el workaround saudi de redirigir exportaciones fuera de Hormuz. Analistas (BBC) describen la amenaza a los tanqueros como la peor desde el inicio de la guerra con Iran",
+      "Crack 3-2-1 en 56.24 USD/bbl (MUY_FUERTE) con utilizacion de refinerias en 97.2% y destilados en 110.632 kb: el sistema de refinacion corre a capacidad maxima y aun asi no puede satisfacer la demanda de producto — la escasez global es de productos refinados, no de crudo",
+      "Trump acusa publicamente a ExxonMobil y Chevron de ganar 'demasiada plata' y exige reducciones inmediatas del precio del combustible, un dia despues de que Chevron reportara ganancias record y pagara un bono especial: riesgo politico directo sobre el margen de refino (windfall tax, export curbs, jawboning)",
+      "Belgica quedo enteramente dependiente de LNG ruso en julio por el colapso de suministro a Europa causado por la guerra: evidencia de estres severo en el mercado global de LNG que contrasta violentamente con Henry Hub en 2.68 y storage en 3.084 Bcf — el gas USA esta desconectado de la escasez global. Suma: tormenta en el Golfo dejo 2 mmbbl offline y ataques con drones ucranianos sobre Moscu"
     ],
-    "contradicciones": "Primera y mas importante: heating oil en 3.9815 USD/gal cotizando casi 1 USD por galon POR ENCIMA de RBOB en 3.0078 en plena temporada de gasolina. Eso invierte la estacionalidad normal y dice que el deficit no es de demanda estadounidense de transporte sino de destilado medio - compatible con disrupcion de refino/flujos en Medio Oriente, demanda logistica militar y sustitucion de generacion en Europa. Segunda: crack 3-2-1 en 60.70 USD/bbl CON utilizacion de refinerias en 97.2%. El manual dice que cracks altos con utilizacion baja implica disrupcion operacional; aca es lo contrario - el sistema corre a maximo y el margen sigue extremo, lo que significa que la restriccion es de capacidad instalada global, no de outages locales. Es la senal mas bullish de refino del set. Tercera: precios de crudo firmes (WTI 79.24) con backwardation severa, mientras OPEC+ agrega volumen (188 kb/d) - el mercado esta diciendo que ese volumen es irrelevante o inexistente en la practica, coherente con las notas que reportan declino de capacidad efectiva entre miembros. Cuarta: natural gas en 2.772 completamente desacoplado del tightness del complejo liquido, con storage en 3,084 Bcf, pese a olas de calor extremas en Europa que deberian traccionar LNG - el liquido y el gas estan en regimenes fisicos opuestos y hay que tradearlos por separado. Quinta y la mas peligrosa para el posicionamiento: el flat price cotiza como si la guerra continuara mientras el titular politico dominante es una tregua con acuerdo 'pendiente'. Esa desconexion es exactamente donde vive el riesgo de gap adverso, y es la razon por la que preferimos margen de refino sobre crudo direccional.",
+    "contradicciones": "Cuatro dislocaciones concretas. PRIMERA Y PRINCIPAL: el flat price cayo por el titular de paz (Trump suspende ataque, talks el lunes) pero la curva no lo valido — backwardation 6m en +4.55 USD sobre 75.35 es ~6% y los cracks estan en maximos. El precio puede mentir en el corto plazo con un titular diplomatico; la curva y los cracks son flujo fisico y siguen gritando escasez. Si el mercado realmente creyera en la resolucion, la curva se aplanaria. SEGUNDA: refinerias al 97.2% — utilizacion practicamente maxima, o sea CERO disrupcion operativa en USA — coexistiendo con un crack 3-2-1 de 56.24 y un crack de destilado de ~81 USD/bbl. Esto descarta la explicacion facil de 'outage de refineria' y deja solo una lectura: la demanda de producto (domestica + pull de exportacion por el vacio que dejan Rusia y Medio Oriente) excede la capacidad fisica global de producirlo. Es tightness estructural de producto, no un accidente. TERCERA: Brent-WTI en apenas 3.48 USD. Con Hormuz interrumpido, bloqueo Houthi del Mar Rojo, y fletes en niveles que le dan ganancias record al mayor shipbroker del mundo, uno esperaria que el benchmark waterborne pagara una prima mucho mayor sobre el crudo landlocked de Cushing. O el mercado no cree en la disrupcion, o el arbitraje de exportacion USGC esta arrastrando a WTI hacia arriba. Vale la pena investigarlo. CUARTA: Henry Hub en 2.68 con 3.084 Bcf en storage mientras Europa esta tan desesperada que Belgica importo LNG 100% ruso en julio. El gas americano es el unico activo del complejo que ignora completamente la guerra — el cuello de botella de licuefaccion lo tiene aislado. QUINTA, mas sutil: el desk tecnico marca USO +14.96% sobre su 200DMA (la mayor sobreextension del panel) al mismo tiempo que el crudo 'se desploma' segun las noticias. Ambas cosas son ciertas: la tendencia estructural sigue intacta y ademas USO captura roll yield positivo en backwardation; lo que cayo fue el ruido de titular sobre una tendencia alcista.",
     "invalidadores": [
-      "Acuerdo formal Iran-EE.UU. firmado o alto el fuego verificable: desarma prima de guerra en el flat price. Vigilar aplanamiento del calendar 6m de WTI desde +6.42 hacia menos de +3.00 - si la backwardation se comprime, el tightness era prima geopolitica y no balance fisico, y se cae la pata larga de crudo (WTI, BRENT, OXY, EOG, VIST)",
-      "Compresion del crack 3-2-1 por debajo de 30 USD/bbl y/o caida de refinery utilization por debajo de 93%: invalida la tesis de refino (VLO, CRAK). Utilizacion cayendo CON crack cayendo = destruccion de demanda de productos; utilizacion cayendo con crack subiendo = outages, que seria bullish margen pero bearish volumen",
-      "Builds sostenidos de inventario: crudo por encima de 425 MMbbl, gasolina por encima de 225 MMbbl o destilados por encima de 125 MMbbl en reportes EIA consecutivos. Reconstruccion de stocks con refinerias a 97% significaria que la demanda real es mas debil que lo que dicen los cracks y que el tightness era logistico/transitorio",
-      "Ruptura del regimen macro GOLDILOCKS: HY spread saliendo de 2.84% hacia mas de 4.00%, VIX sostenido por encima de 22, o Sahm rule aproximandose a 0.50 desde 0.07. La tesis de demanda energetica sostenida depende de que no haya senal recesiva; si el credito se abre, XLE, VLO y los E&P se venden antes que el barril fisico",
-      "Aceleracion de OPEC+ mucho mas alla de los 188 kb/d en la reunion siguiente (por ejemplo unwind acelerado de recortes voluntarios), o retorno material de barriles venezolanos si la transicion en Caracas avanza rapido: cambia el balance de oferta 2027 y mata la backwardation en el diferido",
-      "Natural gas: si el storage empieza a mostrar inyecciones muy por debajo de lo normal o draws por calor extremo mas feedgas LNG record, el short en NG (2.772) se invalida rapido - es la posicion con el stop mas corto del memo"
+      "ACUERDO IRAN-USA FIRMADO CON NORMALIZACION DE HORMUZ Y MAR ROJO: si se materializa el 'deal imminent' y se levanta el bloqueo Houthi, la prima de riesgo se evapora. La confirmacion no es el titular sino la estructura — si el calendar 6m de WTI se comprime por debajo de +2.00 USD o entra en contango, la tesis TIGHT_BACKWARDATED muere y hay que cerrar todos los longs de crudo inmediatamente, independientemente del flat price.",
+      "COLAPSO DEL CRACK: si el 3-2-1 comprime por debajo de 35 USD/bbl, o si el crack de destilado cae por debajo de 50 USD/bbl, se invalidan mis dos mejores senales (HEATING_OIL 7, VLO/CRAK 6). Vigilar tambien inventario de gasolina por encima de 225.000 kb o destilados reconstruyendo por encima de 120.000 kb en los proximos reportes EIA: seria la senal de que la oferta de producto alcanzo a la demanda.",
+      "MATERIALIZACION DEL RIESGO POLITICO SOBRE EL MARGEN DE REFINO: si el jawboning de Trump escala a accion concreta — windfall profit tax, restricciones a la exportacion de productos refinados desde USGC, o intervencion de precios — hay que salir de VLO, CRAK y reducir XOM/CVX aunque el crack fisico siga alto. El fundamento seguiria intacto pero la capacidad de capturarlo no.",
+      "QUIEBRE DEL REGIMEN MACRO GOLDILOCKS: mi tesis de demanda descansa en unemployment 4.2%, Sahm 0.07 y claims 197k. Si el Sahm rule sube hacia 0.30-0.50 o los jobless claims rompen por encima de 250k, la demanda de destilado (proxy de actividad industrial y transporte de carga) se cae y el crack de 81 USD/bbl se desarma solo, sin necesidad de que aparezca oferta nueva.",
+      "INVERSION DEL SHORT DE NATGAS: si el storage Lower 48 empieza a inyectar por debajo del ritmo estacional, o si el feedgas de exportacion LNG hace records por el vacio europeo (Belgica 100% LNG ruso), Henry Hub se dispara. Cierro el short si NG rompe por encima de 3.20 o si aparece evidencia de arbitraje de exportacion acelerando. Es la senal de menor conviccion del memo (4) precisamente por esto.",
+      "EIA REVIERTE EL CUADRO FISICO: builds de crudo superiores a 5 mmbbl en dos semanas consecutivas y/o utilizacion de refinerias cayendo por debajo de 93% serian evidencia de que el balance se aflojo. Recordar que mi data EIA es del 24-jul: son 11 dias de antiguedad y el proximo reporte puede cambiar la lectura."
     ],
-    "data_gaps": "Gaps que limitan materialmente este analisis: (1) NO tengo 5-year averages ni cambios semanales WoW de ningun inventario EIA - solo niveles absolutos al 24-jul, por lo que no puedo afirmar draw vs build ni posicion relativa al rango estacional; esto es la limitacion mas grave del memo. (2) NO tengo time spreads de Brent (solo calendar 6m de WTI), ni la estructura completa de la curva WTI (prompt 1-2m vs 12m), asi que no puedo distinguir tightness prompt puntual de backwardation estructural. (3) NO tengo Saudi Aramco Contract Price, ni FEI Asia, ni spread FEI-Mont Belvieu, ni freight VLGC - por eso el regimen LPG es esencialmente una inferencia desde un solo dato de inventario domestico. (4) NO tengo JKM ni TTF, ni feedgas de LNG US, ni inyeccion semanal de gas - el short en natgas se apoya solo en nivel de storage y precio spot. (5) NO tengo crack spreads regionales (Gulf Coast vs NW Europe vs Singapore) ni datos de outages de refinerias, ni cuanta capacidad de refino en Medio Oriente esta efectivamente fuera por el conflicto. (6) NO tengo flujos por el Estrecho de Ormuz, ni tanqueros en agua, ni floating storage. (7) NO tengo demanda implicita de productos US ni datos de demanda china. (8) NO tengo ningun fundamental corporativo: earnings, guidance, capex, hedge books de XOM, CVX, OXY, VLO, EOG ni VIST - todas las senales de equity son derivadas del regimen fisico y del contexto tecnico/macro del fondo, no de analisis bottom-up. (9) No tengo diferenciales de crudo argentino (Medanito) ni capacidad de evacuacion de Vaca Muerta para calificar VIST correctamente."
+    "data_gaps": "Lo que me falta y limita este memo, en orden de importancia. (1) PROMEDIOS DE 5 ANIOS Y CAMBIOS SEMANALES DE EIA: tengo niveles absolutos (crudo 404.508, gasolina 211.301, destilados 110.632, propano 102.286, gas 3.084 Bcf) pero NO tengo el WoW ni el desvio vs promedio de 5 anios. Sin eso no puedo decir con rigor si estamos en draw o build ni cuantificar el deficit — mis calificativos de 'bajo' o 'holgado' son juicio de nivel absoluto, no medicion. Es el gap mas importante de todos. (2) ANTIGUEDAD DE LA DATA EIA: 24-jul contra fecha de analisis 04-ago, once dias, y en esos once dias pasaron la tormenta del Golfo (2 mmbbl offline) y la escalada del Mar Rojo. (3) ESTRUCTURA DE LA CURVA BRENT: solo tengo el calendar 6m de WTI. Sin la curva Brent (prompt spread, 6m) no puedo confirmar si la tightness es global o regional USA, que es justamente lo que necesitaria para explicar el Brent-WTI de 3.48. (4) TODO EL COMPLEJO LPG INTERNACIONAL: no tengo Saudi CP, no tengo FEI Asia, no tengo el spread FEI-Mont Belvieu, no tengo tarifas de flete VLGC ni dias de transito. Por eso el regimen LPG esta en BALANCED con confianza 40 — es honestamente un placeholder. (5) FLETES Y SEGUROS: se por las noticias que los fletes estan en niveles excepcionales (ganancias record del shipbroker) pero no tengo numeros de Worldscale, ni primas de guerra de seguro, ni conteos de transitos por Hormuz/Bab el-Mandeb — que serian la medicion directa de la disrupcion. (6) GAS NATURAL: sin feedgas de LNG, sin produccion seca diaria, sin HDD/CDD forecast, mi short es un lean de baja conviccion. (7) OPEC+: no tengo produccion real, cumplimiento de cuotas, ni estimacion de spare capacity — dato critico para saber cuanto colchon existe si Hormuz se cierra de verdad. (8) POSICIONAMIENTO: sin data de CFTC no se si el mercado ya esta largo y crowded, lo que cambiaria completamente la asimetria del riesgo de titular sobre el acuerdo con Iran. (9) VALUACION Y TECNICA POR ACCION: no tengo 200DMA, multiplos ni guidance de XOM, CVX, OXY, VLO, EOG ni VIST — mis convicciones sobre equities son extrapolacion del fisico al equity, no analisis bottom-up."
   },
   "indicadores_clave": {
     "yield_curve": {
-      "valor": 0.99,
-      "fecha": "2026-08-03"
+      "valor": 0.95,
+      "fecha": "2026-08-04"
     },
     "vix": {
-      "valor": 15.979999542236328,
-      "fecha": "2026-08-03"
+      "valor": 16.5,
+      "fecha": "2026-08-04"
     },
     "hy_spread": {
-      "valor": 2.84,
-      "fecha": "2026-07-30"
-    },
-    "dxy": {
-      "valor": 99.76799774169922,
+      "valor": 2.78,
       "fecha": "2026-08-03"
     },
+    "dxy": {
+      "valor": 99.86000061035156,
+      "fecha": "2026-08-04"
+    },
     "yield_10y": {
-      "valor": 4.68,
-      "fecha": "2026-07-30"
+      "valor": 4.7,
+      "fecha": "2026-08-03"
     },
     "sahm_rule": {
       "valor": 0.07,
@@ -452,26 +403,26 @@
       "fecha": "2026-06-01"
     },
     "breakeven_5y5y": {
-      "valor": 2.3,
-      "fecha": "2026-07-31"
+      "valor": 2.31,
+      "fecha": "2026-08-03"
     }
   },
   "eventos_clave": [
-    "[Yahoo Finance] 'Gen-Alpha's Warren Buffett, Leopold Aschenbrenner, just learned Wall Street's oldest lesson: Chart of the Day' — el artículo describe que 'the chip wipeout reached a climax this week'. Es el único headline con lectura de mercado real hoy: señala desapalancamiento concentrado en semis/AI. Impacto concreto: justifica pasar QQQ (687.99) a NEUTRAL en horizonte semanal a pesar de que vix 15.98 y hy_spread 2.84% no muestran stress sistémico. Divergencia explícita: micro-stress en tech sin confirmación en agregados de crédito.",
-    "[Associated Press] 'Ceuta grapples with aftermath of border surge after most migrants leave the Spanish territory' — 60.000 migrantes entraron al enclave español y la mayoría retornó a Marruecos. Impacto macro: riesgo político europeo (presión sobre coaliciones en España/UE, agenda migratoria), potencial ampliación de spreads periféricos y viento en contra para eurusd en 1.1530. Hoy no está en precio: eurusd sigue firme y dxy en 99.77, por lo que lo tratamos como riesgo latente, no como catalizador activo.",
-    "[TheStreet] 'Fidelity breaks down IRA rules that catch heirs off guard' — sin impacto macro directo. Relevancia como indicador de sentimiento: cobertura financiera enfocada en planificación patrimonial y no en riesgo, típico de entornos de complacencia consistentes con vix 15.98.",
-    "[USA Today] 'Raising Cane's to open 7 new restaurants' — expansión de capacidad en consumo discrecional/restaurantes. Señal micro coherente con un consumidor que no está en recesión, alineada con unemployment 4.2% y sahm_rule 0.07, aunque ambos datos tengan 63 días.",
-    "[XDA] 'Linux's market share in North America has breached 10% for the first time' — irrelevante para el book macro. Se cita para documentar que la agenda informativa del día carece de eventos tier-1 (sin Fed, sin CPI, sin payrolls en el flujo), lo que eleva el riesgo de que el próximo movimiento venga de un dato no anticipado."
+    "[MarketWatch] 'Dow surges 600 points toward a record high... oil prices, Treasury yields fall on signs of U.S.-Iran war de-escalation; Palantir earnings on tap' — Explica de forma directa por qué yield_10y_mkt cotiza en 4.627% contra el 4.70% de yield_10y de ayer y por qué vix está en 16.5: salida de prima geopolítica. Es un impulso desinflacionario vía energía que refuerza el ancla de breakeven_5y5y en 2.31% y valida el sesgo largo en SPY (771.33) en el margen. Riesgo: es un catalizador reversible, no estructural.",
+    "[Axios] 'The message beneath the yen intervention — U.S. participation may have been an effort to enable the Japanese to smooth gyrations in their currency without creating more market pressure for Treasury bonds' — El evento macro más importante del día. Con usdjpy en 157.715, confirma que el carry trade yen está bajo gestión oficial y que la preocupación real es la demanda japonesa de Treasuries (relevante con yield_10y en 4.70% y tips_yield_10y en 2.43%). Sostiene el corto de DXY (99.86) y es argumento estructural para GLD (374.16). Es también el principal invalidador de las posiciones largas de riesgo si la intervención falla.",
+    "[Fox Business] 'GOP AGs warn OpenAI's Altman to preserve records in AI agent hacking probe' (15 fiscales generales tras un incidente de un agente de IA) — Riesgo regulatorio idiosincrático sobre el liderazgo de mega-cap tech. No cambia el régimen macro (hy_spread 2.78%, vix 16.5 sin reacción) pero justifica mantener la convicción de QQQ en 6 y no en 8.",
+    "[Politico] 'White House finalizes artificial intelligence oversight framework' — La administración briefeará a las principales empresas de IA sobre su marco de revisión de modelos avanzados. Combinado con la nota anterior, define un régimen regulatorio emergente para el sector que concentra el peso de los índices: fuente de dispersión y de volatilidad de sector, no de riesgo sistémico por ahora.",
+    "[CBS News] 'JPMorgan Chase to invest $750 billion in increasing the U.S. housing supply and homeownership' (financiamiento para 1 millón de unidades asequibles y asistencia a 500.000 compradores) — Impulso de crédito privado al sector más sensible a tasas, en un contexto donde tips_yield_10y 2.43% mantiene el costo real del financiamiento hipotecario alto. Marginalmente pro-crecimiento y consistente con hy_spread comprimido en 2.78%; también marginalmente inflacionario vía shelter si la demanda se activa antes que la oferta — un punto a vigilar dado michigan_inflation_exp 4.6%."
   ],
   "invalidadores": [
-    "usdjpy quiebra a la baja de forma abrupta desde 156.61 (por ej. hacia 150 o menos): sería unwind del carry trade global y anularía inmediatamente el long SPY y el short DXY, incluso con hy_spread aún en 2.84%.",
-    "hy_spread se amplía desde 2.84% hacia 3.50%+ (FRED:BAMLH0A0HYM2): rompería el pilar de liquidez del régimen Goldilocks y forzaría pasar SPY a neutral/short y TLT a long.",
-    "yield_10y supera 5.00% desde 4.68% con tips_yield_10y por encima de 2.60%: shock de tasas reales que comprime múltiplos y tumba tlt (82.25) y qqq (687.99); en ese caso GLD también sufre en el corto plazo.",
-    "breakeven_5y5y se despega de 2.30% hacia 2.60%+ convergiendo con michigan_inflation_exp 4.6%: reclasificación del régimen a REFLACION/STAGFLATION, invalida el neutral en TLT hacia SHORT y refuerza GLD.",
-    "sahm_rule sube desde 0.07 hacia 0.35+ o jobless_claims (hoy 197k, dato rancio de 9 días) salta por encima de 260k en la próxima publicación: transición a DESACELERACION, invierte todo el book de equity.",
-    "vix rompe por encima de 22-25 desde 15.98 en conjunto con caída de qqq: confirmaría que el 'chip wipeout' reportado por [Yahoo Finance] es desapalancamiento sistémico y no rotación sectorial."
+    "hy_spread (FRED:BAMLH0A0HYM2) rompiendo por encima de 3.50-4.00% desde 2.78%: sería la señal de que las tasas reales de 2.43% (tips_yield_10y) empezaron a morder el crédito corporativo. Anularía todas las señales largas de equity.",
+    "Desarme desordenado del carry trade: usdjpy quebrando fuerte a la baja desde 157.715 tras la intervención coordinada reportada por [Axios]. Un movimiento violento de yen fuerte con VIX saltando desde 16.5 invalida SPY/QQQ largos y probablemente también GLD en la fase de liquidación de margen.",
+    "Sorpresa inflacionaria en el próximo CPI/PCE (últimos datos: CPI 332.568 y PCE core 130.266, ambos al 2026-06-01, 64 días de antigüedad) que empuje breakeven_5y5y por encima de 2.60% desde 2.31% y valide michigan_inflation_exp 4.6%. Cambia el régimen a REFLACION/STAGFLATION: mata TLT, mata QQQ, refuerza GLD.",
+    "Deterioro laboral: sahm_rule (0.07) subiendo por encima de 0.30 o jobless_claims saltando materialmente desde 197.000 (dato ya rancio, 10 días). Con unemployment en 4.2%, dos décimas de suba cambian el cuadrante a DESACELERACION y dan vuelta la señal de TLT a LONG.",
+    "Reversión de la de-escalación EE.UU.-Irán reportada por [MarketWatch]: reactivación del conflicto devuelve la prima geopolítica al crudo, revierte la caída de yields (yield_10y_mkt 4.627%) y reintroduce presión inflacionaria por el canal de energía.",
+    "Endurecimiento regulatorio sobre IA que exceda lo esperado ([Politico] marco de la Casa Blanca; [Fox Business] investigación de 15 AGs a OpenAI): riesgo concentrado en el liderazgo de QQQ, invalidaría esa señal específica sin cambiar el régimen macro."
   ],
-  "confianza_consolidada": 60,
+  "confianza_consolidada": 62,
   "track_record": [
     {
       "id": 28,
@@ -1420,148 +1371,166 @@
   },
   "banking": {
     "annual": {
-      "fecha": "2026-06-02",
+      "fecha": "2026-08-04",
       "regimen_credito": {
         "clasificacion": "EXPANSION",
-        "confianza": 62,
-        "razonamiento": "Los bancos universales muestran cost_of_risk contenido: BAC en 0.55%, JPM en 0.81%, C en 1.44% (el unico que provisiona con cierta agresividad, coherente con su mix de tarjetas y exposicion EM). Estos niveles son consistentes con un ciclo de credito sano y todavia expansivo, alineado con el regimen GOLDILOCKS del fondo (HY spreads en 2.71%, curva normalizada +0.89%, VIX 15.7). Pero el dato que define la fase es el apetito de prestamo: loan_to_deposit ESTRUCTURALMENTE BAJO en todos los universales (BAC 0.55, C 0.53, JPM 0.55). Esto NO es euforia crediticia -- es lo contrario: los bancos estan sentados sobre liquidez y prestan con cautela relativa a su base de depositos. Marks diria: cuando todos prestan sin miedo es tarde en el ciclo; aca el loan_to_deposit bajo sugiere que NO estamos en esa fase terminal. Es expansion con disciplina, no euforia. La ausencia de un repunte de provisiones descarta CONTRACCION."
+        "confianza": 58,
+        "razonamiento": "Los balances bancarios FY2024 no muestran el comportamiento de fin de ciclo. El apetito de prestamo es estructuralmente bajo: loan_to_deposit de 0.550 en JPM (calculated_from_loans_and_deposits, 1.3236T loans / 2.406T deposits), 0.551 en BAC (1.0826T / 1.9655T) y 0.526 en C (675.9B / 1.2845T). Tres de los cuatro universales prestan poco mas de la mitad de sus depositos: eso NO es un balance estirado por euforia crediticia, es exceso de liquidez y cautela. Marks: cuando el banco no quiere prestar, suele ser temprano, no tarde. Del lado de provisiones, el flujo esta lejos de un shock: cost_of_risk 0.81% en JPM (10.678B provisiones / 1.3236T prestamos), 1.44% en C (9.726B / 675.9B, el mas alto y consistente con su mix de tarjetas) y 0.55% en BAC (5.935B / 1.0826T, el mas bajo del grupo prestamista). Es decir: provisiones normalizadas-a-elevadas en los card-heavy, bajas en el resto, sin senal de deterioro sistemico. Eso encaja con el regimen macro GOLDILOCKS del fondo (yield_curve +0.99% desinvertida, hy_spread 2.84%, vix 15.98, sahm_rule 0.07). Por que EXPANSION y no EUFORIA: la euforia crediticia se veria en loan_to_deposit subiendo hacia 0.80-0.90 con cost_of_risk cayendo a la vez; aca el loan_to_deposit esta deprimido. La confianza es solo 58 por dos razones duras: (1) los fundamentals son FY2024 y la fecha de analisis es 2026-08-04, hay ~18 meses de rezago y NO tengo la serie temporal para medir la DERIVADA de provisiones, que es el verdadero leading indicator; (2) no tengo allowance for credit losses / loans (cobertura de reservas), NPLs ni net charge-offs, solo el flujo de provision, asi que no puedo juzgar suficiencia de reserva. Tampoco tengo NIM, ROTCE ni CET1/Tier1 (LIMITATIONS #14/#16/#17)."
       },
-      "tesis_principal": "Los bancos universales senalan una economia que sigue en expansion crediticia ordenada, no eufórica. Provisiones contenidas (cost_of_risk 0.55%-1.44%) confirman que NO huelen recesion -- coherente con el GOLDILOCKS del fondo. La señal mas interesante es defensiva: el loan_to_deposit bajo y uniforme (~0.55) indica que los grandes bancos prefieren liquidez sobre crecimiento agresivo de balance, lo cual es saludable pero tambien sugiere demanda de credito tibia o suscripcion conservadora. Esto encaja con un ciclo maduro-pero-no-tardio. C es el outlier de riesgo (cost_of_risk casi 3x el de BAC), señalando que su libro es mas sensible al deterioro. Los investment banks (GS, MS) confirman el risk-on: noninterest_income domina sus ingresos (GS 45.5bn vs NII 8bn; MS 53bn vs 8.6bn), lo que en un VIX bajo y momentum de equities fuerte (SPY/QQQ momentum_ajust >2.5) es viento de cola para trading y banca de inversion. CRITICO: me faltan NIM, ROTCE y CET1 (no disponibles via XBRL, LIMITATIONS #14/#16/#17), por lo que NO puedo evaluar calidad de capital ni rentabilidad ajustada -- esta lectura es de CICLO, no de solvencia.",
+      "tesis_principal": "Los bancos estan diciendo algo distinto a lo que dice el mercado de credito, y ahi esta la senal. El hy_spread en 2.84% grita complacencia total, pero los balances bancarios estan en modo defensivo: loan_to_deposit de 0.52-0.55 en JPM/BAC/C, es decir casi la mitad de los depositos NO esta prestado. La conclusion no es que el ciclo sea temprano en la economia real, sino que el riesgo de credito migro FUERA del sensor bancario: si el apalancamiento crece en private credit y no en el balance regulado, entonces los bancos ya no son el termometro completo del ciclo y su aparente solidez es en parte un artefacto de perimetro. Traduccion operativa: (a) el sector no muestra estres crediticio, asi que no hay razon para posicionarse SHORT en bancos hoy; (b) tampoco hay expansion de credito acelerada que justifique LONG agresivo al ciclo bancario comercial; (c) la asimetria mas limpia esta en el sub-tipo INVESTMENT BANK, no en el comercial: con vix 15.98, spreads en 2.84% y SPY/QQQ en LONG sobre 200DMA, el ciclo de capital markets (M&A, ECM/DCM, trading) es donde el regimen GOLDILOCKS paga primero, y ahi GS muestra noninterest_income de 45.456B contra noninterest_expense de 33.767B con efficiency_ratio 0.631. (d) Dentro de los universales, la dispersion es el trade: JPM tiene efficiency_ratio 0.517 contra 0.655-0.665 del resto (BAC 0.656, WFC 0.663, C 0.665). Un gap de ~14 puntos de eficiencia no es ruido, es una franquicia distinta. Y el punto Mayo: el cost_of_risk de 0.55% de BAC y de 0.065% de MS no los leo como fortaleza sino como colchon de provision fino; si el regimen se gira, el catch-up de provisiones pega mas fuerte donde menos se provisiono.",
       "senales": [
         {
           "activo": "JPM",
           "direccion": "LONG",
           "conviccion": 7,
-          "razonamiento": "El mejor posicionado de los universales: efficiency_ratio de 0.52 (muy superior al ~0.66 del peer group), NII de 92.6bn dominante, y cost_of_risk de 0.81% que provisiona razonablemente sin asfixiar resultados. En expansion crediticia con risk-on de equities, JPM captura tanto banca comercial como sus fees. Eficiencia lograda con escala, no con recorte de costos defensivo -- eso es calidad real, no fragilidad Mayo. Conviccion moderada por falta de CET1/ROTCE para confirmar."
-        },
-        {
-          "activo": "BAC",
-          "direccion": "LONG",
-          "conviccion": 5,
-          "razonamiento": "Cost_of_risk de 0.55%, el mas bajo de los universales. Aqui activo el escepticismo Mayo: en ciclo maduro un cost_of_risk tan bajo puede ser provision insuficiente (riesgo diferido) tanto como fortaleza genuina. Efficiency_ratio de 0.66 es mediocre vs JPM. Loan_to_deposit de 0.55 con base de depositos enorme (1.97tn) = mucha liquidez ociosa, sensibilidad a tasas en su cartera de bonos. LONG debil, sesgado por el regimen benigno, no por excelencia operativa."
-        },
-        {
-          "activo": "WFC",
-          "direccion": "NEUTRAL",
-          "conviccion": 4,
-          "razonamiento": "Datos incompletos: no tengo cost_of_risk ni loan_to_deposit (loans_held_for_investment = not_found). Solo veo efficiency_ratio de 0.66 (en linea con peers) y provision de 4.3bn. Sin la metrica clave de apetito de prestamo y sin poder ubicar su cost_of_risk en el ciclo, no puedo dar direccion con conviccion. NEUTRAL por insuficiencia de datos, no por tesis negativa."
-        },
-        {
-          "activo": "C",
-          "direccion": "NEUTRAL",
-          "conviccion": 4,
-          "razonamiento": "El outlier de riesgo: cost_of_risk de 1.44%, casi 3x BAC y ~2x JPM. Provisiones de 9.7bn sobre un libro de prestamos menor (676bn) revela un mix mas riesgoso (tarjetas/EM). En GOLDILOCKS esto puede ser solo el perfil de su libro, pero es el banco que primero mostraria stress si el ciclo gira. Efficiency_ratio de 0.665 sin brillo. Es el canario en la mina del grupo: NEUTRAL ahora, pero el primer SHORT candidato si cost_of_risk acelera."
+          "razonamiento": "Universal bank, se lee por eficiencia, cost_of_risk y apetito de prestamo. efficiency_ratio 0.517 (91.797B noninterest_expense / 177.556B revenue = 92.583B NII + 84.973B noninterest_income), unico del grupo por debajo de 0.60 y ~14 puntos mejor que sus pares. cost_of_risk 0.807% es el segundo mas alto entre prestamistas: esta provisionando de verdad, no maquillando, lo cual reduce el riesgo de catch-up de provisiones si el ciclo gira. Depositos de 2.406T con loan_to_deposit 0.550 = poder de fuego sin usar para prestar en la fase de expansion. Coherente con GOLDILOCKS 68% y con el sesgo risk-on tecnico (SPY LONG conv 8). No llego a 8-9 porque no tengo NIM, ROTCE ni CET1 (LIMITATIONS #14/#16/#17) y no puedo verificar si el ROTCE que justifica su multiplo es sostenible ni cuanto capital exceso tiene; ademas los datos son FY2024, con ~18 meses de rezago frente a la fecha de analisis."
         },
         {
           "activo": "GS",
           "direccion": "LONG",
           "conviccion": 6,
-          "razonamiento": "Investment bank -- no se lee por cost_of_risk (loan_to_deposit y loans = not_found, correcto, casi no presta). Se lee por trading/fees: noninterest_income de 45.5bn vs NII de 8bn confirma el motor correcto. Efficiency_ratio de 0.63, el mejor de los IBs. Con VIX contenido (15.7), equities en momentum extremo (QQQ momentum_ajust 2.69) y liquidez abundante (HY spreads 2.71%), el entorno favorece banca de inversion y trading. LONG coherente con la tesis tecnica risk-on del fondo."
+          "razonamiento": "Investment bank: se lee por trading/eficiencia, no por cost_of_risk (que ademas viene missing_inputs porque loans_held_for_investment es not_found; su provision_for_credit_losses de 1.348B no es divisible por un stock de prestamos que no tengo). efficiency_ratio 0.631 es el mejor entre los dos IBs y mejor que los tres universales no-JPM. noninterest_income 45.456B contra NII de solo 8.056B confirma que el motor es capital markets: exactamente el motor que se enciende con vix 15.98, hy_spread 2.84% y equities sobre 200DMA. Es una posicion pro-regimen mas que pro-credito. Conviccion limitada a 6 porque este perfil es beta apalancada al regimen: si el VIX se dispara, la misma linea de ingresos que hoy es virtud se convierte en volatilidad de resultados, y no tengo capital ratios ni composicion de VaR para dimensionar el downside."
+        },
+        {
+          "activo": "C",
+          "direccion": "NEUTRAL",
+          "conviccion": 5,
+          "razonamiento": "Universal bank. Es el que mas provisiona: cost_of_risk 1.439% (9.726B / 675.914B), 2.6x el de BAC. Parte es mix estructural (tarjetas y exposicion internacional), y honestidad contable es un positivo relativo en fase de expansion. Pero el resto no cierra: efficiency_ratio 0.665, el peor de los universales, y revenue total de 81.139B (54.095B NII + 27.044B noninterest_income) sobre 1.2845T de depositos, la peor productividad de balance del grupo. loan_to_deposit 0.526, el mas bajo de los universales: el banco tiene depositos que no monetiza. Es una tesis de reestructuracion/self-help que NO puedo validar con esta data: sin ROTCE, sin NIM y sin CET1 (LIMITATIONS #14/#16/#17) no distingo mejora operativa real de recorte de costos fragil. Se queda NEUTRAL hasta ver la derivada de eficiencia."
+        },
+        {
+          "activo": "BAC",
+          "direccion": "NEUTRAL",
+          "conviccion": 5,
+          "razonamiento": "Universal bank y el caso mas Mayo del grupo. cost_of_risk de 0.548% (5.935B / 1.0826T) es el mas bajo de todos los prestamistas comerciales: en un ciclo que ya lleva anos de expansion, eso no lo leo como calidad de activos superior sino como colchon de provision delgado. No puedo refutarlo ni confirmarlo porque no tengo allowance/loans, NPLs ni net charge-offs. Segundo problema: NII de 56.060B sobre 1.9655T de depositos y solo 1.0826T prestados (loan_to_deposit 0.551) sugiere un balance con mucho activo de bajo rendimiento, pero no puedo cuantificarlo porque NIM no esta disponible (LIMITATION #16) - ese es exactamente el dato que falta para decidir. efficiency_ratio 0.656, mediocre frente al 0.517 de JPM. Sin evidencia de deterioro pero sin evidencia de ventaja: NEUTRAL."
         },
         {
           "activo": "MS",
           "direccion": "NEUTRAL",
           "conviccion": 4,
-          "razonamiento": "Investment bank con el mismo viento de cola que GS (noninterest_income 53bn vs NII 8.6bn), pero efficiency_ratio de 0.71 -- el PEOR del grupo entero. Mayo aqui: esa ineficiencia limita la conversion del ciclo favorable en rentabilidad. Cost_of_risk de 0.065% es irrelevante (apenas presta). NEUTRAL: el entorno es bueno pero la maquina es cara de operar; prefiero GS para expresar la misma tesis de IB."
+          "razonamiento": "Investment bank. Dos numeros que me frenan. Primero, efficiency_ratio 0.711 (43.901B noninterest_expense / 61.761B revenue), el PEOR de los siete: la maquina de wealth management/trading convierte poco ingreso en resultado, y sin desglose de comp ratio no puedo saber si es estructural o ciclico. Segundo, cost_of_risk 0.065% (146M provisiones / 225.834B de loans_held_for_investment) es practicamente cero. Parte es explicable por el tipo de credito (prestamos colateralizados contra portafolios), pero 6 basis points de provision sobre 225.8B es un buffer nominal: en un evento de mercado el colateral y la provision se deterioran juntos, no en secuencia. Como IB deberia beneficiarse del mismo regimen que GS, pero con peor eficiencia y peor colchon prefiero expresar ese trade via GS. NEUTRAL."
+        },
+        {
+          "activo": "WFC",
+          "direccion": "NEUTRAL",
+          "conviccion": 3,
+          "razonamiento": "Universal bank con data insuficiente para una tesis de ciclo. loans_held_for_investment viene not_found, por lo tanto cost_of_risk y loan_to_deposit son missing_inputs: no tengo ni apetito de prestamo ni costo del riesgo, que son precisamente las dos variables con las que se lee este sub-tipo. Lo unico legible: efficiency_ratio 0.663 (54.598B / 82.296B), en linea con BAC y C y muy por detras de JPM; NII 47.676B sobre 1.3718T de depositos; provision_for_credit_losses 4.334B en valor absoluto, que sin denominador de prestamos no me dice nada sobre intensidad de riesgo. Tampoco tengo NIM/ROTCE/CET1. NEUTRAL por falta de datos, no por vista negativa: la abstencion es la posicion honesta."
         },
         {
           "activo": "NU",
           "direccion": "NEUTRAL",
           "conviccion": 3,
-          "razonamiento": "Digital EM (Brasil), otro animal. Datos casi vacios: NII, provisiones, cost_of_risk y efficiency_ratio = not_found/missing. Lo unico legible es loan_to_deposit de 0.18 -- extremadamente bajo, tipico de un banco que capta depositos rapido pero todavia presta poco relativo a su base. No puedo evaluar el cost_of_risk de su credito unsecured (su variable mas critica). Cobertura insuficiente para tomar direccion. NEUTRAL por falta de datos."
+          "razonamiento": "Digital EM (Brasil), otro animal y con cobertura minima en esta data. net_interest_income, noninterest_income, noninterest_expense y provision_for_credit_losses vienen todos not_found; cost_of_risk y efficiency_ratio son missing_inputs. Lo unico direct es deposits 28.855B y loans_held_for_investment 5.322B, que dan loan_to_deposit 0.184. Ese 18.4% NO lo interpreto como cautela crediticia: para un banco digital de credito unsecured es mas probable un artefacto de clasificacion (receivables de tarjeta fuera del concepto loans_held_for_investment) que una lectura economica. Sin provisiones ni NIM no puedo evaluar lo unico que importa en este modelo: si el cost_of_risk del credito unsecured brasileno esta cubierto por el spread. Ademas el ciclo de credito relevante para NU es el brasileno, no el norteamericano del regimen macro del fondo. NEUTRAL, sin conviccion analitica."
         }
       ],
       "eventos_clave": [
-        "Direccion del cost_of_risk de C en el proximo trimestre: si acelera por encima de 1.5%, es el primer canario de giro de ciclo.",
-        "Movimiento del loan_to_deposit de los universales: si sube hacia 0.65+, confirma euforia tardia; si cae, señala contraccion temprana de apetito.",
-        "Noninterest_income de GS/MS vs trimestre previo: la sostenibilidad del motor de trading depende de que VIX y momentum de equities se mantengan.",
-        "Cualquier repunte de provision_for_credit_losses agregado: en GOLDILOCKS no deberia subir; si lo hace sin deterioro macro visible, los bancos estan oliendo algo que la macro aun no muestra."
+        "Derivada trimestral del cost_of_risk en JPM, BAC y C: el nivel importa menos que el cambio. Dos trimestres consecutivos de provisiones subiendo sin deterioro visible en macro seria el aviso temprano de que los bancos huelen algo que hy_spread 2.84% todavia no.",
+        "loan_to_deposit del grupo universal: si sube desde 0.52-0.55 hacia 0.60+, es confirmacion de expansion crediticia real y valida la fase EXPANSION. Si sigue plano o cae, la economia se esta financiando fuera del sistema bancario y el sensor pierde valor informativo.",
+        "Net charge-offs y allowance/loans (requieren 10-K, hoy NO los tengo): es el unico test directo de si el 0.548% de BAC y el 0.065% de MS son reservas suficientes o provision diferida.",
+        "Deterioro especifico en tarjetas de credito y consumer unsecured, que es donde C (cost_of_risk 1.439%) y JPM (0.807%) concentran su costo de riesgo. Es el segmento que se rompe primero cuando el ciclo gira.",
+        "Volumen de M&A/ECM/DCM y ingresos de trading para GS y MS: con vix 15.98 el ciclo de capital markets es el driver de ese sub-tipo. Un VIX sostenido sobre 25 corta ese motor.",
+        "Fondeo y competencia por depositos: los 1.9655T de BAC, 2.406T de JPM y 1.3718T de WFC son la ventaja del sistema. Cualquier senal de fuga de depositos hacia money market cambia la ecuacion de NII, aunque sin NIM no podre medir el impacto con esta data.",
+        "Estres en private credit / nonbank lenders: si el riesgo migro fuera del balance regulado, ahi va a aparecer la primera grieta, y llegara a los bancos por exposicion de warehouse lines antes que por su libro directo."
       ],
       "contradicciones": [
-        "BAC tiene el cost_of_risk mas bajo (0.55%) del grupo pese a tener el balance de prestamos mas grande despues de JPM. En ciclo maduro esto huele a provision conservadora vs realidad del libro -- o el libro es genuinamente prime, o el riesgo esta diferido. No puedo distinguir sin NIM/charge-offs detallados.",
-        "C provisiona casi 3x mas que BAC en proporcion a sus prestamos. O C ve algo que BAC no ve en su segmento (tarjetas/EM), o BAC esta sub-provisionando. Dos universales del mismo ciclo no deberian divergir tanto sin explicacion en el mix.",
-        "Loan_to_deposit uniformemente bajo (~0.55) en GOLDILOCKS con liquidez abundante: si el regimen es tan benigno y el credito tan barato (HY 2.71%), por que los bancos no expanden mas su libro? O la demanda de credito es mas tibia de lo que el regimen sugiere, o la suscripcion es mas cautelosa -- ambas son señales sutiles de que la expansion no es eufórica.",
-        "MS con efficiency_ratio de 0.71 en el mejor entorno posible de mercados (VIX bajo, equities en maximos): si no puede ser eficiente AHORA, cuando podra? Eficiencia que no mejora en el pico del ciclo es bandera amarilla."
+        "La contradiccion madre: hy_spread en 2.84% (FRED:BAMLH0A0HYM2) dice que el mercado de credito no percibe ningun riesgo de default, mientras que los bancos que financian ese credito operan con loan_to_deposit de 0.52-0.55. Complacencia extrema en el precio del credito conviviendo con cautela extrema en el otorgamiento. La explicacion mas probable es que el riesgo se origina fuera del balance bancario (nobank/private credit), lo que significa que el sensor bancario esta parcialmente CIEGO: la salud de estos balances no prueba salud del ciclo de credito agregado. No tengo datos de private credit para confirmarlo, lo marco como hipotesis, no como hecho.",
+        "cost_of_risk de 0.548% en BAC contra 1.439% en C: un factor 2.6x en el mismo sub-tipo y mismo ciclo. El mix (tarjetas, internacional) explica parte, pero sin allowance/loans, NPLs ni net charge-offs no puedo descartar la lectura alternativa Mayo: que uno de los dos esta provisionando de menos. Si C esta bien provisionado, BAC esta corto de reserva; si BAC esta bien, C esta sobre-reservado y tiene release de reservas por delante. Las dos versiones importan y ninguna es verificable con esta data.",
+        "MS provisiona 146M sobre 225.834B de prestamos = 6.5bps. Aun aceptando que es lending colateralizado, un buffer de 6.5bps es el numero de un banco que asume cero correlacion entre caida de mercado y calidad de colateral. Esa asuncion es justamente la que falla en un evento de vol. cost_of_risk sospechosamente bajo dado el regimen, exactamente el patron que la regla 4 marca como riesgo diferido y no como fortaleza.",
+        "BAC tiene 1.9655T de depositos, el segundo balance del grupo, y genera 56.060B de NII, mientras JPM con 2.406T (22% mas depositos) genera 92.583B (65% mas NII). El gap es demasiado grande para atribuirlo solo a mix de negocios y apunta a activos de bajo rendimiento heredados. No puedo cerrar el numero porque NIM no esta disponible (LIMITATION #16): esta es la contradiccion que queda ABIERTA por falta de dato.",
+        "Los tres universales no-JPM convergen en efficiency_ratio 0.655-0.665 mientras JPM esta en 0.517. Una dispersion asi de estable sugiere que el mercado ya paga esa diferencia; el riesgo del LONG JPM no es operativo sino de valuacion, y no tengo multiplos ni ROTCE (LIMITATION #14) para chequear si el premio ya esta descontado.",
+        "Rezago temporal severo: los fundamentals son FY2024 y el analisis es del 2026-08-04. Toda la lectura de ciclo se apoya en un nivel, no en una tendencia. Si las provisiones empezaron a subir en 2025-2026, esta data no lo ve. Es la debilidad estructural mas grande del memo y el Synthesizer debe descontarla."
       ],
       "invalidadores": [
-        "Subida coordinada de cost_of_risk en >=2 universales = giro de EXPANSION hacia CONTRACCION; invalidaria todos los LONG.",
-        "Ampliacion de HY spreads por encima de 4% o VIX sostenido >25 = fin del entorno risk-on; invalidaria los LONG de GS y la tesis de banca de inversion.",
-        "Acceso a CET1/ROTCE/NIM (actualmente faltantes, LIMITATIONS #14/#16/#17) que revele capital debil o margenes comprimidos cambiaria materialmente la lectura de calidad -- esta tesis es de CICLO, no de solvencia.",
-        "Caida de NII en universales sin baja correspondiente de provisiones = señal de complacencia (margen cae pero no reconocen riesgo), giraria la lectura hacia cautela."
+        "cost_of_risk subiendo de forma sincronizada en JPM, BAC y C (por ejemplo JPM sobre ~1.10%, BAC sobre ~0.85%) mientras los prestamos no crecen: eso mueve la clasificacion de EXPANSION a CONTRACCION y anula el LONG JPM.",
+        "hy_spread rompiendo por encima de 4.5-5.0% desde el 2.84% actual: se termina la complacencia crediticia, el sub-tipo investment bank pierde su motor y el LONG GS deja de tener sustento de regimen.",
+        "yield_curve volviendo a invertirse desde +0.99% o sahm_rule cruzando su umbral desde 0.07: el regimen GOLDILOCKS del fondo cae, y con provisiones tan finas (BAC 0.548%, MS 0.065%) el catch-up de reservas seria el primer golpe a resultados.",
+        "vix sostenido sobre 25 o SPY perdiendo el 200DMA de 697.41: invalida el LONG GS antes que ninguna otra senal, porque su ingreso depende de noninterest_income (45.456B) ligado a actividad de mercado.",
+        "Aparicion de datos de allowance/loans o net charge-offs que muestren cobertura de reservas cayendo mientras los prestamos crecen: confirmaria la tesis Mayo de provision insuficiente y convertiria los NEUTRAL de BAC y MS en negativos.",
+        "Datos posteriores a FY2024 (FY2025/1H2026) que contradigan estos niveles: dado el rezago de ~18 meses, cualquier serie mas fresca tiene prioridad absoluta sobre este memo.",
+        "Obtener NIM, ROTCE y CET1/Tier1 via parse de 10-K (hoy no disponibles, LIMITATIONS #14/#16/#17): pueden confirmar o destruir tanto el LONG JPM (si el premio ya esta en el precio) como el NEUTRAL BAC (si el NIM explica el gap de NII de forma benigna).",
+        "Aparicion de loans_held_for_investment para WFC y GS: habilitaria cost_of_risk y loan_to_deposit para ambos y podria mover WFC de NEUTRAL-por-falta-de-datos a una direccion con conviccion real."
       ]
     },
     "quarterly": {
-      "fecha": "2026-06-05",
+      "fecha": "2026-08-04",
       "regimen_credito": {
         "clasificacion": "EXPANSION",
         "direccion_ciclo": "ACELERANDO",
-        "confianza": 70,
-        "razonamiento": "La fotografia de tendencias es benigna y coherente con el regimen Goldilocks del fondo, pero con matices Mayo. Cost_of_risk baja o se mantiene plano en casi toda la muestra universal (BAC -23%, C -10.3% con 3 trimestres consecutivos bajando), provisiones en retroceso (BAC -15%, WFC -44.9%, C -4.2%), y apetito de prestamo (loan_to_deposit) subiendo sin alarma (BAC +5.4%, JPM +2.1%, MS +3.4%). Esto es la firma clasica de expansion media: el credito todavia no se deteriora y los bancos relajan provisiones porque no ven morosidad entrante. La direccion es ACELERANDO porque NII crece de forma generalizada (BAC +11.2%, C +10.7%, JPM +5.4%, MS +20.5%, GS +93.6%) y el apetito de prestamo sube en paralelo. NO clasifico EUFORIA porque el L/D sube de forma moderada (+2 a +5%), no parabolica, y las rachas consecutivas son cortas (2 trimestres), no la aceleracion sin freno que marca el final de ciclo. La unica grieta visible es JPM, que rema en direccion contraria al sector (ver contradicciones)."
+        "confianza": 66,
+        "razonamiento": "La pendiente dominante del sector es de credito abaratandose y apetito de prestamo despertando, que es la definicion operativa de expansion, no de giro. Cinco de los seis bancos con datos muestran provisiones bajando: BAC -15.0%, C -4.2% (2 trimestres consecutivos bajando), WFC -44.9%, MS -92.9% (distorsionado, ver contradicciones); y el cost_of_risk cae en BAC (-23.0%) y C (-10.3%, 3 trimestres consecutivos bajando). Simultaneamente el apetito sube: loan_to_deposit de BAC +5.4% con 2 trimestres consecutivos al alza (0.5516->0.5636->0.5757), JPM +2.1% con 2 consecutivos (0.5331->0.5413->0.5531) y MS +3.4%. NII sube en todos los que tienen serie: BAC +11.2%, C +10.7%, JPM +5.4%, MS +20.5%, GS +93.6%; solo WFC esta plano (+0.2%). Eso es ACELERANDO, no ESTABLE: la combinacion de LTD subiendo dos trimestres seguidos en los dos universales mas grandes con provisiones cayendo es el patron clasico de fase media-tardia de expansion. Lo que aun NO justifica clasificar EUFORIA es que las rachas son cortas (2-3 trimestres, no 5-6) y que los niveles de loan_to_deposit siguen bajos (0.52-0.58 en universales), es decir el apetito esta creciendo desde una base defensiva. La unica pendiente que va en direccion contraria al sector es JPM: cost_of_risk +2.7% y provisiones +11.5% (serie en dientes de sierra 2.631->3.305->2.849->3.403e9), y esa divergencia es la senal mas informativa del panel. No hay ninguna metrica en el panel que indique contraccion de credito. Faltan ROTCE, NIM y CET1/Tier1 (no disponibles via XBRL, LIMITATIONS #14/#16/#17): sin ellos no puedo juzgar si la expansion se esta financiando con capital o con apalancamiento, que es la pregunta clave de esta fase."
       },
-      "tesis_principal": "Dos tendencias dominan. PRIMERA: relajacion generalizada de provisiones y cost_of_risk en la banca universal mientras los prestamos crecen; esto confirma el Goldilocks macro (HY spreads 2.75%, Sahm 0.13, sin senal recesiva) y dice que los bancos no anticipan deterioro de credito a 1-2 trimestres. SEGUNDA: el motor de ganancias migro de margen a volumen y a NII, especialmente en los investment banks (GS NII +93.6%, MS +20.5%) consistente con mercados de capital activos bajo VIX 15.94 y SPY/QQQ en momentum fuerte. El matiz Mayo: JPM es el unico universal que SUBE cost_of_risk (+2.7%) y provisiones (+11.5%) mientras el resto las baja. O JPM esta provisionando con disciplina temprana (lo cual seria la senal adelantada del ciclo), o el resto del sector esta soltando reservas demasiado rapido. Esa divergencia es la informacion mas valiosa del trimestre.",
+      "tesis_principal": "Las tendencias del banking desk son COHERENTES con el regimen GOLDILOCKS del fondo (hy_spread 2.84%, curva +0.99%, VIX 15.98): el credito bancario no muestra deterioro, lo muestra abaratandose. La pendiente que manda es doble: (1) cost_of_risk y provisiones cayendo en casi todo el panel, (2) NII expandiendo a doble digito en 4 de 6 bancos. Pero la lectura Marks obliga a decir la segunda mitad: cuando las provisiones caen AL MISMO TIEMPO que el loan_to_deposit sube dos trimestres seguidos, el sector no esta reconociendo riesgo nuevo mientras acumula exposicion nueva. Eso no es peligro inmediato, es la firma de que estamos en la mitad tardia de la expansion, no al principio. La divergencia mas util para el Synthesizer: JPM es el unico que aprovisiona MAS mientras crece, y el unico cuyo efficiency_ratio se DETERIORA (+10.7%, 0.4724->0.5230); el sector entero mejora eficiencia (BAC -4.0%, GS -7.1%, MS -7.5%) pero esa mejora coincide con NII subiendo, lo que la hace fragil y dependiente de tasas, no de control de costos. Segunda divergencia: WFC entrega NII plano (+0.2%) con provisiones -44.9%, la combinacion de menor calidad de resultado del panel. Traduccion para el fondo: el ciclo de credito confirma el Goldilocks pero ya no esta barato en terminos de riesgo asumido; el sesgo debe ser LONG selectivo hacia coherencia de tendencia (BAC, GS), NEUTRAL hacia quien mejora resultado por liberacion de reservas (WFC) o hacia quien esta desacelerando internamente (JPM), y explicitamente sin opinion en NU por falta total de datos trimestrales.",
       "senales": [
         {
           "activo": "BAC",
           "direccion": "LONG",
           "conviccion": 7,
-          "razonamiento": "La tendencia mas limpia del grupo: cost_of_risk bajando -23% en 6 trimestres, provisiones -15%, efficiency mejorando -4% (gasto bajo control, no solo NII), y NII subiendo +11.2% con loan_to_deposit acelerando +5.4% (2 trimestres consecutivos). Apetito de prestamo creciente sin deterioro de credito = expansion saludable. La mejora de eficiencia es genuina porque acompana caida de costo de riesgo, no solo viento de cola de tasas."
-        },
-        {
-          "activo": "C",
-          "direccion": "LONG",
-          "conviccion": 6,
-          "razonamiento": "Cost_of_risk bajando -10.3% con 3 trimestres consecutivos a la baja (la racha mas consistente del grupo), provisiones -4.2% y NII +10.7%. L/D estable (-1.4%) indica que la mejora NO viene de apalancar el balance, sino de calidad de credito. Eficiencia volatil (termina en 0.6469, peor que su minimo de 0.6216) resta conviccion: la mejora operativa no es lineal."
-        },
-        {
-          "activo": "JPM",
-          "direccion": "NEUTRAL",
-          "conviccion": 6,
-          "razonamiento": "El divergente. Unico universal que SUBE cost_of_risk (+2.7%) y provisiones (+11.5%) mientras el resto las baja, con eficiencia DETERIORANDO +10.7% (de 0.4724 a 0.523). NII crece solo +5.4%, el mas debil de los universales. Lectura Marks: si JPM provisiona temprano puede estar viendo algo que el sector ignora. No es SHORT (sigue siendo el mejor operado), pero su trayectoria contradice el optimismo del grupo y merece neutralidad hasta confirmar si es prudencia o deterioro."
-        },
-        {
-          "activo": "WFC",
-          "direccion": "NEUTRAL",
-          "conviccion": 4,
-          "razonamiento": "Datos insuficientes para tesis fuerte: cost_of_risk y loan_to_deposit sin datos via XBRL. Lo que hay: provisiones bajando -44.9% (la caida mas agresiva del grupo) pero con NII y efficiency PLANOS (cambios <0.5%). Mayo flag: soltar reservas casi a la mitad sin crecimiento de ingresos ni de prestamos sugiere que el alivio de provisiones esta inflando earnings sin motor de negocio detras. Sin cost_of_risk ni L/D no puedo confirmar si el riesgo se esta reconociendo. Neutral por falta de visibilidad."
+          "razonamiento": "El unico banco del panel con las cinco tendencias alineadas en la misma direccion virtuosa: cost_of_risk -23.0% (1497->1152 bps*10^-6, caida sostenida), provisiones -15.0%, efficiency_ratio -4.0% mejorando (0.6427->0.6172, y mejorando en los ultimos 3 trimestres seguidos: 0.6291->0.6261->0.6172), NII +11.2% con 2 trimestres consecutivos subiendo, y loan_to_deposit +5.4% con 2 consecutivos al alza. La mejora de eficiencia acompana pero no depende solo del NII: el ratio ya venia bajando desde 0.6623. Es el perfil que un regimen GOLDILOCKS deberia producir. Caveat Mayo que baja la conviccion de 8 a 7: provisiones cayendo mientras el LTD acelera es exactamente la combinacion que subestima riesgo acumulado; si el ciclo gira, BAC entra con la reserva mas delgada del panel en pendiente. Sin CET1 ni NIM (LIMITATIONS #16/#17) no puedo verificar si el margen sostiene el NII o si es volumen."
         },
         {
           "activo": "GS",
           "direccion": "LONG",
           "conviccion": 6,
-          "razonamiento": "Investment bank: se lee por eficiencia y motor de ingresos, no por cost_of_risk (sin datos, esperado). NII +93.6% con 3 trimestres consecutivos subiendo y efficiency mejorando -7.1%. Provisiones suben +20.2% pero sobre una base minima e irrelevante para su modelo (no es prestamista tradicional). Coherente con mercados de capital activos bajo VIX 15.94 y momentum SPY/QQQ. Beta alta al regimen Goldilocks: lo que lo hace LONG ahora lo haria SHORT si VIX gira."
+          "razonamiento": "Sub-tipo investment bank: se lee por eficiencia y por generacion, no por cost_of_risk (que ademas viene sin datos, igual que loan_to_deposit, y no lo invento). Ahi las dos pendientes disponibles son buenas: efficiency_ratio -7.1% (0.6703->0.6226) y NII +93.6% con 3 trimestres consecutivos subiendo (2.895->3.104->3.852e9), la racha mas limpia de todo el panel. Rebaja de conviccion por dos motivos: el NII de un IB es una porcion menor del ingreso y su duplicacion refleja mix de balance/funding tanto como negocio, y el efficiency_ratio no es monotono (mejoro a 0.5956 y despues se deterioro a 0.6337 antes de volver a 0.6226), o sea la mejora es volatil, no estructural. Las provisiones (+20.2% nominal) son en realidad una serie lateral 282-397e6 que termina bajando a 339e6: no leo tendencia de deterioro ahi."
+        },
+        {
+          "activo": "C",
+          "direccion": "LONG",
+          "conviccion": 6,
+          "razonamiento": "La mejor pendiente de credito del panel entre universales: cost_of_risk bajando 3 trimestres consecutivos (0.003792->0.003748->0.003507->0.003161, -10.3%) y provisiones bajando 2 consecutivos (-4.2%), con NII +10.7%. Pero la conviccion se topa en 6 por dos incoherencias de trayectoria: (a) el loan_to_deposit esta ESTABLE (-1.4%, banda 0.512-0.526), o sea Citi mejora su costo de riesgo sin ampliar apetito, lo que es prudente pero significa que la mejora es de calidad de cartera vieja y no de franquicia creciendo; (b) el efficiency_ratio nominalmente baja -2.2% pero la serie se DA VUELTA en los ultimos dos trimestres (0.6216->0.6266->0.6469), es decir la eficiencia se esta deteriorando ahora mismo mientras el NII sube, que es la peor combinacion posible: costos creciendo mas rapido que un ingreso favorecido por tasas. Si el NII se aplana, ese efficiency se va arriba de 0.66."
+        },
+        {
+          "activo": "JPM",
+          "direccion": "NEUTRAL",
+          "conviccion": 6,
+          "razonamiento": "Es la contra-tendencia del panel y por eso la senal mas cargada de informacion, pero apunta a NEUTRAL, no a LONG. Unico banco con cost_of_risk subiendo (+2.7%) y provisiones subiendo (+11.5%, 3.052->3.403e9) mientras el loan_to_deposit sube 2 trimestres consecutivos (+2.1%): esta creciendo credito Y reservando mas, lo que o bien es la conducta correcta y conservadora de fin de ciclo, o bien es que ve deterioro en su cartera que el resto todavia no reporta. Honestidad Mayo: la serie de cost_of_risk es dientes de sierra (0.002352->0.001988->0.002484->0.002054->0.002414) y +2.7% en 6 trimestres es ruido, no una racha; no voy a construir una historia de deterioro sobre eso. Lo que si es una tendencia real y negativa es el efficiency_ratio: +10.7%, de 0.4724 a 0.5230, el unico que empeora estructuralmente, y encima con el NII creciendo mas lento del grupo de universales (+5.4% vs +11.2% BAC y +10.7% C). Franquicia superior con pendiente relativa desmejorando: NEUTRAL."
         },
         {
           "activo": "MS",
+          "direccion": "LONG",
+          "conviccion": 5,
+          "razonamiento": "Sub-tipo investment bank: la lectura valida es eficiencia y NII, y ambas son positivas: efficiency_ratio -7.5% (0.7237->0.6692, el mejor delta del panel) y NII +20.5%, con loan_to_deposit +3.4% (0.6104->0.6310, el nivel mas alto del panel, coherente con su libro de prestamos a wealth). Rechazo explicitamente la lectura literal del cost_of_risk -94.1% y de las provisiones -92.9%: eso NO es una tendencia, es un unico trimestre outlier (138e6 -> 6e6) despues de una serie que venia SUBIENDO (18->65->81->138e6). Un lector de pendientes no extrapola un punto. Conviccion 5 porque la mejora de eficiencia coincide con el salto de NII y no puedo separar cuanto es control de costos y cuanto es tasas (falta NIM, LIMITATION #14)."
+        },
+        {
+          "activo": "WFC",
           "direccion": "NEUTRAL",
           "conviccion": 5,
-          "razonamiento": "Investment bank con eficiencia mejorando -7.5% y NII +20.5%, buena trayectoria. Pero cost_of_risk (-94.1%) y provisiones (-92.9%) muestran cifras tan minusculas (provisiones de USD 6M vs 138M) que el riesgo de credito es ruido, no senal: irrelevante para su modelo. La serie de cost_of_risk es erratica (sube y baja sin patron), no una tendencia. LONG-leaning por eficiencia, pero neutral porque la mejora depende del ciclo de mercados de capital igual que GS, sin la magnitud de NII de GS."
+          "razonamiento": "Sesgo negativo dentro de neutral. La combinacion de tendencias es la de peor calidad del panel: NII ESTABLE/plano (+0.2%, 11.92->11.95e9, sin crecimiento real en 6 trimestres) y efficiency_ratio ESTABLE (+0.5%, banda 0.6416-0.6894 sin mejora), mientras las provisiones caen -44.9% (1.236e9 -> 681e6). Traduccion Mayo: en un banco donde el ingreso no crece y los costos no bajan, una caida del 45% en provisiones es la palanca que sostiene el resultado, y esa palanca se agota. Ademas no tengo cost_of_risk ni loan_to_deposit (datos insuficientes), asi que NO puedo verificar si esa caida de provisiones esta respaldada por una cartera efectivamente mejor o si es liberacion de reservas sobre un libro que no crece; sin esas dos series y sin CET1 (LIMITATION #17) no hay base para un LONG."
         },
         {
           "activo": "NU",
           "direccion": "NEUTRAL",
           "conviccion": 2,
-          "razonamiento": "Digital EM (Brasil, unsecured) - animal aparte. Cobertura XBRL trimestral esencialmente nula: todas las metricas 'sin datos' salvo un unico punto de L/D (0.1844). Imposible leer tendencia. No emito tesis con un solo dato. Dato faltante declarado."
+          "razonamiento": "Sin opinion por falta de datos, y lo declaro explicitamente en vez de inventar. Cuatro de las cinco metricas vienen 'datos insuficientes' y la quinta es un unico punto aislado de loan_to_deposit (0.1844) sin serie que permita medir pendiente. La cobertura trimestral XBRL de un emisor digital EM (Brasil, credito unsecured, dinamica de cost_of_risk completamente distinta a la de un universal US) es estructuralmente limitada. No corresponde extender la lectura de ciclo de credito US a NU: es otro animal, otro pais y otra moneda. Cualquier posicion en NU debe venir de otro desk."
         }
       ],
       "eventos_clave": [
-        "JPM Q4: confirmar si cost_of_risk y provisiones siguen subiendo. Tercer trimestre consecutivo al alza convertiria la divergencia en senal de giro de ciclo, no ruido.",
-        "WFC: necesito el cost_of_risk y loan_to_deposit (faltan via XBRL) para juzgar si la caida de provisiones es disciplina o subprovisionamiento. Buscar en 10-K.",
-        "Loan_to_deposit del grupo universal: si BAC/JPM aceleran de +5% a doble digito y las rachas consecutivas se alargan, eso seria la firma de fin de ciclo (apetito sin freno = tarde en el ciclo, Marks).",
-        "NII de GS/MS: si la racha de subidas se rompe, es la primera senal de que el ciclo de mercados de capital se enfria - leading indicator para los IB.",
-        "Cost_of_risk de C: lleva 3 trimestres bajando; vigilar si toca suelo y rebota, marcaria inflexion."
+        "Si el loan_to_deposit de BAC marca un TERCER trimestre consecutivo al alza (>0.5757) sin que las provisiones dejen de caer, la clasificacion pasa de EXPANSION-ACELERANDO a EUFORIA temprana. Esa es la racha a vigilar por encima de cualquier otro dato del panel.",
+        "Si JPM registra un tercer trimestre de provisiones al alza (>3.403e9) y el cost_of_risk sale del rango 0.0020-0.0025 hacia arriba, deja de ser ruido y pasa a ser el indicador adelantado del giro sectorial. Es el canario del panel.",
+        "Efficiency_ratio de C: si supera 0.65 en Q4 (viene 0.6216->0.6266->0.6469) confirma que su mejora de credito no compensa un problema de costos, y la senal LONG cae a NEUTRAL.",
+        "Normalizacion de las provisiones de MS: si Q4 vuelve a la banda 80-140e6 desde los 6e6 de Q3, confirma que el ultimo dato fue un outlier contable y no una mejora de credito.",
+        "WFC: aparicion de las series de cost_of_risk y loan_to_deposit (hoy ausentes) es la unica forma de validar o refutar la hipotesis de que su resultado se apoya en liberacion de reservas. Sin eso, WFC se queda en NEUTRAL por defecto.",
+        "Continuidad de la racha de NII de GS (3 trimestres consecutivos): un cuarto trimestre al alza valida el LONG; una reversion lo desarma, porque el efficiency ratio de GS no es monotono por si solo.",
+        "Cualquier deterioro del hy_spread desde 2.84% hacia arriba de 4% seria la senal macro que precede a la reversion de todas estas pendientes de provisiones a la vez; el credito HY gira antes que el bancario.",
+        "Disponibilidad de ROTCE / NIM / CET1 via parse de 10-K (LIMITATIONS #14/#16/#17): sin ellos no se puede juzgar si esta expansion de credito esta financiada con capital o con apalancamiento, ni cuanto del NII es margen vs volumen."
       ],
       "contradicciones": [
-        "JPM vs el resto de universales: JPM sube cost_of_risk (+2.7%) y provisiones (+11.5%) mientras BAC, C y WFC las bajan. O JPM ve un deterioro que el sector niega, o el sector esta soltando reservas demasiado pronto. Divergencia = senal adelantada del ciclo a vigilar.",
-        "WFC: provisiones cayendo -44.9% con NII y efficiency planos. Reducir reservas a la mitad sin crecimiento de negocio infla earnings de calidad fragil; podria estar no reconociendo riesgo. Sin cost_of_risk ni L/D para verificar.",
-        "BAC y C mejoran eficiencia mientras NII sube fuerte: parte de la mejora de efficiency_ratio puede ser viento de cola de NII (tasas) mas que control de costos estructural. En BAC el cost_of_risk cae en paralelo, lo que la respalda; en C la eficiencia es volatil, lo que la cuestiona.",
-        "Provisiones del sector bajando de forma generalizada en un punto del ciclo donde el momentum macro y de mercado esta extremadamente extendido (SPY +28% 12m, USO +92%): el optimismo de credito coincide con el pico de complacencia (VIX 15.94). Goldilocks tardio se parece a euforia temprana."
+        "SECTORIAL (la principal): provisiones bajando mientras el apetito de prestamo sube. BAC baja provisiones -15.0% y cost_of_risk -23.0% mientras su loan_to_deposit sube +5.4% con 2 trimestres consecutivos al alza. No se puede estar acumulando exposicion nueva y reconociendo menos riesgo salvo que se asuma que la cartera nueva es de mejor calidad que la vieja, cosa que nadie demuestra. Es la firma clasica de complacencia de mitad-tardia de ciclo.",
+        "JPM vs el resto del sector: JPM sube provisiones +11.5% y cost_of_risk +2.7% mientras BAC (-15.0%), C (-4.2%) y WFC (-44.9%) las bajan, todos operando en la misma economia y bajo el mismo Goldilocks. O JPM esta viendo un deterioro en su libro que el resto todavia no reporta, o BAC/C/WFC estan provisionando tarde. Las dos lecturas no pueden ser ciertas a la vez y la divergencia es la senal, no el nivel.",
+        "MEJORA DE EFICIENCIA FRAGIL: BAC (-4.0%), GS (-7.1%) y MS (-7.5%) mejoran efficiency_ratio exactamente en los mismos trimestres en que su NII sube +11.2%, +93.6% y +20.5%. Un ratio mejora tanto por numerador (costos) como por denominador (ingreso); con el NII disparado no se puede atribuir la mejora a disciplina de costos. Si el ciclo de tasas gira y el NII se aplana, esos efficiency ratios se revierten mecanicamente. Sin NIM (LIMITATION #14) no puedo desglosarlo, y lo declaro como el punto ciego mas grande de este memo.",
+        "CITI: efficiency_ratio reportado como 'bajando -2.2%' pero la serie se invierte en los ultimos dos trimestres (0.6216->0.6266->0.6469). La direccion agregada de 6 trimestres esconde un deterioro activo de 2 trimestres. La pendiente reciente contradice la pendiente larga.",
+        "WFC: calidad de resultado. NII plano (+0.2%) y eficiencia plana (+0.5%) con provisiones -44.9%. El unico motor de la ultima linea es la reduccion de cargos por credito, en un banco que ni siquiera reporta el cost_of_risk ni el loan_to_deposit que permitirian validarla. Bandera roja de sostenibilidad.",
+        "MS: el -94.1% de cost_of_risk y el -92.9% de provisiones son artefactos de un solo trimestre (138e6 -> 6e6) que ademas interrumpe una serie que venia subiendo (18->65->81->138e6). Cualquier lectura que tome ese -94% como tendencia de mejora crediticia esta leyendo un outlier. Lo marco para que el Synthesizer no lo agregue como senal positiva.",
+        "GS: reportado como provisiones 'subiendo +20.2%' pero la serie (282-397-351-287-384-339e6) es lateral y termina bajando. Ni tendencia de deterioro ni de mejora: lateral es la lectura honesta.",
+        "MACRO vs SECTOR: el regimen GOLDILOCKS (68%) con hy_spread en 2.84% y VIX 15.98 es coherente con provisiones cayendo, pero el fondo mismo describe el lado de tasas como RESTRICTIVO (yield_3m 3.69%, 10Y 4.68%). Un entorno de tasas restrictivo sostenido normalmente aparece con retraso en el cost_of_risk de las carteras de consumo y CRE. Que cinco de seis bancos bajen provisiones bajo tasas restrictivas es o bien confirmacion de un aterrizaje suave, o bien reconocimiento tardio. JPM es el unico cuyo comportamiento es consistente con la segunda hipotesis."
       ],
       "invalidadores": [
-        "Dos o mas universales empiezan a SUBIR cost_of_risk de forma sincronizada (no solo JPM): invalida la lectura de expansion benigna y adelanta giro a contraccion.",
-        "HY spreads se abren por encima de ~3.5% o Sahm Rule cruza al alza: el soporte macro Goldilocks se rompe y las provisiones a la baja pasarian de prudencia a negacion.",
-        "Reversion de la tendencia de NII (caida 1-2 trimestres) con efficiency deteriorando: confirmaria que las mejoras de eficiencia eran viento de tasas, no estructurales.",
-        "Loan_to_deposit acelera a rachas largas (4+ trimestres) y doble digito: invalida 'EXPANSION media' y mueve la clasificacion hacia EUFORIA / fin de ciclo.",
-        "VIX rompe al alza desde 15.94 y SPY/QQQ pierden 200DMA: invalida especificamente las tesis LONG de GS/MS, cuyo motor depende de mercados de capital activos."
+        "Dos trimestres consecutivos de cost_of_risk SUBIENDO en BAC o C (rompiendo rachas de -23.0% y -10.3% respectivamente): invalida EXPANSION-ACELERANDO y obliga a reclasificar a NEUTRAL con sesgo a CONTRACCION.",
+        "Provisiones subiendo simultaneamente en 3 o mas bancos del panel en el mismo trimestre: el giro deja de ser idiosincratico de JPM y pasa a ser sectorial. Ese es el invalidador duro de todo este memo.",
+        "Loan_to_deposit bajando en BAC y JPM a la vez despues de sus rachas de 2 trimestres al alza: significa que el apetito se retrae, que es el primer sintoma de contraccion aunque el cost_of_risk todavia se vea bajo.",
+        "NII girando a la baja en 2+ bancos: desarmaria automaticamente las mejoras de efficiency_ratio de BAC, GS y MS, que estan apoyadas en el denominador. Invalida las tres senales LONG de golpe.",
+        "Cambio del regimen macro del fondo desde GOLDILOCKS hacia RECESION PROXIMA (sahm_rule cruzando su umbral, curva reinvirtiendose desde +0.99%, hy_spread ampliando desde 2.84%): en ese escenario las provisiones cayendo del panel dejan de ser una senal benigna y pasan a leerse como reconocimiento tardio, y BAC/WFC pasarian de LONG/NEUTRAL a SHORT candidatos.",
+        "Que el dato Q3 de MS (provisiones 6e6) NO se revierta y ademas se acompane de cost_of_risk igual de bajo en Q4: obligaria a revisar si hubo un cambio metodologico o de perimetro contable, no una mejora de credito.",
+        "Reversion del efficiency_ratio de JPM hacia 0.48 o menos: eliminaria la principal razon del NEUTRAL y devolveria a JPM a LONG pese a sus provisiones al alza."
       ],
       "periodo_analizado": "CY2025Q3"
     }
