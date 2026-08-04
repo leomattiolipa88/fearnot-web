@@ -36,7 +36,7 @@ export default async function PaperPage({ params }: Props) {
         {/* Metadata */}
         <div className="flex items-center gap-3 text-xs text-[#6b6b6b] mb-6 flex-wrap">
           <span className="text-[#a1a1a1] uppercase tracking-wider">
-            {new Date(paper.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            {new Date(paper.date + 'T12:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
           </span>
           {paper.horizon && (
             <>

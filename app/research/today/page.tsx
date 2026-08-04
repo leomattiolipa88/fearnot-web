@@ -45,7 +45,7 @@ export default function TodayPulse() {
     if (chunk.trim()) paragraphs.push(chunk + (chunk.endsWith('.') ? '' : '.'));
   }
 
-  const displayDate = new Date(data.metadata.fecha).toLocaleDateString('en-US', {
+  const displayDate = new Date(data.metadata.fecha + 'T12:00:00').toLocaleDateString('en-US', {
     weekday: 'long',
     month: 'long',
     day: 'numeric',
