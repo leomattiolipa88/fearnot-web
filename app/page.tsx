@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Header from '@/app/components/Header';
+import BankingSection from '@/app/components/BankingSection';
 
 // ============== Types ==============
 type WebData = {
@@ -25,6 +26,7 @@ type WebData = {
   }>;
   eventos_clave: string[];
   confianza_consolidada: number | null;
+  banking?: any;
 };
 
 // ============== Helpers ==============
@@ -110,7 +112,7 @@ export default function Home() {
         </div>
         <h1 className="font-serif text-[clamp(64px,12vw,140px)] leading-[0.95] tracking-tight mb-8">
           In chaos,<br />
-          <em className="italic text-[#ff4d4d]">FEAR NOT.</em>
+          <em className="italic text-[var(--accent)]">FEAR NOT.</em>
         </h1>
         <p className="text-xl leading-relaxed text-[#a1a1a1] max-w-[600px] mb-10">
           We look where others won&apos;t. Systematic macro research, powered by a multi-agent AI architecture and grounded in 150 years of market evidence. We take markets seriously. Ourselves, less so.
@@ -221,8 +223,10 @@ export default function Home() {
 
       {/* Quote */}
       <div className="h-px bg-white/[0.08] max-w-[1200px] mx-auto" />
+      <BankingSection banking={data.banking} />
+
       <section className="max-w-[1200px] mx-auto px-8 py-32 text-center">
-        <p className="font-serif text-[clamp(32px,5vw,56px)] leading-tight tracking-tight max-w-[900px] mx-auto mb-8">&ldquo;It takes courage to be <em className="italic text-[#ff4d4d]">a pig</em>.&rdquo;</p>
+        <p className="font-serif text-[clamp(32px,5vw,56px)] leading-tight tracking-tight max-w-[900px] mx-auto mb-8">&ldquo;It takes courage to be <em className="italic text-[var(--accent)]">a pig</em>.&rdquo;</p>
         <p className="text-xs uppercase tracking-widest text-[#a1a1a1]">— Stanley Druckenmiller</p>
       </section>
       <div className="h-px bg-white/[0.08] max-w-[1200px] mx-auto" />
@@ -237,7 +241,7 @@ export default function Home() {
             { num: '03', title: "Look where others won't", text: 'Rare earths. Argentine sovereigns. Oil pods reading Trafigura&apos;s playbook. Options flow in backwaters. If the Bloomberg terminal is ignoring it, we are probably writing about it.' },
           ].map((p) => (
             <div key={p.num} className="pt-5 border-t border-white/[0.08]">
-              <span className="font-serif italic text-4xl text-[#ff4d4d] mb-4 block">{p.num}</span>
+              <span className="font-serif italic text-4xl text-[var(--accent)] mb-4 block">{p.num}</span>
               <h3 className="text-xl font-medium mb-3 tracking-tight">{p.title}</h3>
               <p className="text-sm leading-relaxed text-[#a1a1a1]" dangerouslySetInnerHTML={{ __html: p.text }} />
             </div>

@@ -25,7 +25,7 @@ export default function Header({ regimen, confianza }: Props) {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 text-base font-medium tracking-tight">
-          <div className="w-6 h-6 bg-[#ff4d4d] rounded-md relative overflow-hidden">
+          <div className="w-6 h-6 bg-[var(--accent)] rounded-md relative overflow-hidden">
             <div
               className="absolute inset-0"
               style={{ background: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 70%)' }}

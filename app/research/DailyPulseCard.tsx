@@ -13,7 +13,7 @@ export default function DailyPulseCard() {
 
   return (
     <Link href="/research/today">
-      <div className="bg-[#141414] border border-white/[0.08] rounded-xl p-8 hover:border-[#ff4d4d]/40 transition cursor-pointer group">
+      <div className="bg-[#141414] border border-white/[0.08] rounded-xl p-8 hover:border-[var(--accent)]/40 transition cursor-pointer group">
         <div className="flex items-center justify-between gap-8 flex-wrap">
           <div className="flex-1 min-w-[300px]">
             <div className="flex items-center gap-3 text-xs uppercase tracking-widest text-[#7cc943] mb-3">
@@ -28,7 +28,7 @@ export default function DailyPulseCard() {
           </div>
           <div className="text-right">
             <div className="text-xs text-[#6b6b6b] mb-2 uppercase tracking-wider">Current Regime</div>
-            <div className="font-serif text-2xl text-[#ff4d4d] italic">
+            <div className="font-serif text-2xl text-[var(--accent)] italic">
               {data?.regimen.clasificacion || '—'}
             </div>
             <div className="text-xs text-[#a1a1a1] mt-1">
@@ -36,7 +36,7 @@ export default function DailyPulseCard() {
             </div>
           </div>
         </div>
-        <div className="mt-6 text-xs text-[#6b6b6b] group-hover:text-[#ff4d4d] transition">
+        <div className="mt-6 text-xs text-[#6b6b6b] group-hover:text-[var(--accent)] transition">
           Read today&apos;s pulse →
         </div>
       </div>

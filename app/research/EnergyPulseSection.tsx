@@ -205,7 +205,7 @@ export default function EnergyPulseSection() {
               <ul className="space-y-2">
                 {pulse.invalidadores.map((inv, i) => (
                   <li key={i} className="text-sm text-[#a1a1a1] flex gap-3 items-start">
-                    <span className="text-[#ff4d4d] mt-1">×</span>
+                    <span className="text-[var(--accent)] mt-1">×</span>
                     <span>{inv}</span>
                   </li>
                 ))}

@@ -72,7 +72,7 @@ export default function ConvictionsSection() {
         const dirColor = conv.direccion === 'LONG' ? 'text-[#7cc943]' : 'text-[#f27272]';
         const dirBg = conv.direccion === 'LONG' ? 'bg-[#7cc943]/[0.12]' : 'bg-[#f27272]/[0.12]';
         const sizeColor =
-          conv.position_size === 'CONCENTRATED' ? 'text-[#ff4d4d]' :
+          conv.position_size === 'CONCENTRATED' ? 'text-[var(--accent)]' :
           conv.position_size === 'STANDARD' ? 'text-[#f5bd4f]' :
           'text-[#a1a1a1]';
 
@@ -127,7 +127,7 @@ export default function ConvictionsSection() {
                   <ol className="space-y-3">
                     {conv.thesis.map((frase, i) => (
                       <li key={i} className="flex gap-4">
-                        <span className="font-serif italic text-xl text-[#ff4d4d] shrink-0">
+                        <span className="font-serif italic text-xl text-[var(--accent)] shrink-0">
                           {String(i + 1).padStart(2, '0')}
                         </span>
                         <p className="text-base leading-relaxed text-[#d4d4d4] pt-1">{frase}</p>
@@ -207,7 +207,7 @@ export default function ConvictionsSection() {
                     <ul className="space-y-2">
                       {conv.invalidators.map((inv, i) => (
                         <li key={i} className="text-sm text-[#a1a1a1] flex gap-3 items-start">
-                          <span className="text-[#ff4d4d] mt-1">×</span>
+                          <span className="text-[var(--accent)] mt-1">×</span>
                           <span>{inv}</span>
                         </li>
                       ))}

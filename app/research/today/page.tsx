@@ -79,7 +79,7 @@ export default function TodayPulse() {
         </div>
 
         <h1 className="font-serif text-[clamp(48px,8vw,96px)] leading-[1.05] tracking-tight mb-6">
-          Regime: <em className="italic text-[#ff4d4d]">{data.regimen.clasificacion}</em>
+          Regime: <em className="italic text-[var(--accent)]">{data.regimen.clasificacion}</em>
         </h1>
 
         <div className="flex flex-wrap gap-4 text-sm text-[#a1a1a1] mb-16">
@@ -191,7 +191,7 @@ export default function TodayPulse() {
             <div className="space-y-3">
               {data.invalidadores.map((inv, i) => (
                 <div key={i} className="flex gap-4 items-start">
-                  <span className="font-serif italic text-2xl text-[#ff4d4d] mt-1 shrink-0">
+                  <span className="font-serif italic text-2xl text-[var(--accent)] mt-1 shrink-0">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <p className="text-base leading-relaxed text-[#a1a1a1] flex-1 pt-2">{inv}</p>
@@ -211,7 +211,7 @@ export default function TodayPulse() {
               This pulse is generated automatically by the macro agent (Claude Sonnet) and the technical agent (Claude Opus), without human editing. The agents read fresh macro data from FRED, real-time market data from yfinance, and curated news from NewsAPI. Their conclusions are presented here exactly as produced.
             </p>
             <p className="text-sm leading-relaxed text-[#a1a1a1]">
-              For structural analyses with editorial voice, see our <Link href="/research" className="text-white border-b border-white hover:text-[#ff4d4d] hover:border-[#ff4d4d] transition">Deep Dives</Link>.
+              For structural analyses with editorial voice, see our <Link href="/research" className="text-white border-b border-white hover:text-[var(--accent)] hover:border-[var(--accent)] transition">Deep Dives</Link>.
             </p>
             <div className="flex gap-4 text-xs text-[#6b6b6b] mt-4 flex-wrap">
               <span>Generated: {generatedAt}</span>

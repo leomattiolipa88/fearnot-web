@@ -78,7 +78,7 @@ function MetricCard({
     color === 'win'
       ? 'text-[#7cc943]'
       : color === 'loss'
-      ? 'text-[#ff4d4d]'
+      ? 'text-[var(--accent)]'
       : 'text-white';
 
   return (
@@ -110,7 +110,7 @@ function ClosedConvictionRow({ conv }: { conv: Conviction }) {
             className={`text-xs px-2 py-1 rounded ${
               conv.direccion === 'LONG'
                 ? 'bg-[#7cc943]/10 text-[#7cc943]'
-                : 'bg-[#ff4d4d]/10 text-[#ff4d4d]'
+                : 'bg-[var(--accent)]/10 text-[var(--accent)]'
             }`}
           >
             {conv.direccion}
@@ -124,7 +124,7 @@ function ClosedConvictionRow({ conv }: { conv: Conviction }) {
         </div>
         <div
           className={`col-span-1 font-mono text-xs ${
-            isWin ? 'text-[#7cc943]' : 'text-[#ff4d4d]'
+            isWin ? 'text-[#7cc943]' : 'text-[var(--accent)]'
           }`}
         >
           {formatPct(conv.retorno_pct)}
@@ -132,7 +132,7 @@ function ClosedConvictionRow({ conv }: { conv: Conviction }) {
         <div className="col-span-1 font-mono text-xs text-[#7cc943]/70">
           {formatPct(conv.mfe_pct)}
         </div>
-        <div className="col-span-1 font-mono text-xs text-[#ff4d4d]/70">
+        <div className="col-span-1 font-mono text-xs text-[var(--accent)]/70">
           {formatPct(conv.mae_pct)}
         </div>
         <div className="col-span-1 font-mono text-xs text-[#a1a1a1]">
@@ -145,7 +145,7 @@ function ClosedConvictionRow({ conv }: { conv: Conviction }) {
           {isWin ? (
             <span className="text-[#7cc943] text-lg">✓</span>
           ) : (
-            <span className="text-[#ff4d4d] text-lg">✕</span>
+            <span className="text-[var(--accent)] text-lg">✕</span>
           )}
         </div>
       </div>
@@ -166,7 +166,7 @@ function PendingRow({ conv }: { conv: Conviction }) {
             className={`text-xs px-2 py-1 rounded ${
               conv.direccion === 'LONG'
                 ? 'bg-[#7cc943]/10 text-[#7cc943]'
-                : 'bg-[#ff4d4d]/10 text-[#ff4d4d]'
+                : 'bg-[var(--accent)]/10 text-[var(--accent)]'
             }`}
           >
             {conv.direccion}
@@ -220,7 +220,7 @@ export default function PerformancePage() {
     return (
       <div className="min-h-screen bg-[#0a0a0a] text-white">
         <Header />
-        <div className="max-w-[1200px] mx-auto px-8 py-20 text-center text-[#ff4d4d]">
+        <div className="max-w-[1200px] mx-auto px-8 py-20 text-center text-[var(--accent)]">
           Error loading data.
         </div>
       </div>

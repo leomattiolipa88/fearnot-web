@@ -63,7 +63,7 @@ body {
 
 .prose-fearnot em {
   font-style: italic;
-  color: #ff4d4d;
+  color: var(--accent);
 }
 
 .prose-fearnot a {
@@ -73,7 +73,7 @@ body {
 }
 
 .prose-fearnot a:hover {
-  border-bottom-color: #ff4d4d;
+  border-bottom-color: var(--accent);
 }
 
 .prose-fearnot ul, .prose-fearnot ol {
@@ -88,7 +88,7 @@ body {
 }
 
 .prose-fearnot blockquote {
-  border-left: 3px solid #ff4d4d;
+  border-left: 3px solid var(--accent);
   padding: 0.5rem 0 0.5rem 1.5rem;
   margin: 2rem 0;
   font-family: 'Instrument Serif', serif;
@@ -103,11 +103,17 @@ body {
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   font-size: 0.9em;
-  color: #ff4d4d;
+  color: var(--accent);
 }
 
 .prose-fearnot hr {
   border: none;
   border-top: 1px solid rgba(255,255,255,0.08);
   margin: 3rem 0;
+}
+/* Design tokens — acento de marca (cobre).
+   El verde/rojo de señales LONG/SHORT es semántica de mercado: no se toca. */
+:root {
+  --accent: #d98e4f;
+  --accent-bright: #e5a86e;
 }

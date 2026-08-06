@@ -19,11 +19,11 @@ export default function ResearchPage() {
 
         <div className="mb-20">
           <div className="flex items-center gap-3 text-xs uppercase tracking-widest text-[#a1a1a1] mb-4">
-            <span className="w-1.5 h-1.5 bg-[#ff4d4d] rounded-full" />
+            <span className="w-1.5 h-1.5 bg-[var(--accent)] rounded-full" />
             <span>Research</span>
           </div>
           <h1 className="font-serif text-[clamp(56px,9vw,112px)] leading-[1.05] tracking-tight">
-            Research <em className="italic text-[#ff4d4d]">archive</em>
+            Research <em className="italic text-[var(--accent)]">archive</em>
           </h1>
         </div>
 
@@ -63,10 +63,10 @@ export default function ResearchPage() {
             <div className="space-y-3">
               {papers.map((paper) => (
                 <Link key={paper.slug} href={`/research/${paper.slug}`}>
-                  <div className="bg-[#141414] border border-white/[0.08] rounded-xl p-6 hover:border-[#ff4d4d]/40 transition cursor-pointer group">
+                  <div className="bg-[#141414] border border-white/[0.08] rounded-xl p-6 hover:border-[var(--accent)]/40 transition cursor-pointer group">
                     <div className="flex items-start justify-between gap-6 flex-wrap">
                       <div className="flex-1 min-w-[300px]">
-                        <h3 className="font-serif text-2xl mb-2 group-hover:text-[#ff4d4d] transition">
+                        <h3 className="font-serif text-2xl mb-2 group-hover:text-[var(--accent)] transition">
                           {paper.title}
                         </h3>
                         {paper.subtitle && (
