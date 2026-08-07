@@ -39,6 +39,9 @@ export default function BankingSection({ banking }: { banking?: any }) {
         <span className="px-2 py-0.5 border border-white/[0.14] rounded-full text-[10px]">Monthly</span>
         <span className="flex-1 h-px bg-white/[0.08] max-w-[80px]" />
       </div>
+      <p className="text-[11px] text-[#6b6b6b] mb-6 -mt-6">
+        Source: SEC 10-K/10-Q filings. Fundamentals lag live earnings by design — this desk reads audited filings, not press releases.
+      </p>
       <div className="grid md:grid-cols-2 gap-6">
         {banking.annual && <BankCard tag="Annual · 10-K" d={banking.annual} />}
         {banking.quarterly && <BankCard tag="Quarterly · 10-Q" d={banking.quarterly} />}
